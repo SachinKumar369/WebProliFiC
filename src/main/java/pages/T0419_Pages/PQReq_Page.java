@@ -365,18 +365,34 @@ public class PQReq_Page {
                         "Issue in Requisition Number", true);
             }
 
+//            String input = ProductConfirmation.getText();
+//
+//            // Regular expression to match the last number in the string
+//            Pattern pattern = Pattern.compile("\\b\\d+\\b(?=\\s*$)");
+//            Matcher matcher = pattern.matcher(input);
+//
+//            if (matcher.find()) {
+//                RequisitionNumber = matcher.group();
+//            }
+//            setRequisitionNumber(RequisitionNumber);
+//            System.out.println("Requisition Number: " + RequisitionNumber);
+//            
+            
+            
             String input = ProductConfirmation.getText();
 
             // Regular expression to match the last number in the string
-            Pattern pattern = Pattern.compile("\\b\\d+\\b(?=\\s*$)");
+            Pattern pattern = Pattern.compile("Requisition Number\\s(\\d+)");
             Matcher matcher = pattern.matcher(input);
 
             if (matcher.find()) {
-                RequisitionNumber = matcher.group();
+                RequisitionNumber = matcher.group(1);
             }
             setRequisitionNumber(RequisitionNumber);
             System.out.println("Requisition Number: " + RequisitionNumber);
-            
+
+
+
             
             if (ProductConfirmation.isDisplayed()) {
                 // Define requisition type and requisition number

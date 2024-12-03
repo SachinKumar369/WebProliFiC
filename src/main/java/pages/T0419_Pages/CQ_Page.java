@@ -244,29 +244,60 @@ public class CQ_Page {
             BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
             Utilities.WaitTillElementDisplayed(BaseTest.getDriver(), EnterItemDetail);
             Utilities.Click(BaseTest.getDriver(), EnterItemDetail);
-
+            
+            
             Set<String> usedTexts = new HashSet<>();
+            boolean isPage2Switched = false; // Track if switched to Page 2
+            int itemsFromPage1 = 10; // Define the number of items to pick from Page 1
 
-            for (int i = 0; i < 2; i++) {
-                if (i > 0) { // Execute only after i = 0
+            for (int i = 1; i < 10; i++) {
+                if (i > 0) { // Add a new row after the first iteration
                     Utilities.Click(BaseTest.getDriver(), AddRow);
                 }
+
+                // Perform actions to filter items
                 Utilities.SendKeys(BaseTest.getDriver(), getItemSearchElement(i), "%%");
                 getItemSearchElement(i).sendKeys(Keys.TAB);
                 BaseTest.getDriver().switchTo().defaultContent();
                 BaseTest.getDriver().switchTo().frame("iframeGridDialog");
                 Utilities.WaitTillElementDisplayed(BaseTest.getDriver(), ItemFilter);
-                String text = Item.get(i).getText();
-                // Check for unique text
-                while (usedTexts.contains(text)) {
-                    int randomIndex1 = random.nextInt(Item.size() - 2);
-                    text = Item.get(randomIndex1).getText(); // Get a new text if duplicate
+
+                // Switch to Page 2 if 3 items are selected from Page 1, or after the 4th item
+                if (i >= itemsFromPage1 ) {
+                    try {
+                        WebElement page2Button = BaseTest.getDriver().findElement(By.xpath("//select[@class='dropDown']"));
+                        if (page2Button.isDisplayed() && page2Button.isEnabled()) {
+                            Utilities.selectBy(BaseTest.getDriver(), "index", page2Button, "3"); // Switch to Page 2  //change number to increase the page 
+                            Utilities.WaitTillElementDisplayed(BaseTest.getDriver(), ItemFilter); // Wait for Page 2 to load
+                            isPage2Switched = true; // Mark that Page 2 is active
+                        }
+                    } catch (NoSuchElementException e) {
+                        System.out.println("Page 2 button not found, continuing on current page.");
+                    }
                 }
 
-                usedTexts.add(text); // Add unique text to the set
+                // After switching to Page 2, reset item selection index
+                int itemIndex;
+                if (isPage2Switched) {
+                    itemIndex = i - itemsFromPage1; // Start selecting from Page 2 after 3 items from Page 1
+                } else {
+                    itemIndex = i; // Continue selecting from Page 1
+                }
+
+                // Get and ensure unique text
+                String text = Item.get(itemIndex).getText(); // Get text from the correct page
+                while (usedTexts.contains(text)) {
+                    int randomInde= random.nextInt(Item.size() - 2); // Adjust as per available items
+                    text = Item.get(randomInde).getText(); // Get a new text if duplicate
+                }
+                usedTexts.add(text); // Add the unique text to the set
                 Utilities.SendKeys(BaseTest.getDriver(), ItemFilter, text); // Use the unique text
                 DynamicWait.smallWait();
                 Utilities.Click(BaseTest.getDriver(), FirstColumn);
+
+                // Switch back to the main frame and enter quantity
+                double j=(i+1)*10.25;
+                String a=String.valueOf(j);
                 BaseTest.getDriver().switchTo().defaultContent();
                 BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
                 Utilities.WaitTillElementDisplayed(BaseTest.getDriver(), getrequestQuantityelement(i));
@@ -274,9 +305,43 @@ public class CQ_Page {
                 actions.keyDown(Keys.CONTROL)
                         .sendKeys("a")
                         .keyUp(Keys.CONTROL)
-                        .sendKeys("10")
+                        .sendKeys(a)
                         .perform();
             }
+
+
+//            Set<String> usedTexts = new HashSet<>();
+//
+//            for (int i = 0; i < 2; i++) {
+//                if (i > 0) { // Execute only after i = 0
+//                    Utilities.Click(BaseTest.getDriver(), AddRow);
+//                }
+//                Utilities.SendKeys(BaseTest.getDriver(), getItemSearchElement(i), "%%");
+//                getItemSearchElement(i).sendKeys(Keys.TAB);
+//                BaseTest.getDriver().switchTo().defaultContent();
+//                BaseTest.getDriver().switchTo().frame("iframeGridDialog");
+//                Utilities.WaitTillElementDisplayed(BaseTest.getDriver(), ItemFilter);
+//                String text = Item.get(i).getText();
+//                // Check for unique text
+//                while (usedTexts.contains(text)) {
+//                    int randomIndex1 = random.nextInt(Item.size() - 2);
+//                    text = Item.get(randomIndex1).getText(); // Get a new text if duplicate
+//                }
+//
+//                usedTexts.add(text); // Add unique text to the set
+//                Utilities.SendKeys(BaseTest.getDriver(), ItemFilter, text); // Use the unique text
+//                DynamicWait.smallWait();
+//                Utilities.Click(BaseTest.getDriver(), FirstColumn);
+//                BaseTest.getDriver().switchTo().defaultContent();
+//                BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
+//                Utilities.WaitTillElementDisplayed(BaseTest.getDriver(), getrequestQuantityelement(i));
+//                getrequestQuantityelement(i).click();
+//                actions.keyDown(Keys.CONTROL)
+//                        .sendKeys("a")
+//                        .keyUp(Keys.CONTROL)
+//                        .sendKeys("10")
+//                        .perform();
+//            }
 
             Utilities.Click(BaseTest.getDriver(), SaveButton);
             BaseTest.getDriver().switchTo().defaultContent();
@@ -289,14 +354,27 @@ public class CQ_Page {
                         "Issue in Requisition Number", true);
             }
 
+//            String input = ProductConfirmation.getText();
+//
+//            // Regular expression to match the last number in the string
+//            Pattern pattern = Pattern.compile("\\b\\d+\\b(?=\\s*$)");
+//            Matcher matcher = pattern.matcher(input);
+//
+//            if (matcher.find()) {
+//                RequisitionNumber = matcher.group();
+//            }
+//            setRequisitionNumber(RequisitionNumber);
+//            System.out.println("Requisition Number: " + RequisitionNumber);
+            
+            
             String input = ProductConfirmation.getText();
 
             // Regular expression to match the last number in the string
-            Pattern pattern = Pattern.compile("\\b\\d+\\b(?=\\s*$)");
+            Pattern pattern = Pattern.compile("Requisition Number\\s(\\d+)");
             Matcher matcher = pattern.matcher(input);
 
             if (matcher.find()) {
-                RequisitionNumber = matcher.group();
+                RequisitionNumber = matcher.group(1);
             }
             setRequisitionNumber(RequisitionNumber);
             System.out.println("Requisition Number: " + RequisitionNumber);
