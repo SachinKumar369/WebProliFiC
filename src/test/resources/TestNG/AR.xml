@@ -21,7 +21,7 @@
 
     <test name="AR Test" enabled="true">
         <classes>
-            <class name="AccountsReceivables.TransactionEntry.ChequeInquiry"/>
+            <class name="AccountsReceivables.TransactionEntry.DocInquiry"/>
         </classes>
     </test>
 
