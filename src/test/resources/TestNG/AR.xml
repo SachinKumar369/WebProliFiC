@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="WebProLific Suite" thread-count="1" parallel="classes">
+    <listeners>
+        <listener class-name="listeners.TestListener"/>
+        <listener class-name="listeners.AnnotationTransformer"/>
+        <listener class-name="listeners.RetryListener"/>
+    </listeners>
+
+    <parameter name="browser" value="chrome"/>
+    <parameter name="os" value="Windows"/>
+    <parameter name="mode" value="UI"/>
+
+    <parameter name="environment" value="new"/>
+    <parameter name="client" value="prologic"/>
+    <parameter name="plantype" value="All"/>
+    <parameter name="implicitwaitduration" value="3"/>
+    <parameter name="timeunit" value="seconds"/>
+    <parameter name="url" value="https://qc2web.prologicfirst.in/WISH/Common/frmLogin.aspx"/>
+
+
+    <test name="AR Test" enabled="true">
+        <classes>
+            <class name="AccountsReceivables.TransactionEntry.InvoicePosting"/>
+        </classes>
+    </test>
+
+
+</suite>

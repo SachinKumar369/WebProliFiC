@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import extentreports.ExtentTestManager;
 import utils.Utilities;
 
-public class LaunchSite {
+public class LaunchSite extends BaseTest{
 	/**
 	 * Constructor
 	 */
@@ -27,7 +27,7 @@ public class LaunchSite {
 	 * @Modified_By : Sachin Kumar
 	 * @Modified_Date :
 	 **/
-	public void LaunchPortal(String url) {
+	public static void LaunchPortal(String url) {
 		try {
 			BaseTest.getDriver().navigate().to(url);
 			BaseTest.getDriver().manage().deleteAllCookies();

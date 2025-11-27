@@ -91,6 +91,10 @@ public class ReqTemp_Page {
     private WebElement OkButton;
     @FindBy(xpath = "//img[@id=\"cphBody_imgIndentDept\"]")
     private WebElement IndendDepartment;
+    @FindBy(xpath = "//input[starts-with(@id,'item_id_1_')]")
+    private WebElement getItemSearchElement;
+    @FindBy(xpath = "//input[starts-with(@id,'qty_req_7_')]")
+    private WebElement getrequestQuantityelement;
 
     public WebElement getItemSearchElement(int itemId) {
         String xpath = "//input[@id='item_id_1_" + itemId + "']";
@@ -174,7 +178,7 @@ public class ReqTemp_Page {
            
             
             
-            for(int k=0;k<5;k++) {
+            for(int k=0;k<1;k++) {
             try {
             Utilities.WaitTillElementDisplayed(BaseTest.getDriver(), AddButton);
             Utilities.Click(BaseTest.getDriver(), AddButton);
@@ -207,7 +211,7 @@ public class ReqTemp_Page {
             //To select Template 
             BaseTest.getDriver().switchTo().defaultContent();
             BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
-            Utilities.SendKeys(BaseTest.getDriver(), Template, "Egg");
+            Utilities.SendKeys(BaseTest.getDriver(), Template, "Non Veg Dh");
             
             //Add quantitiy to the items
             
@@ -228,7 +232,7 @@ public class ReqTemp_Page {
             wait.until(ExpectedConditions.alertIsPresent()).accept(); // Accept the alert if present
             
             //add quantity to he item of template
-            for(int j=0;j<2;j++) {
+            for(int j=0;j<4;j++) {
             getrequestQuantityelement(j).click();
             actions.keyDown(Keys.CONTROL)
                     .sendKeys("a")
@@ -241,12 +245,12 @@ public class ReqTemp_Page {
 
             Set<String> usedTexts = new HashSet<>();
 
-            for (int i = 2; i < 4; i++) {
+            for (int i = 1; i < 2; i++) {
                 if (i > 0) { // Execute only after i = 0
                     Utilities.Click(BaseTest.getDriver(), AddRow);
                 }
-                Utilities.SendKeys(BaseTest.getDriver(), getItemSearchElement(i), "%%");
-                getItemSearchElement(i).sendKeys(Keys.TAB);
+                Utilities.SendKeys(BaseTest.getDriver(), getItemSearchElement, "%%");
+                getItemSearchElement.sendKeys(Keys.TAB);
                 BaseTest.getDriver().switchTo().defaultContent();
                 BaseTest.getDriver().switchTo().frame("iframeGridDialog");
                 Utilities.WaitTillElementDisplayed(BaseTest.getDriver(), ItemFilter);
@@ -265,8 +269,8 @@ public class ReqTemp_Page {
                 Utilities.Click(BaseTest.getDriver(), FirstColumn);
                 BaseTest.getDriver().switchTo().defaultContent();
                 BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
-                Utilities.WaitTillElementDisplayed(BaseTest.getDriver(), getrequestQuantityelement(i));
-                getrequestQuantityelement(i).click();
+                Utilities.WaitTillElementDisplayed(BaseTest.getDriver(), getrequestQuantityelement);
+                getrequestQuantityelement.click();
                 actions.keyDown(Keys.CONTROL)
                         .sendKeys("a")
                         .keyUp(Keys.CONTROL)

@@ -240,7 +240,7 @@ public class Requisition_Page {
 
             Set<String> usedTexts = new HashSet<>();
 
-            for (int i = 0; i < 7; i++) { 
+            for (int i = 0; i < 3; i++) {
                 if (i > 0) { // Execute only after i = 0
                     Utilities.Click(BaseTest.getDriver(), AddRow);
                 }

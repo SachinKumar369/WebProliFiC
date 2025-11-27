@@ -96,6 +96,8 @@ public class TQReqPage {
     private WebElement DownloadTemplate;
     @FindBy(id="cphBody_imgIndentDept")
     private WebElement IndentDept;
+    @FindBy(id="cphBody_txtIndentDept")
+    private WebElement Indend;
     
     @FindBy(xpath = "//input[starts-with(@id,'item_id_1_')]")
     private List<WebElement> Items;
@@ -103,6 +105,8 @@ public class TQReqPage {
     private List<WebElement> Quantity;
     @FindBy(xpath = "//input[starts-with(@id,'item_desc_3_')]")
     private List<WebElement> ItemName;
+    @FindBy(id="cphBody_txtunit_id")
+    private WebElement Property;
     
     
 
@@ -190,6 +194,91 @@ public class TQReqPage {
             Utilities.SendKeys(BaseTest.getDriver(), Filter, RequestionType);
             DynamicWait.smallWait();
             Utilities.Click(BaseTest.getDriver(), FirstColumn);
+
+            //validation on the basic of requisition type
+
+            //check whether indent department is disabled or not
+            if(Description.get(8).contains("Transfer Requisition")){
+                BaseTest.getDriver().switchTo().defaultContent();
+                BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
+
+                WebElement inputField = BaseTest.getDriver().findElement(By.id("cphBody_txtIndentDept"));
+
+                // Verify the input field is disabled
+                boolean isDisabled = inputField.getAttribute("readonly") != null &&
+                        inputField.getAttribute("tabindex").equals("-1") &&
+                        inputField.getAttribute("class").contains("readonlytextbox");
+
+                if (isDisabled) {
+                    System.out.println("The input field is disabled.");
+                    ExtentTestManager.createAssertTestStepWithScreenshot("Indent Dept", Status.PASS, "Indent Department is Disabled", true);
+                } else {
+                    System.out.println("The input field is enabled.");
+                    ExtentTestManager.createAssertTestStepWithScreenshot("Indent Dept", Status.WARNING, "Indent Department is Enabled", true);
+                }
+
+//                boolean Indent=IndentDept.isEnabled();
+//
+//                if(Indent==true){
+//                    ExtentTestManager.createAssertTestStepWithScreenshot("Indent Dept", Status.PASS, "Indent Department is Disabled", true);
+//                }else {
+//                    ExtentTestManager.createAssertTestStepWithScreenshot("Indent Dept", Status.WARNING, "Indent Department is Enabled", true);
+//
+//                }
+            }
+
+
+            //check whether from dipartment is enabled or not
+
+//            BaseTest.getDriver().switchTo().defaultContent();
+//            BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
+//            if(ToDepartment.isEnabled()){
+//                ExtentTestManager.createAssertTestStepWithScreenshot("From Department", Status.PASS, "From Department is Enabled ", true);
+//            }else {
+//                ExtentTestManager.createAssertTestStepWithScreenshot("From Department", Status.WARNING, "From Department is Disabled", true);
+//
+//            }
+//            Utilities.WaitTillElementIsClickable(BaseTest.getDriver(),ToDepartment);
+
+
+            try {
+                // Wait for the element to be clickable (visible and enabled)
+                WebDriverWait wait1 = new WebDriverWait(BaseTest.getDriver(), Duration.ofSeconds(2));
+                WebElement clickableElement = wait1.until(ExpectedConditions.elementToBeClickable(FromDepartment));
+                ExtentTestManager.createAssertTestStepWithScreenshot("From Department", Status.PASS, "From Department is Enabled ", true);
+
+                System.out.println("From Department is clickable");
+            } catch (TimeoutException e) {
+                System.out.println("From Department is NOT clickable");
+                ExtentTestManager.createAssertTestStepWithScreenshot("From Department", Status.WARNING, "From Department is Disabled", true);
+            }
+
+            try {
+                // Wait for the element to be clickable (visible and enabled)
+                WebDriverWait wait1 = new WebDriverWait(BaseTest.getDriver(), Duration.ofSeconds(2));
+                WebElement clickableElement = wait1.until(ExpectedConditions.elementToBeClickable(ToDepartment));
+                ExtentTestManager.createAssertTestStepWithScreenshot("To Department", Status.PASS, "To Department is Enabled ", true);
+
+                System.out.println("To Department is clickable");
+            } catch (TimeoutException e) {
+                System.out.println("To Department is NOT clickable");
+                ExtentTestManager.createAssertTestStepWithScreenshot("To Department", Status.WARNING, "To Department is Disabled", true);
+            }
+
+
+            //Check whether property is displayed or not
+
+
+                if(Property.isDisplayed()==false){
+                    ExtentTestManager.createAssertTestStepWithScreenshot("Property", Status.PASS, "Property not displayed", true);
+                }else {
+                    ExtentTestManager.createAssertTestStepWithScreenshot("Property", Status.WARNING, " Department is Enabled", true);
+
+                }
+
+
+
+
 
 
             //Select From Department/Store
@@ -362,11 +451,11 @@ public class TQReqPage {
             String input = ProductConfirmation.getText();
 
             // Regular expression to match the last number in the string
-            Pattern pattern = Pattern.compile("\\b\\d+\\b(?=\\s*$)");
+            Pattern pattern = Pattern.compile("Requisition Number\\s(\\d+)");
             Matcher matcher = pattern.matcher(input);
 
             if (matcher.find()) {
-                RequisitionNumber = matcher.group();
+                RequisitionNumber = matcher.group(1);
             }
             setRequisitionNumber(RequisitionNumber);
             System.out.println("Requisition Number: " + RequisitionNumber);

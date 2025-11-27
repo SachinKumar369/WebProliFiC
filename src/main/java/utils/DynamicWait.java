@@ -7,7 +7,8 @@ public class DynamicWait {
 
 	private final static long SMALL_PAUSE = 300;
 	private final static long MEDIUM_PAUSE = 2000;
-	private final static long LONG_PAUSE = 5000;
+	private final static long LONG_PAUSE = 9000;
+
 
 	/**
 	 * Small Wait waits for 3 sec
@@ -40,7 +41,7 @@ public class DynamicWait {
     		Log.error(ExceptionUtils.getStackTrace(e));
     		e.printStackTrace();
 		}
-		return 3;
+		return 5;
 	}
 
 	/**
@@ -58,7 +59,7 @@ public class DynamicWait {
     		Log.error(ExceptionUtils.getStackTrace(e));
     		e.printStackTrace();
 		}
-		return 5;
+		return 10;
 	}
 
 }

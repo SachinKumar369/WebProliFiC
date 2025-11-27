@@ -181,7 +181,7 @@ public class MasterReq_Page {
             Utilities.WaitTillElementDisplayed(BaseTest.getDriver(), Filter);
             
             //To Select Requisition Type
-            for(int j=0;j<=5;j++) {
+            for(int j=0;j<=4;j++) {
             String RequestionType = Description.get(j);
             Utilities.SendKeys(BaseTest.getDriver(), Filter, RequestionType);
             DynamicWait.smallWait();

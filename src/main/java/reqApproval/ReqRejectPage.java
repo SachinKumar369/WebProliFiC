@@ -197,7 +197,7 @@ public class ReqRejectPage {
         	   
             
             BaseTest.getDriver().switchTo().defaultContent();
-            BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
+            BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");  //MultiPageiframeBrw
             Utilities.Click(BaseTest.getDriver(), pers);
             
             
@@ -295,27 +295,27 @@ public class ReqRejectPage {
             BaseTest.getDriver().switchTo().window(currentHandles1);
             
             
-            //Click on Close Button
-            BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
-            Utilities.Click(BaseTest.getDriver(), CloseBtn);
-            
-            
-            //Click on Close Button again
-            BaseTest.getDriver().switchTo().defaultContent();
-            BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
-            Utilities.Click(BaseTest.getDriver(), CloseBtn1);
+//            //Click on Close Button
+//            BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
+//            Utilities.Click(BaseTest.getDriver(), CloseBtn);
+//
+//
+//            //Click on Close Button again
+//            BaseTest.getDriver().switchTo().defaultContent();
+//            BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
+//            Utilities.Click(BaseTest.getDriver(), CloseBtn1);
             
             
             
             
             //
             // Switch to the main content and then to the required frame
-//            BaseTest.getDriver().switchTo().defaultContent();
-//            BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
-//
-//            // Wait for Inventory element and click it
-//            Utilities.WaitTillElementDisplayed(BaseTest.getDriver(), Inventory);
-//            Utilities.Click(BaseTest.getDriver(), Inventory);
+            BaseTest.getDriver().switchTo().defaultContent();
+            BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
+
+            // Wait for Inventory element and click it
+            Utilities.WaitTillElementDisplayed(BaseTest.getDriver(), Inventory);
+            Utilities.Click(BaseTest.getDriver(), Inventory);
 
 
             //Inventory Module Select
@@ -341,7 +341,7 @@ public class ReqRejectPage {
             List<String> Resources1 = ExcelHandler.getAllColumnData("Requisition Number");
            
             //for(int i=0;i<Resources1.size();i++) {
-            String resource1 = Resources1.getLast();
+            String resource1 = Resources1.get(Resources1.size() - 1);
             
             				
             
@@ -356,12 +356,29 @@ public class ReqRejectPage {
             
             DynamicWait.smallWait();
             BaseTest.getDriver().switchTo().defaultContent();
+            BaseTest.getDriver().switchTo().frame("iframeGridDialog");
+            Utilities.Click(BaseTest.getDriver(),OKBtn);
             
              
             
             //check whether requisition has been approved or not
             BaseTest.getDriver().switchTo().defaultContent();
             BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
+            //validate whether requisition has been approved
+            BaseTest.getDriver().switchTo().defaultContent();
+            BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
+            WebElement reason=BaseTest.getDriver().findElement(By.id("cphBody_txtReason"));
+            boolean isDisable=reason.getAttribute("tabindex").equals("-1");
+
+            if (isDisable==false) {
+
+                ExtentTestManager.createAssertTestStepWithScreenshot("Reason", Status.PASS, "Reason is mentioned here hence in reject state", true);
+            } else {
+
+                ExtentTestManager.createAssertTestStepWithScreenshot("Reason", Status.WARNING, "Requisition is  in Approved State", true);
+            }
+
+
             
             
 //            String Text=Approval.getText();
@@ -376,17 +393,17 @@ public class ReqRejectPage {
 
            
             
-            String Text=Approval.getAttribute("value");
-            String Text1="Approve";
-            if(Approval.getText()==Text1) {
-            	System.out.println("Requisition has been approved" +Text);
-            	 ExtentTestManager.createAssertTestStepWithScreenshot("Verify the Requisition has been Approved", Status.PASS,
-                         "Navigation on Product Page working fine", true);
-            } else {
-				System.out.println("Requisition is in "+Text+ "State");
-				 ExtentTestManager.createAssertTestStepWithScreenshot("Verify the navigation on tapping login", Status.FAIL,
-	                        "Navigation on Product Page working fine", true);
-			}   
+//            String Text=Approval.getAttribute("value");
+//            String Text1="Approve";
+//            if(Approval.getText()==Text1) {
+//            	System.out.println("Requisition has been approved" +Text);
+//            	 ExtentTestManager.createAssertTestStepWithScreenshot("Verify the Requisition has been Approved", Status.PASS,
+//                         "Navigation on Product Page working fine", true);
+//            } else {
+//				System.out.println("Requisition is in "+Text+ "State");
+//				 ExtentTestManager.createAssertTestStepWithScreenshot("Verify the navigation on tapping login", Status.FAIL,
+//	                        "Navigation on Product Page working fine", true);
+//			}
             
          
             

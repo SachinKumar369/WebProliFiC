@@ -1,0 +1,3578 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?mso-application progid="Excel.Sheet"?><Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet" xmlns:html="http://www.w3.org/TR/REC-html40" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet" xmlns:x="urn:schemas-microsoft-com:office:excel">
+   
+  <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+      
+    <Author>pf8</Author>
+      
+    <LastAuthor>Rajdeep Barui</LastAuthor>
+      
+    <Created>2011-07-28T12:36:17Z</Created>
+      
+    <LastSaved>2024-11-14T10:47:11Z</LastSaved>
+      
+    <Version>16.00</Version>
+     
+  </DocumentProperties>
+   
+  <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+      
+    <AllowPNG/>
+     
+  </OfficeDocumentSettings>
+   
+  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+      
+    <WindowHeight>9165</WindowHeight>
+      
+    <WindowWidth>21600</WindowWidth>
+      
+    <WindowTopX>32767</WindowTopX>
+      
+    <WindowTopY>32767</WindowTopY>
+      
+    <ProtectStructure>False</ProtectStructure>
+      
+    <ProtectWindows>False</ProtectWindows>
+     
+  </ExcelWorkbook>
+   
+  <Styles>
+      
+    <Style ss:ID="Default" ss:Name="Normal">
+         
+      <Alignment ss:Vertical="Bottom"/>
+         
+      <Borders/>
+         
+      <Font ss:FontName="Arial" x:Family="Swiss"/>
+         
+      <Interior/>
+         
+      <NumberFormat/>
+         
+      <Protection/>
+        
+    </Style>
+      
+    <Style ss:ID="s62">
+         
+      <NumberFormat ss:Format="@"/>
+        
+    </Style>
+      
+    <Style ss:ID="s63">
+         
+      <NumberFormat ss:Format="Fixed"/>
+        
+    </Style>
+      
+    <Style ss:ID="s64">
+         
+      <NumberFormat ss:Format="0"/>
+        
+    </Style>
+      
+    <Style ss:ID="s65">
+         
+      <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+         
+      <Font ss:Bold="1" ss:FontName="Arial" x:Family="Swiss"/>
+         
+      <NumberFormat ss:Format="@"/>
+        
+    </Style>
+      
+    <Style ss:ID="s66">
+         
+      <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+         
+      <Borders>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Left" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Right" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Top" ss:Weight="1"/>
+           
+      </Borders>
+         
+      <Font ss:Bold="1" ss:Color="#FF0000" ss:FontName="Arial" x:Family="Swiss"/>
+         
+      <Interior ss:Color="#F2F2F2" ss:Pattern="Solid"/>
+         
+      <NumberFormat ss:Format="@"/>
+        
+    </Style>
+      
+    <Style ss:ID="s67">
+         
+      <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+         
+      <Borders>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Left" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Right" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Top" ss:Weight="1"/>
+           
+      </Borders>
+         
+      <Font ss:Bold="1" ss:FontName="Arial" x:Family="Swiss"/>
+         
+      <Interior ss:Color="#F2F2F2" ss:Pattern="Solid"/>
+         
+      <NumberFormat ss:Format="@"/>
+        
+    </Style>
+      
+    <Style ss:ID="s68">
+         
+      <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+         
+      <Borders>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Left" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Right" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Top" ss:Weight="1"/>
+           
+      </Borders>
+         
+      <Font ss:Bold="1" ss:Color="#333399" ss:FontName="Arial" x:Family="Swiss"/>
+         
+      <Interior ss:Color="#F2F2F2" ss:Pattern="Solid"/>
+         
+      <NumberFormat ss:Format="@"/>
+        
+    </Style>
+      
+    <Style ss:ID="s69">
+         
+      <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+         
+      <Borders>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Left" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Right" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Top" ss:Weight="1"/>
+           
+      </Borders>
+         
+      <Font ss:Bold="1" ss:Color="#000000" ss:FontName="Arial" x:Family="Swiss"/>
+         
+      <Interior ss:Color="#F2F2F2" ss:Pattern="Solid"/>
+         
+      <NumberFormat ss:Format="@"/>
+        
+    </Style>
+      
+    <Style ss:ID="s70">
+         
+      <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+         
+      <Borders>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Left" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Right" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Top" ss:Weight="1"/>
+           
+      </Borders>
+         
+      <Font ss:Bold="1" ss:FontName="Arial" x:Family="Swiss"/>
+         
+      <Interior ss:Color="#F2F2F2" ss:Pattern="Solid"/>
+         
+      <NumberFormat ss:Format="Fixed"/>
+        
+    </Style>
+      
+    <Style ss:ID="s71">
+         
+      <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+         
+      <Borders>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Left" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Right" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Top" ss:Weight="1"/>
+           
+      </Borders>
+         
+      <Font ss:Bold="1" ss:FontName="Arial" x:Family="Swiss"/>
+         
+      <Interior ss:Color="#F2F2F2" ss:Pattern="Solid"/>
+         
+      <NumberFormat ss:Format="0"/>
+        
+    </Style>
+      
+    <Style ss:ID="s72">
+         
+      <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+         
+      <Borders>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Left" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Right" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Top" ss:Weight="1"/>
+           
+      </Borders>
+         
+      <Font ss:Bold="1" ss:Color="#FF0000" ss:FontName="Arial" x:Family="Swiss"/>
+         
+      <Interior ss:Color="#F2F2F2" ss:Pattern="Solid"/>
+         
+      <NumberFormat ss:Format="Fixed"/>
+        
+    </Style>
+      
+    <Style ss:ID="s73">
+         
+      <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+         
+      <Borders>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Left" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Right" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Top" ss:Weight="1"/>
+           
+      </Borders>
+         
+      <Font ss:Bold="1" ss:Color="#FF0000" ss:FontName="Arial" x:Family="Swiss"/>
+         
+      <Interior ss:Color="#F2F2F2" ss:Pattern="Solid"/>
+         
+      <NumberFormat ss:Format="0"/>
+        
+    </Style>
+      
+    <Style ss:ID="s74">
+         
+      <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+         
+      <Borders>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Bottom" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Left" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Right" ss:Weight="1"/>
+           
+      </Borders>
+         
+      <Font ss:Bold="1" ss:FontName="Arial" x:Family="Swiss"/>
+         
+      <Interior ss:Color="#F2F2F2" ss:Pattern="Solid"/>
+         
+      <NumberFormat ss:Format="@"/>
+        
+    </Style>
+      
+    <Style ss:ID="s75">
+         
+      <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+         
+      <Borders>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Left" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Right" ss:Weight="1"/>
+           
+      </Borders>
+         
+      <Font ss:Bold="1" ss:Color="#000000" ss:FontName="Arial" x:Family="Swiss"/>
+         
+      <Interior ss:Color="#F2F2F2" ss:Pattern="Solid"/>
+         
+      <NumberFormat ss:Format="@"/>
+        
+    </Style>
+      
+    <Style ss:ID="s76">
+         
+      <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+         
+      <Borders>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Left" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Right" ss:Weight="1"/>
+           
+      </Borders>
+         
+      <Font ss:Bold="1" ss:Color="#808080" ss:FontName="Arial" x:Family="Swiss"/>
+         
+      <Interior ss:Color="#F2F2F2" ss:Pattern="Solid"/>
+         
+      <NumberFormat ss:Format="@"/>
+        
+    </Style>
+      
+    <Style ss:ID="s77">
+         
+      <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+         
+      <Borders>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Right" ss:Weight="1"/>
+           
+      </Borders>
+         
+      <Font ss:Bold="1" ss:Color="#000000" ss:FontName="Arial" x:Family="Swiss"/>
+         
+      <Interior ss:Color="#F2F2F2" ss:Pattern="Solid"/>
+         
+      <NumberFormat ss:Format="@"/>
+        
+    </Style>
+      
+    <Style ss:ID="s78">
+         
+      <Borders>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Bottom" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Left" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Right" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Top" ss:Weight="1"/>
+           
+      </Borders>
+         
+      <Interior ss:Color="#FFF2CC" ss:Pattern="Solid"/>
+         
+      <NumberFormat ss:Format="@"/>
+        
+    </Style>
+      
+    <Style ss:ID="s79">
+         
+      <Borders>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Bottom" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Left" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Right" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Top" ss:Weight="1"/>
+           
+      </Borders>
+         
+      <Font ss:FontName="Arial" ss:Size="9" x:Family="Swiss"/>
+         
+      <Interior ss:Color="#FFF2CC" ss:Pattern="Solid"/>
+         
+      <NumberFormat ss:Format="Fixed"/>
+         
+      <Protection ss:Protected="0"/>
+        
+    </Style>
+      
+    <Style ss:ID="s80">
+         
+      <Borders>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Bottom" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Left" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Right" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Top" ss:Weight="1"/>
+           
+      </Borders>
+         
+      <Font ss:FontName="Arial" ss:Size="9" x:Family="Swiss"/>
+         
+      <Interior ss:Color="#FFF2CC" ss:Pattern="Solid"/>
+         
+      <NumberFormat ss:Format="0"/>
+         
+      <Protection ss:Protected="0"/>
+        
+    </Style>
+      
+    <Style ss:ID="s81">
+         
+      <Borders>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Bottom" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Left" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Right" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Top" ss:Weight="1"/>
+           
+      </Borders>
+         
+      <Interior ss:Color="#FFF2CC" ss:Pattern="Solid"/>
+         
+      <NumberFormat ss:Format="0"/>
+        
+    </Style>
+      
+    <Style ss:ID="s82">
+         
+      <Font ss:Bold="1" ss:FontName="Arial" x:Family="Swiss"/>
+         
+      <Interior ss:Color="#BFBFBF" ss:Pattern="Solid"/>
+        
+    </Style>
+      
+    <Style ss:ID="s83">
+         
+      <Font ss:FontName="Arial" x:Family="Swiss"/>
+        
+    </Style>
+      
+    <Style ss:ID="s84">
+         
+      <Interior ss:Color="#9BC2E6" ss:Pattern="Solid"/>
+        
+    </Style>
+      
+    <Style ss:ID="s85">
+         
+      <Font ss:FontName="Arial" x:Family="Swiss"/>
+         
+      <Interior ss:Color="#9BC2E6" ss:Pattern="Solid"/>
+        
+    </Style>
+      
+    <Style ss:ID="s86">
+         
+      <Interior/>
+        
+    </Style>
+      
+    <Style ss:ID="s87">
+         
+      <Font ss:FontName="Arial" x:Family="Swiss"/>
+         
+      <Interior/>
+        
+    </Style>
+      
+    <Style ss:ID="s88">
+         
+      <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+        
+    </Style>
+      
+    <Style ss:ID="s89">
+         
+      <Interior ss:Color="#B4C6E7" ss:Pattern="Solid"/>
+        
+    </Style>
+      
+    <Style ss:ID="s90">
+         
+      <Font ss:FontName="Arial" x:Family="Swiss"/>
+         
+      <Interior ss:Color="#B4C6E7" ss:Pattern="Solid"/>
+        
+    </Style>
+      
+    <Style ss:ID="s91">
+         
+      <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+         
+      <Borders>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Bottom" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Left" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Right" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Top" ss:Weight="1"/>
+           
+      </Borders>
+         
+      <Interior/>
+        
+    </Style>
+      
+    <Style ss:ID="s92">
+         
+      <Borders>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Bottom" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Left" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Right" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Top" ss:Weight="1"/>
+           
+      </Borders>
+         
+      <Interior/>
+        
+    </Style>
+      
+    <Style ss:ID="s93">
+         
+      <Borders>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Bottom" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Left" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Right" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Top" ss:Weight="1"/>
+           
+      </Borders>
+         
+      <Font ss:FontName="Arial" x:Family="Swiss"/>
+         
+      <Interior/>
+        
+    </Style>
+      
+    <Style ss:ID="s94">
+         
+      <Borders>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Bottom" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Left" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Right" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Top" ss:Weight="1"/>
+           
+      </Borders>
+        
+    </Style>
+      
+    <Style ss:ID="s95">
+         
+      <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+         
+      <Borders>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Bottom" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Left" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Right" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Top" ss:Weight="1"/>
+           
+      </Borders>
+         
+      <Font ss:Color="#000000" ss:FontName="Calibri" ss:Size="11" x:Family="Swiss"/>
+         
+      <Interior/>
+        
+    </Style>
+      
+    <Style ss:ID="s96">
+         
+      <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+         
+      <Borders>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Left" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Right" ss:Weight="1"/>
+           
+      </Borders>
+         
+      <Interior/>
+        
+    </Style>
+      
+    <Style ss:ID="s97">
+         
+      <Borders>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Left" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Right" ss:Weight="1"/>
+           
+      </Borders>
+         
+      <Interior/>
+        
+    </Style>
+      
+    <Style ss:ID="s98">
+         
+      <Borders>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Left" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Right" ss:Weight="1"/>
+           
+      </Borders>
+         
+      <Font ss:FontName="Arial" x:Family="Swiss"/>
+         
+      <Interior/>
+        
+    </Style>
+      
+    <Style ss:ID="s99">
+         
+      <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+         
+      <Borders>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Bottom" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Left" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Right" ss:Weight="1"/>
+            
+        <Border ss:LineStyle="Continuous" ss:Position="Top" ss:Weight="1"/>
+           
+      </Borders>
+        
+    </Style>
+     
+  </Styles>
+   
+  <Worksheet ss:Name="Data">
+      
+    <Table ss:ExpandedColumnCount="58" ss:ExpandedRowCount="8" ss:StyleID="s62" x:FullColumns="1" x:FullRows="1">
+         
+      <Column ss:AutoFitWidth="0" ss:StyleID="s62" ss:Width="49.5"/>
+         
+      <Column ss:AutoFitWidth="0" ss:StyleID="s62" ss:Width="48.75"/>
+         
+      <Column ss:AutoFitWidth="0" ss:StyleID="s62" ss:Width="87.75"/>
+         
+      <Column ss:AutoFitWidth="0" ss:StyleID="s62" ss:Width="56.25"/>
+         
+      <Column ss:AutoFitWidth="0" ss:StyleID="s62" ss:Width="57"/>
+         
+      <Column ss:AutoFitWidth="0" ss:StyleID="s62" ss:Width="54"/>
+         
+      <Column ss:AutoFitWidth="0" ss:StyleID="s62" ss:Width="41.25"/>
+         
+      <Column ss:AutoFitWidth="0" ss:StyleID="s62" ss:Width="45"/>
+         
+      <Column ss:AutoFitWidth="0" ss:StyleID="s62" ss:Width="42"/>
+         
+      <Column ss:AutoFitWidth="0" ss:Index="11" ss:StyleID="s62" ss:Width="50.25"/>
+         
+      <Column ss:AutoFitWidth="0" ss:StyleID="s62" ss:Width="46.5"/>
+         
+      <Column ss:AutoFitWidth="0" ss:StyleID="s62" ss:Width="45"/>
+         
+      <Column ss:AutoFitWidth="0" ss:Span="1" ss:StyleID="s62" ss:Width="67.5"/>
+         
+      <Column ss:AutoFitWidth="0" ss:Index="16" ss:StyleID="s62" ss:Width="56.25"/>
+         
+      <Column ss:AutoFitWidth="0" ss:StyleID="s62" ss:Width="60"/>
+         
+      <Column ss:AutoFitWidth="0" ss:StyleID="s62" ss:Width="76.5"/>
+         
+      <Column ss:AutoFitWidth="0" ss:Span="1" ss:StyleID="s62" ss:Width="87"/>
+         
+      <Column ss:AutoFitWidth="0" ss:Index="21" ss:StyleID="s62" ss:Width="54.75"/>
+         
+      <Column ss:AutoFitWidth="0" ss:StyleID="s62" ss:Width="72.75"/>
+         
+      <Column ss:AutoFitWidth="0" ss:StyleID="s63" ss:Width="40.5"/>
+         
+      <Column ss:AutoFitWidth="0" ss:StyleID="s64" ss:Width="40.5"/>
+         
+      <Column ss:AutoFitWidth="0" ss:StyleID="s62" ss:Width="55.5"/>
+         
+      <Column ss:AutoFitWidth="0" ss:StyleID="s62" ss:Width="90"/>
+         
+      <Column ss:AutoFitWidth="0" ss:StyleID="s62" ss:Width="78.75"/>
+         
+      <Column ss:AutoFitWidth="0" ss:Index="29" ss:StyleID="s62" ss:Width="66"/>
+         
+      <Column ss:AutoFitWidth="0" ss:StyleID="s62" ss:Width="43.5"/>
+         
+      <Column ss:AutoFitWidth="0" ss:StyleID="s63" ss:Width="75.75"/>
+         
+      <Column ss:AutoFitWidth="0" ss:StyleID="s64" ss:Width="78.75"/>
+         
+      <Column ss:AutoFitWidth="0" ss:Index="34" ss:StyleID="s62" ss:Width="69"/>
+         
+      <Column ss:AutoFitWidth="0" ss:StyleID="s62" ss:Width="40.5"/>
+         
+      <Column ss:AutoFitWidth="0" ss:StyleID="s62" ss:Width="76.5"/>
+         
+      <Column ss:AutoFitWidth="0" ss:StyleID="s62" ss:Width="105.75"/>
+         
+      <Column ss:AutoFitWidth="0" ss:StyleID="s62" ss:Width="40.5"/>
+         
+      <Column ss:AutoFitWidth="0" ss:StyleID="s62" ss:Width="76.5"/>
+         
+      <Column ss:AutoFitWidth="0" ss:StyleID="s62" ss:Width="105.75"/>
+         
+      <Column ss:AutoFitWidth="0" ss:StyleID="s62" ss:Width="40.5"/>
+         
+      <Column ss:AutoFitWidth="0" ss:StyleID="s62" ss:Width="76.5"/>
+         
+      <Column ss:AutoFitWidth="0" ss:StyleID="s62" ss:Width="105"/>
+         
+      <Column ss:AutoFitWidth="0" ss:StyleID="s62" ss:Width="39.75"/>
+         
+      <Column ss:AutoFitWidth="0" ss:StyleID="s62" ss:Width="77.25"/>
+         
+      <Column ss:AutoFitWidth="0" ss:StyleID="s62" ss:Width="108.75"/>
+         
+      <Column ss:AutoFitWidth="0" ss:StyleID="s62" ss:Width="39.75"/>
+         
+      <Column ss:AutoFitWidth="0" ss:StyleID="s62" ss:Width="77.25"/>
+         
+      <Column ss:AutoFitWidth="0" ss:StyleID="s62" ss:Width="105"/>
+         
+      <Column ss:AutoFitWidth="0" ss:Index="51" ss:StyleID="s62" ss:Width="65.25"/>
+         
+      <Column ss:AutoFitWidth="0" ss:StyleID="s62" ss:Width="63.75"/>
+         
+      <Column ss:AutoFitWidth="0" ss:Index="57" ss:StyleID="s62" ss:Width="73.5"/>
+         
+      <Column ss:AutoFitWidth="0" ss:StyleID="s62" ss:Width="58.5"/>
+         
+      <Row ss:AutoFitHeight="0" ss:Height="37.5" ss:StyleID="s65">
+            
+        <Cell ss:StyleID="s66">
+          <Data ss:Type="String">Account Group</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s66">
+          <Data ss:Type="String">AR Account</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s66">
+          <Data ss:Type="String">AR Account Name</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s66">
+          <Data ss:Type="String">Address 1</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s67">
+          <Data ss:Type="String">Address 2</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s67">
+          <Data ss:Type="String">Address 3</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s67">
+          <Data ss:Type="String">City</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s67">
+          <Data ss:Type="String">State</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s67">
+          <Data ss:Type="String">Zip</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s67">
+          <Data ss:Type="String">Country</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s67">
+          <Data ss:Type="String">Contact Name</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s67">
+          <Data ss:Type="String">Phone</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s67">
+          <Data ss:Type="String">Fax</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s67">
+          <Data ss:Type="String">Email</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s67">
+          <Data ss:Type="String">Mobile</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s67">
+          <Data ss:Type="String">Currency</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s68">
+          <Data ss:Type="String">GST State Code</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s68">
+          <Data ss:Type="String">GST Country Code</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s68">
+          <Data ss:Type="String">GST Reg No</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s68">
+          <Data ss:Type="String">Aadhar No.</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s68">
+          <Data ss:Type="String">ARN No</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s69">
+          <Data ss:Type="String">PAN Number</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s70">
+          <Data ss:Type="String">Credit Limit</Data>
+          <Comment ss:Author="PF6">
+            <ss:Data xmlns="http://www.w3.org/TR/REC-html40">
+              <B>
+                                                                                                                  
+                <Font html:Color="#000000" html:Face="Tahoma" html:Size="9" x:Family="Swiss">Outstanding amount for any Account in this Account Group should not exceed</Font>
+                                                                                                          
+              </B>
+                                                                                            
+            </ss:Data>
+          </Comment>
+        </Cell>
+            
+        <Cell ss:StyleID="s71">
+          <Data ss:Type="String">Credit Days</Data>
+          <Comment ss:Author="PF6">
+            <ss:Data xmlns="http://www.w3.org/TR/REC-html40">
+              <B>
+                                                                                                                  
+                <Font html:Color="#000000" html:Face="Tahoma" html:Size="9" x:Family="Swiss">Outstanding amount for any Account in this Account Group should not exceed</Font>
+                                                                                                          
+              </B>
+                                                                                            
+            </ss:Data>
+          </Comment>
+        </Cell>
+            
+        <Cell ss:StyleID="s67">
+          <Data ss:Type="String">Reminder Generate</Data>
+          <Comment ss:Author="PF6">
+            <ss:Data xmlns="http://www.w3.org/TR/REC-html40">
+              <B>
+                                                                                                                  
+                <Font html:Color="#000000" html:Face="Tahoma" html:Size="9" x:Family="Swiss">Should reminders be sent to Accounts in this Account Group?</Font>
+                                                                                                          
+              </B>
+                                                                                            
+            </ss:Data>
+          </Comment>
+        </Cell>
+            
+        <Cell ss:StyleID="s67">
+          <Data ss:Type="String">Remarks / Account Notepad</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s67">
+          <Data ss:Type="String">Type of Account Holder</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s67">
+          <Data ss:Type="String">Type of Account</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s67">
+          <Data ss:Type="String">Accounting Method</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s67">
+          <Data ss:Type="String">Billing Cycle</Data>
+          <Comment ss:Author="PF6">
+            <ss:Data xmlns="http://www.w3.org/TR/REC-html40">
+              <B>
+                                                                                                                  
+                <Font html:Color="#000000" html:Face="Tahoma" html:Size="9" x:Family="Swiss">D: Daily W: Weekly M: Monthly N: No Fixed Cycle</Font>
+                                                                                                          
+              </B>
+                                                                                            
+            </ss:Data>
+          </Comment>
+        </Cell>
+            
+        <Cell ss:StyleID="s72">
+          <Data ss:Type="String">Covering Letter Amount</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s73">
+          <Data ss:Type="String">Covering Letter Number</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s74">
+          <Data ss:Type="String">Frozen Flag</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s74">
+          <Data ss:Type="String">Add/Update/Delete Flag</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s75">
+          <Data ss:Type="String">Group Code1</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s76">
+          <Data ss:Type="String">Group Code Name1</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s77">
+          <Data ss:Type="String">Group Code Value1</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s77">
+          <Data ss:Type="String">Group Code2</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s76">
+          <Data ss:Type="String">Group Code Name2</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s77">
+          <Data ss:Type="String">Group Code Value2</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s77">
+          <Data ss:Type="String">Group Code3</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s76">
+          <Data ss:Type="String">Group Code Name3</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s77">
+          <Data ss:Type="String">Group Code Value3</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s77">
+          <Data ss:Type="String">Group Code4</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s76">
+          <Data ss:Type="String">Group Code Name4</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s77">
+          <Data ss:Type="String">Group Code Value4</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s77">
+          <Data ss:Type="String">Group Code5</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s76">
+          <Data ss:Type="String">Group Code Name5</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s77">
+          <Data ss:Type="String">Group Code Value5</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s77">
+          <Data ss:Type="String">Buyer ID</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s77">
+          <Data ss:Type="String">Biling Name</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s77">
+          <Data ss:Type="String">Scheme ID</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s77">
+          <Data ss:Type="String">VAT Number</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s77">
+          <Data ss:Type="String">TIN Number</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s77">
+          <Data ss:Type="String">IDTY</Data>
+          <Comment ss:Author="Rajdeep Barui">
+            <ss:Data xmlns="http://www.w3.org/TR/REC-html40">
+              <Font html:Color="#000000" html:Face="Tahoma" html:Size="9" x:Family="Swiss">NRIC BRN PASSPORT ARMY </Font>
+                                                                                            
+            </ss:Data>
+          </Comment>
+        </Cell>
+            
+        <Cell ss:StyleID="s77">
+          <Data ss:Type="String">IDNO</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s77">
+          <Data ss:Type="String">SST Registration Number</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s77">
+          <Data ss:Type="String">SAC/MISC Code</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78">
+          <Data ss:Type="String">AR_ACC_001</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s79"/>
+            
+        <Cell ss:StyleID="s80"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s79"/>
+            
+        <Cell ss:StyleID="s81"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78">
+          <Data ss:Type="String">AR_ACC_002</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s79"/>
+            
+        <Cell ss:StyleID="s80"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s79"/>
+            
+        <Cell ss:StyleID="s81"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78">
+          <Data ss:Type="String">AR_ACC_003</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s79"/>
+            
+        <Cell ss:StyleID="s80"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s79"/>
+            
+        <Cell ss:StyleID="s81"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78">
+          <Data ss:Type="String">AR_ACC_004</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s79"/>
+            
+        <Cell ss:StyleID="s80"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s79"/>
+            
+        <Cell ss:StyleID="s81"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78">
+          <Data ss:Type="String">AR_ACC_005</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s79"/>
+            
+        <Cell ss:StyleID="s80"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s79"/>
+            
+        <Cell ss:StyleID="s81"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78">
+          <Data ss:Type="String">AR_ACC_006</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s79"/>
+            
+        <Cell ss:StyleID="s80"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s79"/>
+            
+        <Cell ss:StyleID="s81"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78">
+          <Data ss:Type="String">AR_ACC_007</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s79"/>
+            
+        <Cell ss:StyleID="s80"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s79"/>
+            
+        <Cell ss:StyleID="s81"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+            
+        <Cell ss:StyleID="s78"/>
+           
+      </Row>
+        
+    </Table>
+      
+    <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+         
+      <Print>
+            
+        <ValidPrinterInfo/>
+            
+        <HorizontalResolution>600</HorizontalResolution>
+            
+        <VerticalResolution>600</VerticalResolution>
+           
+      </Print>
+         
+      <Zoom>80</Zoom>
+         
+      <Selected/>
+         
+      <FreezePanes/>
+         
+      <FrozenNoSplit/>
+         
+      <SplitHorizontal>1</SplitHorizontal>
+         
+      <TopRowBottomPane>1</TopRowBottomPane>
+         
+      <ActivePane>2</ActivePane>
+         
+      <Panes>
+            
+        <Pane>
+               
+          <Number>3</Number>
+              
+        </Pane>
+            
+        <Pane>
+               
+          <Number>2</Number>
+               
+          <ActiveRow>12</ActiveRow>
+               
+          <ActiveCol>7</ActiveCol>
+              
+        </Pane>
+           
+      </Panes>
+         
+      <ProtectObjects>False</ProtectObjects>
+         
+      <ProtectScenarios>False</ProtectScenarios>
+        
+    </WorksheetOptions>
+     
+  </Worksheet>
+   
+  <Worksheet ss:Name="help">
+      
+    <Table ss:ExpandedColumnCount="7" ss:ExpandedRowCount="58" x:FullColumns="1" x:FullRows="1">
+         
+      <Column ss:AutoFitWidth="0" ss:Width="182.25"/>
+         
+      <Column ss:AutoFitWidth="0" ss:Width="60"/>
+         
+      <Column ss:AutoFitWidth="0" ss:Width="87.75"/>
+         
+      <Column ss:AutoFitWidth="0" ss:Width="84"/>
+         
+      <Column ss:AutoFitWidth="0" ss:Width="70.5"/>
+         
+      <Column ss:AutoFitWidth="0" ss:Width="168.75"/>
+         
+      <Column ss:AutoFitWidth="0" ss:Width="327.75"/>
+         
+      <Row>
+            
+        <Cell ss:StyleID="s82">
+          <Data ss:Type="String">Column Name</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s82">
+          <Data ss:Type="String">Position</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s82">
+          <Data ss:Type="String">Drop Down</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s82">
+          <Data ss:Type="String">Data Type </Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s82">
+          <Data ss:Type="String">Length</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s82">
+          <Data ss:Type="String">Drop Down Values</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s82">
+          <Data ss:Type="String">Remarks</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell>
+          <Data ss:Type="String">Account Group</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">4</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell>
+          <Data ss:Type="String">AR Account</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">2</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">8</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell>
+          <Data ss:Type="String">AR Account Name</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">3</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">120</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">Address 1</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">4</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">30</Data>
+        </Cell>
+            
+        <Cell ss:Index="7">
+          <Data ss:Type="String">This field is mandate for Malaysa e-invoice MALINS ='Y'</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">Address 2</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">5</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">30</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">Address 3</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">6</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">30</Data>
+        </Cell>
+            
+        <Cell ss:Index="7">
+          <Data ss:Type="String">KSAEIV =Y Consider this field as a building number and mandate for KSA</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell>
+          <Data ss:Type="String">City</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">7</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">90</Data>
+        </Cell>
+            
+        <Cell ss:Index="7">
+          <Data ss:Type="String">This field is mandate for KSA INstalled . i.e;KSAIV = 'Y' and MALINS ='Y'</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell>
+          <Data ss:Type="String">State</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">8</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">2</Data>
+        </Cell>
+            
+        <Cell ss:Index="7">
+          <Data ss:Type="String">This field is mandate for KSA INstalled . i.e;KSAIV = 'Y'</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell>
+          <Data ss:Type="String">Zip</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">9</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">10</Data>
+        </Cell>
+            
+        <Cell ss:Index="7">
+          <Data ss:Type="String">This field is mandate for KSA INstalled . i.e;KSAIV = 'Y'</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell>
+          <Data ss:Type="String">Country</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">10</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">14</Data>
+        </Cell>
+            
+        <Cell ss:Index="7">
+          <Data ss:Type="String">This field is mandate for KSA INstalled . i.e;KSAIV = 'Y' and MALINS ='Y'</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell>
+          <Data ss:Type="String">Contact Name</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">11</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">24</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell>
+          <Data ss:Type="String">Phone1</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">12</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">12</Data>
+        </Cell>
+            
+        <Cell ss:Index="7">
+          <Data ss:Type="String">This field is mandate for Malaysa e-invoice MALINS ='Y'</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell>
+          <Data ss:Type="String">Phone2</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">13</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">12</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell>
+          <Data ss:Type="String">Fax</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">14</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">20</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell>
+          <Data ss:Type="String">Telex</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">15</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">20</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell>
+          <Data ss:Type="String">Email</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">16</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">255</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell>
+          <Data ss:Type="String">Currency</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">17</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">4</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell ss:StyleID="s84">
+          <Data ss:Type="String">GST State Code</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s84">
+          <Data ss:Type="Number">18</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s85">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s85">
+          <Data ss:Type="String">int</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s84">
+          <Data ss:Type="Number">2</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s84"/>
+            
+        <Cell ss:StyleID="s84">
+          <Data ss:Type="String"> This field is for GST INstalled . i.e; IGSTI = 'Y' and MALINS = 'Y'</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell ss:StyleID="s84">
+          <Data ss:Type="String">GST Reg No</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s84">
+          <Data ss:Type="Number">19</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s85">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s85">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s84">
+          <Data ss:Type="Number">50</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s84"/>
+            
+        <Cell ss:StyleID="s84">
+          <Data ss:Type="String"> This field is for GST INstalled . i.e; IGSTI = 'Y'</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell ss:StyleID="s84">
+          <Data ss:Type="String">ARN No</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s84">
+          <Data ss:Type="Number">20</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s85">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s85">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s84">
+          <Data ss:Type="Number">255</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s84"/>
+            
+        <Cell ss:StyleID="s84">
+          <Data ss:Type="String"> This field is for GST INstalled . i.e; IGSTI = 'Y'</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell ss:StyleID="s84">
+          <Data ss:Type="String">PAN Number</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s84">
+          <Data ss:Type="Number">21</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s85">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s85">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s84">
+          <Data ss:Type="Number">20</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s84"/>
+            
+        <Cell ss:StyleID="s84">
+          <Data ss:Type="String"> This field is for GST INstalled . i.e; IGSTI = 'Y'</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell>
+          <Data ss:Type="String">Credit Limit</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">22</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">money</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell>
+          <Data ss:Type="String">Reminder Generate</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">23</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s86">
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row ss:StyleID="s86">
+            
+        <Cell>
+          <Data ss:Type="String">Remarks / Account notepad</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">24</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s87">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s87">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">255</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell>
+          <Data ss:Type="String">Type of Account Holder</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">25</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+            
+        <Cell ss:Index="7">
+          <Data ss:Type="String">F - Firm, G - individual</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell>
+          <Data ss:Type="String">Type of Account</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">26</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+            
+        <Cell ss:Index="7">
+          <Data ss:Type="String">P - Permanent, T- Temporary </Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell>
+          <Data ss:Type="String">Accounting Method</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">27</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+            
+        <Cell ss:Index="7">
+          <Data ss:Type="String">O - Open Item, B - Balance Open</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row ss:AutoFitHeight="0" ss:Height="25.5">
+            
+        <Cell>
+          <Data ss:Type="String">Billing Cycle</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">28</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+            
+        <Cell ss:Index="7" ss:StyleID="s88">
+          <Data ss:Type="String">D - Daily, W - Weekly, M - Monthly, N - No Fixed Cycle</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell>
+          <Data ss:Type="String">Covering Letter Amount</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">29</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">money</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell>
+          <Data ss:Type="String">Covering Letter Number</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">30</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">smallint</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell>
+          <Data ss:Type="String">Frozen Flag</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">31</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell>
+          <Data ss:Type="String">Add/Update/Delete Flag</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">32</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">1</Data>
+        </Cell>
+            
+        <Cell ss:Index="7">
+          <Data ss:Type="String">A - Add, U - Update, D - Delete</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell>
+          <Data ss:Type="String">Group Code1</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">33</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">20</Data>
+        </Cell>
+            
+        <Cell ss:Index="7">
+          <Data ss:Type="String">Group Code 1</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell>
+          <Data ss:Type="String">Group Code Name1</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">34</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">90</Data>
+        </Cell>
+            
+        <Cell ss:Index="7">
+          <Data ss:Type="String">Group Name 1</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell>
+          <Data ss:Type="String">Group Code Value</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">35</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">255</Data>
+        </Cell>
+            
+        <Cell ss:Index="7">
+          <Data ss:Type="String">Group Value 1</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell>
+          <Data ss:Type="String">Group Code2</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">33</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">20</Data>
+        </Cell>
+            
+        <Cell ss:Index="7">
+          <Data ss:Type="String">Group Code 2</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell>
+          <Data ss:Type="String">Group Code Name2</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">34</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">90</Data>
+        </Cell>
+            
+        <Cell ss:Index="7">
+          <Data ss:Type="String">Group Name 2</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell>
+          <Data ss:Type="String">Group Code Value</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">35</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">255</Data>
+        </Cell>
+            
+        <Cell ss:Index="7">
+          <Data ss:Type="String">Group Value 2</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell>
+          <Data ss:Type="String">Group Code3</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">33</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">20</Data>
+        </Cell>
+            
+        <Cell ss:Index="7">
+          <Data ss:Type="String">Group Code 3</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell>
+          <Data ss:Type="String">Group Code Name3</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">34</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">90</Data>
+        </Cell>
+            
+        <Cell ss:Index="7">
+          <Data ss:Type="String">Group Name 3</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell>
+          <Data ss:Type="String">Group Code Value</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">35</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">255</Data>
+        </Cell>
+            
+        <Cell ss:Index="7">
+          <Data ss:Type="String">Group Value 3</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell>
+          <Data ss:Type="String">Group Code4</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">33</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">20</Data>
+        </Cell>
+            
+        <Cell ss:Index="7">
+          <Data ss:Type="String">Group Code 4</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell>
+          <Data ss:Type="String">Group Code Name4</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">34</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">90</Data>
+        </Cell>
+            
+        <Cell ss:Index="7">
+          <Data ss:Type="String">Group Name 4</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell>
+          <Data ss:Type="String">Group Code Value</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">35</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">255</Data>
+        </Cell>
+            
+        <Cell ss:Index="7">
+          <Data ss:Type="String">Group Value 4</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell>
+          <Data ss:Type="String">Group Code5</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">33</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">20</Data>
+        </Cell>
+            
+        <Cell ss:Index="7">
+          <Data ss:Type="String">Group Code 5</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell>
+          <Data ss:Type="String">Group Code Name5</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">34</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">90</Data>
+        </Cell>
+            
+        <Cell ss:Index="7">
+          <Data ss:Type="String">Group Name 5</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell>
+          <Data ss:Type="String">Group Code Value</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">35</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s83">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell>
+          <Data ss:Type="Number">255</Data>
+        </Cell>
+            
+        <Cell ss:Index="7">
+          <Data ss:Type="String">Group Value 5</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell ss:StyleID="s89">
+          <Data ss:Type="String">Buyer ID</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s89">
+          <Data ss:Type="Number">36</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s90">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s90">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s89">
+          <Data ss:Type="Number">255</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s89"/>
+            
+        <Cell ss:StyleID="s89"/>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell ss:StyleID="s89">
+          <Data ss:Type="String">Biling Name</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s89">
+          <Data ss:Type="Number">37</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s90">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s90">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s89">
+          <Data ss:Type="Number">255</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s89"/>
+            
+        <Cell ss:StyleID="s89">
+          <Data ss:Type="String"> This field is mandate for KSA INstalled . i.e;KSAIV = 'Y'</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell ss:StyleID="s89">
+          <Data ss:Type="String">Scheme ID</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s89">
+          <Data ss:Type="Number">38</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s90">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s90">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s89">
+          <Data ss:Type="Number">255</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s89"/>
+            
+        <Cell ss:StyleID="s89"/>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell ss:StyleID="s89">
+          <Data ss:Type="String">VAT Number</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s89">
+          <Data ss:Type="Number">39</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s90">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s90">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s89">
+          <Data ss:Type="Number">255</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s89"/>
+            
+        <Cell ss:StyleID="s89">
+          <Data ss:Type="String"> This field is mandate for KSA INstalled . i.e;KSAIV = 'Y'</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell ss:StyleID="s91">
+          <Data ss:Type="String">TIN Number</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s92">
+          <Data ss:Type="Number">40</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s93">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s93">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s92">
+          <Data ss:Type="Number">14</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s94"/>
+            
+        <Cell ss:StyleID="s94">
+          <Data ss:Type="String">This field is mandate for Malayasia e-invoice INstalled . i.e;MALINS = 'Y'</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row ss:AutoFitHeight="0" ss:Height="30">
+            
+        <Cell ss:StyleID="s95">
+          <Data ss:Type="String">Registration/Identification/Passport Type: NRIC/BRN/PASSPORT/ARMY</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s92">
+          <Data ss:Type="Number">41</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s93">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s93">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s93">
+          <Data ss:Type="Number">8</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s94"/>
+            
+        <Cell ss:StyleID="s94">
+          <Data ss:Type="String">This field is mandate for Malayasia e-invoice INstalled . i.e;MALINS = 'Y'</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row ss:AutoFitHeight="0" ss:Height="25.5">
+            
+        <Cell ss:StyleID="s91">
+          <Data ss:Type="String">Registration/Identification/Passport Number</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s92">
+          <Data ss:Type="Number">42</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s93">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s93">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s93">
+          <Data ss:Type="Number">20</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s94"/>
+            
+        <Cell ss:StyleID="s94">
+          <Data ss:Type="String">This field is mandate for Malayasia e-invoice INstalled . i.e;MALINS = 'Y'</Data>
+        </Cell>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell ss:StyleID="s91">
+          <Data ss:Type="String">SST Registration Number</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s92">
+          <Data ss:Type="Number">43</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s93">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s93">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s93">
+          <Data ss:Type="Number">35</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s94"/>
+            
+        <Cell ss:StyleID="s94"/>
+           
+      </Row>
+         
+      <Row>
+            
+        <Cell ss:StyleID="s91">
+          <Data ss:Type="String">SAC - SAC/MISC Code</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s92">
+          <Data ss:Type="Number">44</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s93">
+          <Data ss:Type="String">N</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s93">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s93">
+          <Data ss:Type="Number">20</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s94"/>
+            
+        <Cell ss:StyleID="s94"/>
+           
+      </Row>
+         
+      <Row ss:AutoFitHeight="0" ss:Height="25.5">
+            
+        <Cell ss:StyleID="s96">
+          <Data ss:Type="String">GST Country Code</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s97">
+          <Data ss:Type="Number">45</Data>
+        </Cell>
+            
+        <Cell ss:Index="4" ss:StyleID="s93">
+          <Data ss:Type="String">string</Data>
+        </Cell>
+            
+        <Cell ss:StyleID="s98">
+          <Data ss:Type="Number">3</Data>
+        </Cell>
+            
+        <Cell ss:Index="7" ss:StyleID="s99">
+          <ss:Data xmlns="http://www.w3.org/TR/REC-html40" ss:Type="String">
+                                                             This field is mandate for Malayasia e-invoice INstalled . i.e;MALINS = 'Y' for Malaysia use code                                                   
+            <B>MYS</B>
+            <Font>                                                                  </Font>
+          </ss:Data>
+        </Cell>
+           
+      </Row>
+        
+    </Table>
+      
+    <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+         
+      <Print>
+            
+        <ValidPrinterInfo/>
+            
+        <PaperSizeIndex>9</PaperSizeIndex>
+            
+        <HorizontalResolution>600</HorizontalResolution>
+            
+        <VerticalResolution>600</VerticalResolution>
+           
+      </Print>
+         
+      <TopRowVisible>46</TopRowVisible>
+         
+      <Panes>
+            
+        <Pane>
+               
+          <Number>3</Number>
+               
+          <ActiveRow>61</ActiveRow>
+               
+          <ActiveCol>6</ActiveCol>
+              
+        </Pane>
+           
+      </Panes>
+         
+      <ProtectObjects>False</ProtectObjects>
+         
+      <ProtectScenarios>False</ProtectScenarios>
+        
+    </WorksheetOptions>
+     
+  </Worksheet>
+  
+</Workbook>

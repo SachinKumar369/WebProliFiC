@@ -28,8 +28,7 @@ public class TempCreate_Test extends BaseTest {
     
     private final ThreadLocal<PortalLoginPage> loginPage = new ThreadLocal<>();
     private final ThreadLocal<TempCreate> templatereq = new ThreadLocal<>();
-    //private final ThreadLocal<Requisition_Page> addProduct = new ThreadLocal<>();
-   // private final ThreadLocal<PQEdit_Page> editProduct = new ThreadLocal<>();
+
 
 
 
@@ -39,9 +38,7 @@ public class TempCreate_Test extends BaseTest {
         launchSite.set(new LaunchSite(getDriver()));
         loginPage.set(new PortalLoginPage(getDriver()));
         templatereq.set(new TempCreate(getDriver()));
-      
-       // addProduct.set(new Requisition_Page(getDriver()));
-       // editProduct.set(new PQEdit_Page(getDriver()));
+
     }
 
     /**
@@ -91,8 +88,7 @@ public class TempCreate_Test extends BaseTest {
             launchSite.get().LaunchPortal(url);
             loginPage.get().LogInToPortal(ChainID, PropertyID, Username);
             templatereq.get().AddProduct(Username);
-           // addProduct.get().AddProduct();
-           // editProduct.get().EditProduct();
+
         } catch (Exception e) {
             ExtentTestManager.createAssertTestStepWithScreenshot("Login", Status.FAIL, "Exception found in Login", false, e);
         }

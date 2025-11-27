@@ -99,7 +99,7 @@ public class PQEdit_Page {
     @FindBy(xpath ="//input[starts-with(@id,'item_id_1_')]")
     public WebElement getItemSearchElement;
     
-    @FindBy(xpath="//input[starts-with(@id,'qty_indent_9_')]")    //id="qty_indent_9_8"
+    @FindBy(xpath="//input[starts-with(@id,'qty_indent_9_')]")    //id="qty_indent_9_8"  
     public WebElement AddQty;
 
     public WebElement getItemDropdownElement(int itemId) {
@@ -111,7 +111,7 @@ public class PQEdit_Page {
         String xpath3 = "//input[@id=\'qty_req_7_" + itemId + "']";
         return BaseTest.getDriver().findElement(By.xpath(xpath3));
     }
-    
+
     //public We
 
     public static String RequisitionNumber;
@@ -185,14 +185,15 @@ public class PQEdit_Page {
             List<String> Resources1 = ExcelHandler.getAllColumnData("Requisition Number");
            
             //for(int i=0;i<Resources1.size();i++) {
-            String resource1 = Resources1.getLast();
+            String resource1 = Resources1.get(Resources1.size() - 1);
             
             				
             
             
-            //String resources1 = ExcelHandler.getCellData("1", "Req No");
+            String resources1 = ExcelHandler.getCellData("1", "Req No");
             //String resource1 = Resources1.get(2);
             Utilities.SendKeys(BaseTest.getDriver(), EnterReqNo, resource1);
+          //  Utilities.SendKeys(BaseTest.getDriver(),EnterReqNo,"73986");
            // }
             Utilities.Click(BaseTest.getDriver(), SearchBtn);
             Utilities.Click(BaseTest.getDriver(), ViewEdit);
@@ -205,12 +206,12 @@ public class PQEdit_Page {
             Actions actions = new Actions(BaseTest.getDriver());
             BaseTest.getDriver().switchTo().defaultContent();
             BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
-            Utilities.WaitTillElementDisplayed(BaseTest.getDriver(), getrequestQuantityelement(5));
-            getrequestQuantityelement(5).click();
+            Utilities.WaitTillElementDisplayed(BaseTest.getDriver(), AddQty);
+            AddQty.click();
             actions.keyDown(Keys.CONTROL)
                     .sendKeys("a")
                     .keyUp(Keys.CONTROL)
-                    .sendKeys("50")
+                    .sendKeys("5")
                     .perform();
 
             //Add row
@@ -222,10 +223,10 @@ public class PQEdit_Page {
             Utilities.WaitTillElementDisplayed(BaseTest.getDriver(), ItemFilter);
             if (!Item.isEmpty()) {
                 // Get the last WebElement from the Item list
-                WebElement lastElement = Item.get(Item.size() - 1);
+                WebElement lastElement = Item.get(Item.size()-1);
 
                 // Send the text of the last WebElement to ItemFilter
-                Utilities.SendKeys(BaseTest.getDriver(), ItemFilter, lastElement.getText());
+                Utilities.SendKeys(BaseTest.getDriver(), ItemFilter, lastElement.getText());  //KSTS0355 //GSKC0024
             }
 
             DynamicWait.smallWait();
@@ -239,11 +240,11 @@ public class PQEdit_Page {
             actions.keyDown(Keys.CONTROL)
                     .sendKeys("a")
                     .keyUp(Keys.CONTROL)
-                    .sendKeys("99")
+                    .sendKeys("5")
                     .perform();
 
             //Delete Row
-            Utilities.Click(BaseTest.getDriver(), DeleteRow);
+            //Utilities.Click(BaseTest.getDriver(), DeleteRow);
 
             Utilities.Click(BaseTest.getDriver(), SaveButton);
             if (ProductConfirmation.isDisplayed() && ProductConfirmation.getText().contains("Requisition Number")) {
@@ -256,13 +257,11 @@ public class PQEdit_Page {
 
 
         } catch (Exception e) {
-            ExtentTestManager.createAssertTestStepWithScreenshot("AddProduct", Status.FAIL, "Exception found in Method - AddProduct", true, e);
+            ExtentTestManager.createAssertTestStepWithScreenshot("EditProduct", Status.FAIL, "Exception found in Method - EditProduct", true, e);
         }
 
 
-//        } catch (Exception e) {
-//            ExtentTestManager.createAssertTestStepWithScreenshot("EditProduct", Status.FAIL, "Exception found in Method - EditProduct", true, e);
-//        }
+
     }
 
 }

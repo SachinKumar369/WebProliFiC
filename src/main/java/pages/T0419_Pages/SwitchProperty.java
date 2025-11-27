@@ -111,6 +111,7 @@ public class SwitchProperty {
             //T0410 Resource select
             BaseTest.getDriver().manage().window().maximize();
             BaseTest.getDriver().switchTo().defaultContent();
+
             BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
             Utilities.WaitTillElementDisplayed(BaseTest.getDriver(), SwitchTo);
             // Select the item by visible text 
@@ -129,6 +130,166 @@ public class SwitchProperty {
         // Switch to the main content and then to the required frame
         BaseTest.getDriver().switchTo().defaultContent();
         BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
-    } 
+    }
+
+    public void Switch345() {
+        try {
+            //Getting All resoureces from Testdata excel sheet
+            String Updload_Path = System.getProperty("user.dir") + File.separator + "src" + File.separator + "test" + File.separator + "resources" + File.separator + "TestData" + File.separator + "TestData.xlsx";
+            ExcelHandler.loadExcelFile(Updload_Path, 1);
+            List<String> Resources = ExcelHandler.getAllColumnData("Resources");
+            String resource = Resources.get(7);
+
+            //T0410 Resource select
+            BaseTest.getDriver().manage().window().maximize();
+            BaseTest.getDriver().switchTo().defaultContent();
+
+            BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
+            Utilities.WaitTillElementDisplayed(BaseTest.getDriver(), SwitchTo);
+            // Select the item by visible text
+            Utilities.selectBy(BaseTest.getDriver(), "visibletext", SwitchTo, resource);
+            try {
+                // Wait briefly for the alert and accept it if it appears
+                WebDriverWait wait = new WebDriverWait(BaseTest.getDriver(), Duration.ofSeconds(5));
+                wait.until(ExpectedConditions.alertIsPresent()).accept(); // Accept the alert if present
+                wait.until(ExpectedConditions.alertIsPresent()).dismiss(); // Dismiss the data unsave alert if present
+            } catch (TimeoutException e) {
+                // If no alert is present within the wait time, continue without doing anything
+            }
+        } catch (Exception e) {
+            ExtentTestManager.createAssertTestStepWithScreenshot("AddProduct", Status.FAIL, "Exception found in Method - AddProduct", true, e);
+        }
+        // Switch to the main content and then to the required frame
+        BaseTest.getDriver().switchTo().defaultContent();
+        BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
+    }
+
+    public void Switch361() {
+        try {
+            //Getting All resoureces from Testdata excel sheet
+            String Updload_Path = System.getProperty("user.dir") + File.separator + "src" + File.separator + "test" + File.separator + "resources" + File.separator + "TestData" + File.separator + "TestData.xlsx";
+            ExcelHandler.loadExcelFile(Updload_Path, 1);
+            List<String> Resources = ExcelHandler.getAllColumnData("Resources");
+            String resource = Resources.get(8);
+
+            //T0410 Resource select
+            BaseTest.getDriver().manage().window().maximize();
+            BaseTest.getDriver().switchTo().defaultContent();
+
+            BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
+            Utilities.WaitTillElementDisplayed(BaseTest.getDriver(), SwitchTo);
+            // Select the item by visible text
+            Utilities.selectBy(BaseTest.getDriver(), "visibletext", SwitchTo, resource);
+            try {
+                // Wait briefly for the alert and accept it if it appears
+                WebDriverWait wait = new WebDriverWait(BaseTest.getDriver(), Duration.ofSeconds(5));
+                wait.until(ExpectedConditions.alertIsPresent()).accept(); // Accept the alert if present
+                wait.until(ExpectedConditions.alertIsPresent()).dismiss(); // Dismiss the data unsave alert if present
+            } catch (TimeoutException e) {
+                // If no alert is present within the wait time, continue without doing anything
+            }
+        } catch (Exception e) {
+            ExtentTestManager.createAssertTestStepWithScreenshot("AddProduct", Status.FAIL, "Exception found in Method - AddProduct", true, e);
+        }
+        // Switch to the main content and then to the required frame
+        BaseTest.getDriver().switchTo().defaultContent();
+        BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
+    }
+
+    public void Switch363() {
+        try {
+            //Getting All resoureces from Testdata excel sheet
+            String Updload_Path = System.getProperty("user.dir") + File.separator + "src" + File.separator + "test" + File.separator + "resources" + File.separator + "TestData" + File.separator + "TestData.xlsx";
+            ExcelHandler.loadExcelFile(Updload_Path, 1);
+            List<String> Resources = ExcelHandler.getAllColumnData("Resources");
+            String resource = Resources.get(9);
+
+            //T0410 Resource select
+            BaseTest.getDriver().manage().window().maximize();
+            BaseTest.getDriver().switchTo().defaultContent();
+
+            BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
+            Utilities.WaitTillElementDisplayed(BaseTest.getDriver(), SwitchTo);
+            // Select the item by visible text
+            Utilities.selectBy(BaseTest.getDriver(), "visibletext", SwitchTo, resource);
+            try {
+                // Wait briefly for the alert and accept it if it appears
+                WebDriverWait wait = new WebDriverWait(BaseTest.getDriver(), Duration.ofSeconds(5));
+                wait.until(ExpectedConditions.alertIsPresent()).accept(); // Accept the alert if present
+                wait.until(ExpectedConditions.alertIsPresent()).dismiss(); // Dismiss the data unsave alert if present
+            } catch (TimeoutException e) {
+                // If no alert is present within the wait time, continue without doing anything
+            }
+        } catch (Exception e) {
+            ExtentTestManager.createAssertTestStepWithScreenshot("AddProduct", Status.FAIL, "Exception found in Method - AddProduct", true, e);
+        }
+        // Switch to the main content and then to the required frame
+        BaseTest.getDriver().switchTo().defaultContent();
+        BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
+    }
+
+    public void SwitchTEPD() {
+        try {
+            //Getting All resoureces from Testdata excel sheet
+            String Updload_Path = System.getProperty("user.dir") + File.separator + "src" + File.separator + "test" + File.separator + "resources" + File.separator + "TestData" + File.separator + "TestData.xlsx";
+            ExcelHandler.loadExcelFile(Updload_Path, 1);
+            List<String> Resources = ExcelHandler.getAllColumnData("Resources");
+            String resource = Resources.get(10);
+
+            //T0410 Resource select
+            BaseTest.getDriver().manage().window().maximize();
+            BaseTest.getDriver().switchTo().defaultContent();
+
+            BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
+            Utilities.WaitTillElementDisplayed(BaseTest.getDriver(), SwitchTo);
+            // Select the item by visible text
+            Utilities.selectBy(BaseTest.getDriver(), "value", SwitchTo, resource);
+            try {
+                // Wait briefly for the alert and accept it if it appears
+                WebDriverWait wait = new WebDriverWait(BaseTest.getDriver(), Duration.ofSeconds(5));
+                wait.until(ExpectedConditions.alertIsPresent()).accept(); // Accept the alert if present
+                wait.until(ExpectedConditions.alertIsPresent()).dismiss(); // Dismiss the data unsave alert if present
+            } catch (TimeoutException e) {
+                // If no alert is present within the wait time, continue without doing anything
+            }
+        } catch (Exception e) {
+            ExtentTestManager.createAssertTestStepWithScreenshot("AddProduct", Status.FAIL, "Exception found in Method - AddProduct", true, e);
+        }
+        // Switch to the main content and then to the required frame
+        BaseTest.getDriver().switchTo().defaultContent();
+        BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
+    }
+
+    public void SwitchBHOTL() {
+        try {
+            //Getting All resoureces from Testdata excel sheet
+            String Updload_Path = System.getProperty("user.dir") + File.separator + "src" + File.separator + "test" + File.separator + "resources" + File.separator + "TestData" + File.separator + "TestData.xlsx";
+            ExcelHandler.loadExcelFile(Updload_Path, 1);
+            List<String> Resources = ExcelHandler.getAllColumnData("Resources");
+            String resource = Resources.get(15);
+
+            //T0410 Resource select
+            BaseTest.getDriver().manage().window().maximize();
+            BaseTest.getDriver().switchTo().defaultContent();
+
+            BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
+            Utilities.WaitTillElementDisplayed(BaseTest.getDriver(), SwitchTo);
+            // Select the item by visible text
+            Utilities.selectBy(BaseTest.getDriver(), "visibletext", SwitchTo, resource);
+            try {
+                // Wait briefly for the alert and accept it if it appears
+                WebDriverWait wait = new WebDriverWait(BaseTest.getDriver(), Duration.ofSeconds(5));
+                wait.until(ExpectedConditions.alertIsPresent()).accept(); // Accept the alert if present
+//                wait.until(ExpectedConditions.alertIsPresent()).dismiss(); // Dismiss the data unsave alert if present
+            } catch (TimeoutException e) {
+                // If no alert is present within the wait time, continue without doing anything
+            }
+        } catch (Exception e) {
+            ExtentTestManager.createAssertTestStepWithScreenshot("AddProduct", Status.FAIL, "Exception found in Method - AddProduct", true, e);
+        }
+        // Switch to the main content and then to the required frame
+        BaseTest.getDriver().switchTo().defaultContent();
+        BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
+    }
 
 }

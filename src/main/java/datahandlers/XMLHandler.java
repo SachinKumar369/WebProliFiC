@@ -3,6 +3,10 @@ package datahandlers;
 import com.aventstack.extentreports.Status;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.apache.commons.text.WordUtils;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -20,6 +24,7 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.*;
 
@@ -272,5 +277,66 @@ public class XMLHandler {
             values.add(randomValue);
         }
         return values;
+    }
+
+
+    /*  Method to change xml file to excel */
+    public static File getLatestXMLFile(String downloadDirPath) {
+        File dir = new File(downloadDirPath);
+        if (!dir.exists() || !dir.isDirectory()) {
+            throw new IllegalArgumentException("Invalid download directory: " + downloadDirPath);
+        }
+
+        return Arrays.stream(dir.listFiles((d, name) -> name.toLowerCase().endsWith(".xml")))
+                .max(Comparator.comparingLong(File::lastModified))
+                .orElseThrow(() -> new RuntimeException("No XML files found in directory: " + downloadDirPath));
+    }
+
+
+    /// /
+    public static void processXmlToExcel(File xmlFile) {
+        try {
+            // Parse the XML file
+            Document doc = DocumentBuilderFactory.newInstance()
+                    .newDocumentBuilder()
+                    .parse(xmlFile);
+            doc.getDocumentElement().normalize();
+
+            // Create a new workbook and sheet
+            Workbook workbook = new XSSFWorkbook();
+            Sheet sheet = workbook.createSheet("Sheet1");
+
+            // Get all rows from the XML
+            NodeList rowNodes = doc.getElementsByTagName("Row");
+
+            for (int i = 0; i < rowNodes.getLength(); i++) {
+                Row excelRow = sheet.createRow(i);
+                Node rowNode = rowNodes.item(i);
+
+                if (rowNode.getNodeType() == Node.ELEMENT_NODE) {
+                    NodeList cells = ((Element) rowNode).getElementsByTagName("Cell");
+                    for (int j = 0; j < cells.getLength(); j++) {
+                        Node cell = cells.item(j);
+                        NodeList dataList = ((Element) cell).getElementsByTagName("Data");
+
+                        if (dataList.getLength() > 0) {
+                            String cellValue = dataList.item(0).getTextContent();
+                            excelRow.createCell(j).setCellValue(cellValue);
+                        }
+                    }
+                }
+            }
+
+            // Write to .xlsx file
+            String outputFilePath = xmlFile.getParent() + "/ConvertedExcel.xlsx";
+            FileOutputStream fileOut = new FileOutputStream(outputFilePath);
+            workbook.write(fileOut);
+            fileOut.close();
+            workbook.close();
+
+            System.out.println("Excel file created: " + outputFilePath);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

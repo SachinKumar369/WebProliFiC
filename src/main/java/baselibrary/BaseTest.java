@@ -1,8 +1,7 @@
 package baselibrary;
 
 import com.aventstack.extentreports.Status;
-//import com.microsoft.edge.seleniumtools.EdgeDriver;
-//import com.microsoft.edge.seleniumtools.EdgeOptions;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.text.WordUtils;
 import org.openqa.selenium.*;
@@ -48,6 +47,8 @@ public class BaseTest {
     public void initSession(String pbrowser, String pmode, String penvironment, long pimplicitwaitduration, String ptimeunit, String pos, String purl) {
         try {
             Log.info("Current System OS -> " + System.getProperty("os.name"));
+            Log.info("Initializing WebDriver for Suite Execution...");
+
             folderPath = screenshot_TimeStamp_Folder();
             browser = WordUtils.capitalize(pbrowser);
             Log.info("Browser=" + browser);
@@ -126,7 +127,7 @@ public class BaseTest {
                 edgePrefs.put("download.default_directory", downloadFilepath);
 
                 EdgeOptions edgeOptions = new EdgeOptions();
-                edgeOptions.addArguments("InPrivate");
+                // edgeOptions.addArguments("InPrivate");
                 edgeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
                 edgeOptions.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
                 edgeOptions.addArguments("--disable-notifications");
@@ -141,17 +142,41 @@ public class BaseTest {
 
                 break;
 
+
             case "chrome":
-                WebDriverManager.chromedriver().setup();
+                WebDriverManager.chromedriver()
+                        .clearDriverCache()
+                        .clearResolutionCache()
+                        .driverVersion("141.0.7390.65")  //141.0.7390.65   138.0.7204.92  139.0.7258.155
+                        .setup();
+
                 ChromeOptions chromeOptions = new ChromeOptions();
                 HashMap<String, Object> chromePrefs = new HashMap<>();
-                chromePrefs.put("profile.default_content_settings.popups", 0);
-                chromePrefs.put("download.default_directory", downloadFilepath);
-                chromePrefs.put("download.prompt_for_download", false);
-                chromePrefs.put("safebrowsing.enabled", true);
-                chromeOptions.setExperimentalOption("prefs", chromePrefs);
-                chromeOptions.addArguments("--disable-features=DownloadBubble,DownloadBubbleV2");
 
+                // Set preferences for automatic PDF download
+                chromePrefs.put("profile.default_content_settings.popups", 0); // Disable popups
+                chromePrefs.put("download.prompt_for_download", false); // Disable prompt for download
+                chromePrefs.put("safebrowsing.enabled", true); // Disable safe browsing to prevent download blocking
+                chromePrefs.put("plugins.always_open_pdf_externally", true);
+                chromePrefs.put("download.default_directory", downloadFilepath); // Set download directory
+                chromePrefs.put("savefile.default_directory", downloadFilepath);  // Force PDFs to save in `downloadFilepath`
+
+                chromeOptions.setExperimentalOption("prefs", chromePrefs);
+
+                // Disable the Chrome download bubble
+                chromeOptions.addArguments("--kiosk-printing");
+                chromeOptions.addArguments("--disable-features=DownloadBubble,DownloadBubbleV2");
+                chromeOptions.addArguments("--disable-blink-features=AutomationControlled");
+
+                // Bypass SSL and certificate errors
+                chromeOptions.addArguments("--ignore-certificate-errors"); // Ignore certificate errors
+                chromeOptions.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true); // Accept insecure certificates
+                chromeOptions.addArguments("--disable-web-security"); // Disable web security features
+
+                // Additional argument to disable download protection
+                chromeOptions.addArguments("--safebrowsing-disable-download-protection");
+
+                // Headless mode configuration
                 if (mode.equalsIgnoreCase("headless")) {
                     chromeOptions.addArguments("--headless", "--window-size=1920,1200");
                     chromeOptions.addArguments("--disable-notifications");
@@ -160,16 +185,14 @@ public class BaseTest {
                     chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
                     chromeOptions.addArguments("--remote-allow-origins=*");
                 } else {
-//                    chromeOptions.addArguments("incognito");
+                    // Incognito and other configurations
+                    chromeOptions.addArguments("--disable-blink-features=AutomationControlled");
+                    chromeOptions.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
                     chromeOptions.addArguments("--disable-notifications");
                     chromeOptions.addArguments("--ignore-certificate-errors");
                     chromeOptions.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
                     chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
                     chromeOptions.addArguments("--remote-allow-origins=*");
-                    chromeOptions.addArguments("--safebrowsing-disable-download-protection");
-                    chromeOptions.addArguments("safebrowsing-disable-extension-blacklist");
-                    chromeOptions.addArguments("--disable-features=DownloadBubble,DownloadBubbleV2");
-
                 }
 
                 returnDriver = new ChromeDriver(chromeOptions);
@@ -178,11 +201,81 @@ public class BaseTest {
                 setImplicitWait(returnDriver);
                 version = ((ChromeDriver) returnDriver).getCapabilities().getBrowserVersion();
                 break;
-        }
+                    }
         return returnDriver;
     }
 
-    public static void setDriver() {
+
+//            case "chrome":
+//                WebDriverManager.chromedriver()
+//                        .clearDriverCache()
+//                        .clearResolutionCache()
+//                        .driverVersion("136.0.7103.114")
+//                        .setup();
+//
+//                ChromeOptions chromeOptions = new ChromeOptions();
+//                HashMap<String, Object> chromePrefs = new HashMap<>();
+//
+//                // Enhanced download preferences
+//                chromePrefs.put("profile.default_content_settings.popups", 0);
+//                chromePrefs.put("download.prompt_for_download", false);
+//                chromePrefs.put("plugins.always_open_pdf_externally", true);
+//                chromePrefs.put("download.default_directory", downloadFilepath);
+//                chromePrefs.put("savefile.default_directory", downloadFilepath);
+//
+//                // Safebrowsing configurations to disable download protection
+//                chromePrefs.put("safebrowsing.enabled", false);  // Changed to disable safebrowsing
+//                chromePrefs.put("safebrowsing.disable_download_protection", true);  // Extra protection
+//
+//                // Disable download restrictions (0 = no restrictions)
+//                chromePrefs.put("download_restrictions", 0);
+//
+//                chromeOptions.setExperimentalOption("prefs", chromePrefs);
+//
+//                // Enhanced Chrome arguments
+//                chromeOptions.addArguments(
+//                        "--disable-features=DownloadBubble,DownloadBubbleV2",
+//                        "--safebrowsing-disable-download-protection",
+//                        "--safebrowsing-disable-extension-blacklist",
+//                        "--allow-running-insecure-content",
+//                        "--ignore-certificate-errors",
+//                        "--disable-web-security",
+//                        "--kiosk-printing",
+//                        "--disable-blink-features=AutomationControlled"
+//                );
+//
+//                // Headless mode configuration
+//                if (mode.equalsIgnoreCase("headless")) {
+//                    chromeOptions.addArguments(
+//                            "--headless",
+//                            "--window-size=1920,1200",
+//                            "--disable-gpu",
+//                            "--no-sandbox"
+//                    );
+//                } else {
+//                   // chromeOptions.addArguments("--incognito");
+//                }
+//
+//                // Common capabilities
+//                chromeOptions.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
+//                chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+//                chromeOptions.addArguments("--remote-allow-origins=*");
+//
+//                returnDriver = new ChromeDriver(chromeOptions);
+//                returnDriver.manage().window().maximize();
+//                returnDriver.manage().deleteAllCookies();
+//                setImplicitWait(returnDriver);
+//                version = ((ChromeDriver) returnDriver).getCapabilities().getBrowserVersion();
+//                break;
+//        }
+//            return returnDriver;
+//        }
+
+
+
+
+
+            public static void setDriver() {
         try {
             driver.set(createDriver());
         } catch (Exception e) {
@@ -247,16 +340,30 @@ public class BaseTest {
         outputFile.mkdir();
         return screenshotBasePath + File.separator + "screenshot_" + timeStamp;
     }
+//
+//    @AfterTest(alwaysRun = true)
+//    public void tearDown() {
+//        try {
+//            ExtentTestManager.flush();
+//            quitBrowser();
+//            driver.remove();
+//        } catch (Exception e) {
+//            ExtentTestManager.createAssertTestStepWithScreenshot("tearDown", Status.FAIL,
+//                    "Exception found in Method - tearDown", false, e);
+//        }
+//    }
 
-    @AfterTest(alwaysRun = true)
-    public void tearDown() {
+    private void performLogin() {
+        Log.info("Logging in to the application...");
+        WebDriver driver = getDriver();
         try {
-            ExtentTestManager.flush();
-            quitBrowser();
-            driver.remove();
+            driver.findElement(By.id("username")).sendKeys("your_username");
+            driver.findElement(By.id("password")).sendKeys("your_password");
+            driver.findElement(By.id("loginButton")).click();
+            Log.info("Login successful!");
         } catch (Exception e) {
-            ExtentTestManager.createAssertTestStepWithScreenshot("tearDown", Status.FAIL,
-                    "Exception found in Method - tearDown", false, e);
+            ExtentTestManager.createAssertTestStepWithScreenshot("performLogin", Status.FAIL,
+                    "Exception during Login", false, e);
         }
     }
 }

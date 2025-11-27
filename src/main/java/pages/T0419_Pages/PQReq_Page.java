@@ -66,10 +66,14 @@ public class PQReq_Page {
     private WebElement FirstColumn;
     @FindBy(id = "cphBody_imgFromDeptStore")
     private WebElement FromDepartment;
+    @FindBy(id = "cphBody_imgFromDeptStore")
+    private WebElement FromDepartment9;
     @FindBy(xpath = "//td[@class=\"ControlItemStyle\"][2]")
     private List<WebElement> DepartmentList;
     @FindBy(id = "cphBody_imgToDeptStore")
     private WebElement ToDepartment;
+    @FindBy(id = "cphBody_imgToDeptStore")
+    private WebElement ToDepartment9;
     @FindBy(id = "cphBody_btnEnterItemDetails")
     private WebElement EnterItemDetail;
     @FindBy(xpath = "//img[@id=\"img_item_id_1_0\"]")
@@ -107,6 +111,8 @@ public class PQReq_Page {
     private List<WebElement> Quantity;
     @FindBy(xpath = "//input[starts-with(@id,'item_desc_3_')]")
     private List<WebElement> ItemName;
+    @FindBy(id="cphBody_txtunit_id")
+    private WebElement Property;
     
     
 
@@ -194,8 +200,87 @@ public class PQReq_Page {
             Utilities.SendKeys(BaseTest.getDriver(), Filter, RequestionType);
             DynamicWait.smallWait();
             Utilities.Click(BaseTest.getDriver(), FirstColumn);
-            
-            
+
+
+
+
+            //validation on the basic of requisition type
+
+            //check whether From department is enabled or not
+            if(Description.get(6).contains("Purchase Requisition")){
+                BaseTest.getDriver().switchTo().defaultContent();
+                BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
+                if(FromDepartment.isEnabled()==true){
+                    ExtentTestManager.createAssertTestStepWithScreenshot("From Dept", Status.PASS, "From Department is Enabled", true);
+                }else {
+                    ExtentTestManager.createAssertTestStepWithScreenshot("From Dept", Status.WARNING, "From Department is Disabled", true);
+
+                }
+            }
+
+
+            //check whether indent department is disabled or not
+           // if(Description.get(6).contains("Purchase Requisition")){
+                BaseTest.getDriver().switchTo().defaultContent();
+                BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
+
+                WebElement inputField = BaseTest.getDriver().findElement(By.id("cphBody_txtIndentDept"));
+
+                // Verify the input field is disabled
+                boolean isDisabled = inputField.getAttribute("readonly") != null &&
+                        inputField.getAttribute("tabindex").equals("-1") &&
+                        inputField.getAttribute("class").contains("readonlytextbox");
+
+                if (!isDisabled) {
+                    System.out.println("The Indent Department is Enabled.");
+                    ExtentTestManager.createAssertTestStepWithScreenshot("Indent Dept", Status.PASS, "Indent Department is Enabled", true);
+                } else {
+                    System.out.println("The Indent Department is Disabled.");
+                    ExtentTestManager.createAssertTestStepWithScreenshot("Indent Dept", Status.WARNING, "Indent Department is Disabled", true);
+                }
+          //  }
+
+
+            try {
+                // Wait for the element to be clickable (visible and enabled)
+                WebDriverWait wait1 = new WebDriverWait(BaseTest.getDriver(), Duration.ofSeconds(2));
+                WebElement clickableElement = wait1.until(ExpectedConditions.elementToBeClickable(FromDepartment));
+                ExtentTestManager.createAssertTestStepWithScreenshot("From Department", Status.PASS, "From Department is Enabled ", true);
+
+                System.out.println("From Department is clickable");
+            } catch (TimeoutException e) {
+                System.out.println("From Department is NOT clickable");
+                ExtentTestManager.createAssertTestStepWithScreenshot("From Department", Status.WARNING, "From Department is Disabled", true);
+            }
+
+            try {
+                // Wait for the element to be clickable (visible and enabled)
+                WebDriverWait wait1 = new WebDriverWait(BaseTest.getDriver(), Duration.ofSeconds(2));
+                WebElement clickableElement = wait1.until(ExpectedConditions.elementToBeClickable(ToDepartment));
+                ExtentTestManager.createAssertTestStepWithScreenshot("To Department", Status.PASS, "To Department is not Enabled ", true);
+
+                System.out.println("To Department is clickable");
+            } catch (TimeoutException e) {
+                System.out.println("To Department is NOT clickable");
+                ExtentTestManager.createAssertTestStepWithScreenshot("To Department", Status.WARNING, "To Department is Enable", true);
+            }
+
+
+            //Check whether property is displayed or not
+
+
+            if(Property.isDisplayed()==false){
+                ExtentTestManager.createAssertTestStepWithScreenshot("Property", Status.PASS, "Property not displayed", true);
+            }else {
+                ExtentTestManager.createAssertTestStepWithScreenshot("Property", Status.WARNING, " Department is Enabled", true);
+
+            }
+
+
+
+
+
+
 
 
             //Select From Department/Store
@@ -245,9 +330,42 @@ public class PQReq_Page {
                 DynamicWait.smallWait();
                 Utilities.Click(BaseTest.getDriver(), FirstColumn);	
             }
-            
-            
-            
+
+
+
+//            //validation on the basic of requisition type
+//
+//            //check whether From department is enabled or not
+//            if(Description.get(6).contains("Purchase Requisition")){
+//                BaseTest.getDriver().switchTo().defaultContent();
+//                BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
+//                if(FromDepartment9.isEnabled()){
+//                    ExtentTestManager.createAssertTestStepWithScreenshot("From Dept", Status.PASS, "From Department is Enabled", true);
+//                }else {
+//                    ExtentTestManager.createAssertTestStepWithScreenshot("From Dept", Status.WARNING, "From Department is Disabled", true);
+//
+//                }
+//            }
+//
+//
+//            //check whether from To Dept is Doisabled or not
+//
+//            BaseTest.getDriver().switchTo().defaultContent();
+//            BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
+//            if(ToDepartment9.isEnabled()==false){
+//                ExtentTestManager.createAssertTestStepWithScreenshot("To Department", Status.PASS, "To Department is Disabled ", true);
+//            }else {
+//                ExtentTestManager.createAssertTestStepWithScreenshot("To Department", Status.WARNING, "To Department is Enabled", true);
+//
+//            }
+
+
+
+
+
+
+
+
             //Item Add
             BaseTest.getDriver().switchTo().defaultContent();
             BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
@@ -256,9 +374,9 @@ public class PQReq_Page {
 
             Set<String> usedTexts = new HashSet<>();
             boolean isPage2Switched = false; // Track if switched to Page 2
-            int itemsFromPage1 = 15; // Define the number of items to pick from Page 1
+            int itemsFromPage1 = 5; // Define the number of items to pick from Page 1
 
-            for (int i = 0; i < 2; i++) {
+            for (int i = 0; i < 10; i++) {
                 if (i > 0) { // Add a new row after the first iteration
                     Utilities.Click(BaseTest.getDriver(), AddRow);
                 }
@@ -304,7 +422,7 @@ public class PQReq_Page {
                 Utilities.Click(BaseTest.getDriver(), FirstColumn);
 
                 // Switch back to the main frame and enter quantity
-                double j=(i+1)*10.25;
+                double j=(i+1)*10;
                 String a=String.valueOf(j);
                 BaseTest.getDriver().switchTo().defaultContent();
                 BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");

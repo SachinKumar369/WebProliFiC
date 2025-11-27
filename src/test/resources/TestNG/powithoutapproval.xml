@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="WebProLific Suite" thread-count="1" parallel="classes">
+    <listeners>
+        <listener class-name="listeners.TestListener"/>
+        <listener class-name="listeners.AnnotationTransformer"/>
+        <listener class-name="listeners.RetryListener"/>
+    </listeners>
+
+    <parameter name="browser" value="chrome"/>
+    <parameter name="os" value="Windows"/>
+    <parameter name="mode" value="UI"/>
+    <parameter name="environment" value="new"/>
+    <parameter name="client" value="prologic"/>
+    <parameter name="plantype" value="All"/>
+    <parameter name="implicitwaitduration" value="3"/>
+    <parameter name="timeunit" value="seconds"/>
+    <parameter name="url" value="https://qc2web.prologicfirst.in/WISH/Common/frmLogin.aspx"/>
+
+
+    <test name="With RQ" enabled="false">
+        <classes>
+            <class name="POTest.WithRQ.CPTest"/>
+            <class name="POTest.WithRQ.CPTest"/>
+            <class name="POTest.WithRQ.RPTest"/>
+            <class name="POTest.WithRQ.POGenerationTest"/>
+        </classes>
+    </test>
+
+
+    <test name="WithOUTRQ CP" enabled="false">
+        <classes>
+            <class name="POTest.WithoutRQ.CPTest"/>
+            <class name="POTest.WithoutRQ.RPTest"/>
+            <class name="POTest.Approve.ApprovePOTest"/>
+            <class name="POTest.WithRQ.ApprovePOTest"/>
+            <class name="POTest.WithoutRQ.ApproveRPL2Test"/>
+            <class name="POTest.WithoutRQ.RejectTest"/>
+
+
+        </classes>
+    </test>
+
+    <test name="CP Test" enabled="false">
+        <classes>
+
+
+            <class name="POTest.WithRQ_withoutApproval.withrq.RPTest"/>
+            <class name="POTest.WithRQ_withoutApproval.withrq.SchedulePOTest"/>
+            <class name="POTest.WithRQ_withoutApproval.withrq.PaymentScheduleTest"/>
+            <class name="POTest.WithRQ_withoutApproval.withrq.ItemLevelChargesTest"/>
+            <class name="POTest.WithRQ_withoutApproval.withrq.ScheduleItemTest"/>
+            <class name="POTest.WithRQ_withoutApproval.withrq.InventoryControlTest"/>
+            <class name="POTest.WithRQ_withoutApproval.withrq.CPTest"/>
+            <class name="POTest.WithRQ_withoutApproval.withrq.EditTest"/>
+            <class name="POTest.WithRQ_withoutApproval.withrq.POLevelChargesTest"/>
+            <class name="POTest.WithRQ_withoutApproval.withrq.CommentTest"/>
+
+
+        </classes>
+    </test>
+
+    <test name="withour rq" enabled="true">
+        <classes>
+            <class name="POTest.WithRQ_withoutApproval.WithoutRQ.CommentTest"></class>
+            <class name="POTest.WithRQ_withoutApproval.WithoutRQ.CPTest"></class>
+            <class name="POTest.WithRQ_withoutApproval.WithoutRQ.Edit_Test"></class>
+            <class name="POTest.WithRQ_withoutApproval.WithoutRQ.ItemLevelChargeTest"></class>
+            <class name="POTest.WithRQ_withoutApproval.WithoutRQ.PaymentScheduleTest"></class>
+            <class name="POTest.WithRQ_withoutApproval.WithoutRQ.POLevelChargeTest"></class>
+            <class name="POTest.WithRQ_withoutApproval.WithoutRQ.RP_Test"></class>
+            <class name="POTest.WithRQ_withoutApproval.WithoutRQ.ScheduleItemTest"></class>
+            <class name="POTest.WithRQ_withoutApproval.WithoutRQ.SchedulePOTest"></class>
+
+        </classes>
+    </test>
+
+
+</suite>

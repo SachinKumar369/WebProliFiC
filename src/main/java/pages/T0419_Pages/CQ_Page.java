@@ -248,9 +248,9 @@ public class CQ_Page {
             
             Set<String> usedTexts = new HashSet<>();
             boolean isPage2Switched = false; // Track if switched to Page 2
-            int itemsFromPage1 = 10; // Define the number of items to pick from Page 1
+            int itemsFromPage1 = 5; // Define the number of items to pick from Page 1
 
-            for (int i = 1; i < 10; i++) {
+            for (int i = 0; i < 10; i++) {
                 if (i > 0) { // Add a new row after the first iteration
                     Utilities.Click(BaseTest.getDriver(), AddRow);
                 }
@@ -296,7 +296,7 @@ public class CQ_Page {
                 Utilities.Click(BaseTest.getDriver(), FirstColumn);
 
                 // Switch back to the main frame and enter quantity
-                double j=(i+1)*10.25;
+                double j=(i+1)*10;
                 String a=String.valueOf(j);
                 BaseTest.getDriver().switchTo().defaultContent();
                 BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");

@@ -31,4 +31,8 @@ public class Log {
     public static void debug (String message) {
         Log.debug(message);
     }
+
+    public static void error(String message, Throwable t) {
+        Log.error(message, t);
+    }
 }

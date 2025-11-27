@@ -287,7 +287,7 @@ public class ExcelHandler {
                 }
                 cell.setCellValue(cellValue);
 
-                saveExcelFile();  // Save the Excel file after modification
+//                saveExcelFile();  // Save the Excel file after modification
             }
         } catch (Exception e) {
             Log.error(ExceptionUtils.getStackTrace(e));
@@ -305,6 +305,18 @@ public class ExcelHandler {
     public static synchronized void saveExcelFile() {
         if (excelWBook != null) {
             try (FileOutputStream fileOut = new FileOutputStream(testDataExcelPath + File.separator + testDataExcelFileName)) {
+                excelWBook.write(fileOut);
+                fileOut.flush();
+            } catch (Exception e) {
+                Log.error(ExceptionUtils.getStackTrace(e));
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public static synchronized void saveExcelFileCommon(String FilePath) {
+        if (excelWBook != null) {
+            try (FileOutputStream fileOut = new FileOutputStream(FilePath)) {
                 excelWBook.write(fileOut);
                 fileOut.flush();
             } catch (Exception e) {
@@ -389,5 +401,69 @@ public class ExcelHandler {
         }
         return lastRowNum + 1; // If no empty cell is found, return the next row after the last row
     }
+
+    public static List<String> getAllRowData(Integer rowNum, Integer sheetIndex, String excelFilePath) {
+        List<String> allColData = new ArrayList<>();
+
+        try (FileInputStream file = new FileInputStream(excelFilePath)) {
+            Workbook workbook = new XSSFWorkbook(file);
+
+
+            Sheet sheet = workbook.getSheetAt(sheetIndex);
+            if (sheet == null) {
+                throw new IllegalArgumentException("Sheet with index " + sheetIndex + " does not exist.");
+            }
+
+
+            Row dataRow = sheet.getRow(rowNum);
+            if (dataRow == null) {
+                throw new IllegalArgumentException("Row " + rowNum + " does not exist in sheet " + sheetIndex);
+            }
+
+
+            for (int colIndex = 0; colIndex < dataRow.getLastCellNum(); colIndex++) {
+                Cell dataCell = dataRow.getCell(colIndex);
+                allColData.add(getCellValue(dataCell));
+            }
+        } catch (Exception e) {
+            Log.error(ExceptionUtils.getStackTrace(e));
+        }
+
+        return allColData;
+    }
+
+    // Helper method to fetch cell value as a string
+    private static String getCellValue(Cell cell) {
+        switch (cell.getCellType()) {
+            case STRING:
+                return cell.getStringCellValue();
+            case NUMERIC:
+                if (DateUtil.isCellDateFormatted(cell)) {
+                    return cell.getLocalDateTimeCellValue().toString(); // Or format as needed
+                }
+                return String.valueOf(cell.getNumericCellValue());
+            case BOOLEAN:
+                return String.valueOf(cell.getBooleanCellValue());
+            case FORMULA:
+                return cell.getCellFormula();
+            case BLANK:
+                return "";
+            default:
+                return "";
+        }
+    }
+
+
+
+
+
+    /// ///////////////////
+
+
+
+
+
+
+
 
 }

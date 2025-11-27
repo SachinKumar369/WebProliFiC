@@ -44,7 +44,7 @@ public class PQTest extends BaseTest {
      * @Modified_Date : 
      */
     @Test 
-    public void D2C(Method m) {
+    public void PQTest(Method m) {
         ExtentTestManager.startTest(this.getClass().getSimpleName() + " :: " + m.getName(), "WebProliFic Login");
         try {
             // Load URL based on environment

@@ -105,6 +105,8 @@ public class EditReq_Page {
     public static String getRequisitionNumber() {
         return RequisitionNumber;  // Get the global value
     }
+    @FindBy(id = "LinkProduct2")
+    private WebElement inventory;
     /**
      * Methods
      */
@@ -122,6 +124,7 @@ public class EditReq_Page {
             //Inventory Module Select
             BaseTest.getDriver().switchTo().defaultContent();
             BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
+            Utilities.Click(inventory);
             Utilities.WaitTillElementDisplayed(BaseTest.getDriver(), InventoryModule);
             Utilities.ActionClick(BaseTest.getDriver(), InventoryModule);
 
@@ -131,8 +134,9 @@ public class EditReq_Page {
 
             //Enter Requisition Number
             //Load Excel File
-            String path="D:\\Prologic\\src\\test\\resources\\TestData\\TestData.xlsx";
-            ExcelHandler.loadExcelFile(path, 3);
+            //String path="D:\\Prologic\\src\\test\\resources\\TestData\\TestData.xlsx";
+            String Updload_Path = System.getProperty("user.dir") + File.separator + "src" + File.separator + "test" + File.separator + "resources" + File.separator + "TestData" + File.separator + "TestData.xlsx";
+            ExcelHandler.loadExcelFile(Updload_Path, 3);
             BaseTest.getDriver().switchTo().defaultContent();
             BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
             String ReqNo=ExcelHandler.getCellData("1", "Req No");

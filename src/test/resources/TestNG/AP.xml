@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="WebProLific Suite" thread-count="1" parallel="classes">
+    <listeners>
+        <listener class-name="listeners.TestListener"/>
+        <listener class-name="listeners.AnnotationTransformer"/>
+        <listener class-name="listeners.RetryListener"/>
+    </listeners>
+
+    <parameter name="browser" value="chrome"/>
+    <parameter name="os" value="Windows"/>
+    <parameter name="mode" value="UI"/>
+
+    <parameter name="environment" value="new"/>
+    <parameter name="client" value="prologic"/>
+    <parameter name="plantype" value="All"/>
+    <parameter name="implicitwaitduration" value="3"/>
+    <parameter name="timeunit" value="seconds"/>
+    <parameter name="url" value="https://qc2web.prologicfirst.in/WISH/Common/frmLogin.aspx"/>
+
+
+    <test name="PJV Test" enabled="true">
+        <classes>
+            <class name="accountpayables.PJV.MakePJVTest"/>
+            <class name="accountpayables.PJV.TaxDeductionTest"/>
+            <class name="accountpayables.PJV.MultipleGLTest"/>
+            <class name="accountpayables.PJV.MultipleInvoiceTest"/>
+            <class name="accountpayables.PJV.PJVModificationTest"/>
+            <class name="accountpayables.PJV.PJVApproval"/>
+            <class name="accountpayables.PJV.PJVApprovalWithoutTax"/>
+            <class name="accountpayables.processReceiving.APAccount"/>
+            <class name="accountpayables.processReceiving.BlankSearchTest"/>
+            <class name="accountpayables.payadvance.WithCheque"/>
+            <class name="accountpayables.Inquiry.InvoiceInquiry"/>
+            <class name="accountpayables.Inquiry.ChequeInquiry"/>
+            <class name="accountpayables.Inquiry.APAccountInquiry"/>
+            <class name="accountpayables.creditdebitNote.PostDebitNotes"/>
+            <class name="accountpayables.creditdebitNote.PostCreditNotes"/>
+            <class name="accountpayables.TransactionReversal.ReversePJV"/>
+
+            
+
+            <class name="accountpayables.createApAccounts.CreateAPAccount"/>
+            <class name="accountpayables.PJV.TaxDeductionApprovalTest"/>
+            <class name="accountpayables.payadvance.WithDeduction"/>
+            <class name="accountpayables.payadvance.Freeze"/>
+            <class name="accountpayables.payadvance.WithPO"/>
+            <class name="accountpayables.processpayment.BankTransfer"/>
+            <class name="accountpayables.TransactionReversal.ReversePJV"/>
+            <class name="accountpayables.TransactionReversal.ReversePayament"/>
+            <class name="accountpayables.TransferTransactions.MakePJVTest"/>
+            <class name="accountpayables.TransactionReversal.ReverseCreditDebitNotes"/>
+            <class name="accountpayables.settlement.SettleDocumentTest"/>
+            <class name="accountpayables.settlement.SettlePJVCreditNotesTest"/>
+
+
+        </classes>
+    </test>
+    <test name="Demo" enabled="false">
+        <classes>
+            <class name="accountpayables.PJV.RCMPJV"/>
+
+        </classes>
+    </test>
+
+
+</suite>

@@ -2,12 +2,14 @@ package reqApproval;
 
 import baselibrary.BaseTest;
 import com.aventstack.extentreports.Status;
+import com.fasterxml.jackson.databind.ser.Serializers;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import datahandlers.ExcelHandler;
 import extentreports.ExtentTestManager;
+import org.openqa.selenium.support.ui.Wait;
 import pages.CommonPages.PortalLoginPage;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -141,6 +143,8 @@ public class ReqViewEditPage {
     private WebElement SelectApprove1;
     @FindBy(xpath = "//option[@value=\"AP\"]")
     private WebElement SelectAP;
+    @FindBy(id = "cphBody_btnDeleteRow_Top")
+    private WebElement DeleteRow;
     
     
     @FindBy(id="cphHeader_lnkHelp")
@@ -192,7 +196,7 @@ public class ReqViewEditPage {
         	   
             
             BaseTest.getDriver().switchTo().defaultContent();
-            BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
+            BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
             Utilities.Click(BaseTest.getDriver(), pers);
             
             
@@ -202,7 +206,7 @@ public class ReqViewEditPage {
             
             //
             BaseTest.getDriver().switchTo().defaultContent();
-            BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
+            BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
             Utilities.Click(BaseTest.getDriver()	, UserMail);
             BaseTest.getDriver().switchTo().defaultContent();
             
@@ -280,7 +284,20 @@ public class ReqViewEditPage {
                         .sendKeys("10")
                         .perform();
             }
-            
+
+            BaseTest.getDriver().switchTo().defaultContent();
+            BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
+            WebElement delete=BaseTest.getDriver().findElement(By.id("delete_21_1"));
+            Utilities.Click(BaseTest.getDriver(),delete);
+
+            BaseTest.getDriver().switchTo().defaultContent();
+            BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
+            Utilities.Click(BaseTest.getDriver(),DeleteRow);
+
+            WebDriverWait wait = new WebDriverWait(BaseTest.getDriver(), Duration.ofSeconds(2));
+            wait.until(ExpectedConditions.alertIsPresent()).accept();
+
+
             BaseTest.getDriver().switchTo().defaultContent();
             BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
             

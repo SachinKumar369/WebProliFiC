@@ -98,6 +98,10 @@ public class SQ_Page {
     private WebElement IndentDept;
     @FindBy(id="cphBody_txtunit_id")
     private WebElement SelectProperty;
+    @FindBy(id="cphBody_txtunit_id")
+    private WebElement Property;
+    @FindBy(id="cphBody_cbinter_store_transfer")
+    private WebElement InterState;
     
     
     
@@ -194,11 +198,76 @@ public class SQ_Page {
             Utilities.SendKeys(BaseTest.getDriver(), Filter, RequestionType);
             DynamicWait.smallWait();
             Utilities.Click(BaseTest.getDriver(), FirstColumn);
-            
-            //Select Property
+
+
+
+
+
+            //check whether indent department is disabled or not
+            // if(Description.get(6).contains("Purchase Requisition")){
             BaseTest.getDriver().switchTo().defaultContent();
             BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
-            Utilities.SendKeys(BaseTest.getDriver(), SelectProperty, "T0420");
+
+            WebElement inputField = BaseTest.getDriver().findElement(By.id("cphBody_txtIndentDept"));
+
+            // Verify the input field is disabled
+            boolean isDisabled = inputField.getAttribute("readonly") != null &&
+                    inputField.getAttribute("tabindex").equals("-1") &&
+                    inputField.getAttribute("class").contains("readonlytextbox");
+
+            if (!isDisabled) {
+                System.out.println("The Indent Department is Disable.");
+                ExtentTestManager.createAssertTestStepWithScreenshot("Indent Dept", Status.PASS, "Indent Department is Disable", true);
+            } else {
+                System.out.println("The Indent Department is Enable.");
+                ExtentTestManager.createAssertTestStepWithScreenshot("Indent Dept", Status.WARNING, "Indent Department is Enable", true);
+            }
+            //  }
+
+
+
+
+
+            //Check whether property is displayed or not
+
+
+            if(Property.isDisplayed()==true){
+                ExtentTestManager.createAssertTestStepWithScreenshot("Property", Status.PASS, "Property is displayed", true);
+            }else {
+                ExtentTestManager.createAssertTestStepWithScreenshot("Property", Status.WARNING, " Property Not Displayed", true);
+
+            }
+
+
+
+            // Verify the To Department field is disabled
+            BaseTest.getDriver().switchTo().defaultContent();
+            BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
+
+            WebElement inputField1 = BaseTest.getDriver().findElement(By.id("cphBody_txtToDeptStore"));
+
+            boolean isDisabled1 = inputField1.getAttribute("readonly") != null &&
+                    inputField1.getAttribute("tabindex").equals("-1") &&
+                    inputField1.getAttribute("class").contains("readonlytextbox");
+
+            if (isDisabled1==false) {
+                System.out.println("To Department is Fixed.");
+                ExtentTestManager.createAssertTestStepWithScreenshot("To Dept", Status.PASS, "To x Department is Fixed", true);
+            } else {
+                System.out.println("To Department is not Fixed.");
+                ExtentTestManager.createAssertTestStepWithScreenshot("To Dept", Status.WARNING, "To Department is Enabled", true);
+            }
+
+
+            //Select Property
+//            BaseTest.getDriver().switchTo().defaultContent();
+//            BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
+//            Utilities.SendKeys(BaseTest.getDriver(), SelectProperty, "T0420");
+
+            //Click on Inter State Transfer
+            BaseTest.getDriver().switchTo().defaultContent();
+            BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
+            Utilities.Click(BaseTest.getDriver(),InterState);
 
 
             //Select From Department/Store
@@ -225,7 +294,7 @@ public class SQ_Page {
             Utilities.Click(BaseTest.getDriver(), ToDepartment);
             BaseTest.getDriver().switchTo().defaultContent();
             BaseTest.getDriver().switchTo().frame("iframeGridDialog");
-            int randomIndex2 = random.nextInt(DepartmentList.size());
+            int randomIndex2 = random.nextInt(DepartmentList.size()-2);
             // Click on the random department
             Utilities.WaitTillElementDisplayed(BaseTest.getDriver(), Filter);
             ToDepartment1 = DepartmentList.get(randomIndex2).getText();
@@ -259,9 +328,9 @@ public class SQ_Page {
 
             Set<String> usedTexts = new HashSet<>();
             boolean isPage2Switched = false; // Track if switched to Page 2
-            int itemsFromPage1 = 15; // Define the number of items to pick from Page 1
+            int itemsFromPage1 = 5; // Define the number of items to pick from Page 1
 
-            for (int i = 0; i < 2; i++) {
+            for (int i = 0; i < 5; i++) {
                 if (i > 0) { // Add a new row after the first iteration
                     Utilities.Click(BaseTest.getDriver(), AddRow);
                 }
@@ -307,7 +376,7 @@ public class SQ_Page {
                 Utilities.Click(BaseTest.getDriver(), FirstColumn);
 
                 // Switch back to the main frame and enter quantity
-                double j=(i+1)*10.25;
+                double j=(i+1)*10;
                 String a=String.valueOf(j);
                 BaseTest.getDriver().switchTo().defaultContent();
                 BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");

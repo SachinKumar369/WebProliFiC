@@ -254,7 +254,7 @@ public class ReqCreate {
 
             Set<String> usedTexts = new HashSet<>();
 
-            for (int i = 0; i < 1; i++) {
+            for (int i = 0; i < 5; i++) {
                 if (i > 0) { // Execute only after i = 0
                     Utilities.Click(BaseTest.getDriver(), AddRow);
                 }
@@ -269,7 +269,8 @@ public class ReqCreate {
                     int randomIndex1 = random.nextInt(Item.size() - 2);
                     text = Item.get(randomIndex1).getText(); // Get a new text if duplicate
                 }
-
+                double j=(i+1)*10;
+                String a=String.valueOf(j);
                 usedTexts.add(text); // Add unique text to the set
                 Utilities.SendKeys(BaseTest.getDriver(), ItemFilter, text); // Use the unique text
                 DynamicWait.smallWait();
@@ -281,7 +282,7 @@ public class ReqCreate {
                 actions.keyDown(Keys.CONTROL)
                         .sendKeys("a")
                         .keyUp(Keys.CONTROL)
-                        .sendKeys("10")
+                        .sendKeys(a)
                         .perform();
             }
 
@@ -320,11 +321,11 @@ public class ReqCreate {
             }
             setRequisitionNumber(RequisitionNumber);
             System.out.println("Requisition Number: " + RequisitionNumber);
-            
-            
-            
-            
-            
+
+
+
+
+
 
             if (ProductConfirmation.isDisplayed()) {
                 // Load the Excel file

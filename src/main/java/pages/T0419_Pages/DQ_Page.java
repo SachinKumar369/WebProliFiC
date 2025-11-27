@@ -102,6 +102,8 @@ public class DQ_Page {
     private List<WebElement> ItemName;
     @FindBy(id="cphBody_imgIndentDept")
     private WebElement IndentDept;
+    @FindBy(id="cphBody_txtunit_id")
+    private WebElement Property;
     
 
     public WebElement getItemSearchElement(int itemId) {
@@ -186,6 +188,90 @@ public class DQ_Page {
             Utilities.SendKeys(BaseTest.getDriver(), Filter, RequestionType);
             DynamicWait.smallWait();
             Utilities.Click(BaseTest.getDriver(), FirstColumn);
+
+
+            //validations
+            //validation on the basic of requisition type
+
+            //check whether From department is enabled or not
+            if(Description.get(2).contains("Indent PR (DQ)")){
+                BaseTest.getDriver().switchTo().defaultContent();
+                BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
+                if(FromDepartment.isEnabled()==true){
+                    ExtentTestManager.createAssertTestStepWithScreenshot("From Dept", Status.PASS, "From Department is Enabled", true);
+                }else {
+                    ExtentTestManager.createAssertTestStepWithScreenshot("From Dept", Status.WARNING, "From Department is Disabled", true);
+
+                }
+            }
+
+
+            //check whether indent department is disabled or not
+            // if(Description.get(6).contains("Purchase Requisition")){
+            BaseTest.getDriver().switchTo().defaultContent();
+            BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
+
+            WebElement inputField = BaseTest.getDriver().findElement(By.id("cphBody_txtIndentDept"));
+
+            // Verify the input field is disabled
+            boolean isDisabled = inputField.getAttribute("readonly") != null &&
+                    inputField.getAttribute("tabindex").equals("-1") &&
+                    inputField.getAttribute("class").contains("readonlytextbox");
+
+            if (!isDisabled) {
+                System.out.println("The Indent Department is Enabled.");
+                ExtentTestManager.createAssertTestStepWithScreenshot("Indent Dept", Status.PASS, "Indent Department is Enabled", true);
+            } else {
+                System.out.println("The Indent Department is Disabled.");
+                ExtentTestManager.createAssertTestStepWithScreenshot("Indent Dept", Status.WARNING, "Indent Department is Disabled", true);
+            }
+            //  }
+
+
+//            try {
+//                // Wait for the element to be clickable (visible and enabled)
+//                WebDriverWait wait1 = new WebDriverWait(BaseTest.getDriver(), Duration.ofSeconds(2));
+//                WebElement clickableElement = wait1.until(ExpectedConditions.elementToBeClickable(FromDepartment));
+//                ExtentTestManager.createAssertTestStepWithScreenshot("From Department", Status.PASS, "From Department is Enabled ", true);
+//
+//                System.out.println("From Department is clickable");
+//            } catch (TimeoutException e) {
+//                System.out.println("From Department is NOT clickable");
+//                ExtentTestManager.createAssertTestStepWithScreenshot("From Department", Status.WARNING, "From Department is Disabled", true);
+//            }
+
+//
+
+
+            //Check whether property is displayed or not
+
+
+            if(Property.isDisplayed()==false){
+                ExtentTestManager.createAssertTestStepWithScreenshot("Property", Status.PASS, "Property not displayed", true);
+            }else {
+                ExtentTestManager.createAssertTestStepWithScreenshot("Property", Status.WARNING, " Department is Enabled", true);
+
+            }
+
+
+
+            // Verify the To Department field is disabled
+            BaseTest.getDriver().switchTo().defaultContent();
+            BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
+
+            WebElement inputField1 = BaseTest.getDriver().findElement(By.id("cphBody_txtToDeptStore"));
+
+            boolean isDisabled1 = inputField1.getAttribute("readonly") != null &&
+                    inputField1.getAttribute("tabindex").equals("-1") &&
+                    inputField1.getAttribute("class").contains("readonlytextbox");
+
+            if (isDisabled1) {
+                System.out.println("To Department is Fixed.");
+                ExtentTestManager.createAssertTestStepWithScreenshot("To Dept", Status.PASS, "To Department is Fixed", true);
+            } else {
+                System.out.println("To Department is not Fixed.");
+                ExtentTestManager.createAssertTestStepWithScreenshot("To Dept", Status.WARNING, "To Department is Enabled", true);
+            }
 
             //Select From Department/Store
             BaseTest.getDriver().switchTo().defaultContent();

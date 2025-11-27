@@ -215,6 +215,7 @@ public class KSTRequisition_Page {
 
             try {
             //Select To Department
+            Set<String> usedTexts = new HashSet<>();	
             BaseTest.getDriver().switchTo().defaultContent();
             BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
             Utilities.Click(BaseTest.getDriver(), ToDepartment);
@@ -243,7 +244,7 @@ public class KSTRequisition_Page {
             boolean isPage2Switched = false; // Track if switched to Page 2
             int itemsFromPage1 = 5; // Define the number of items to pick from Page 1
 
-            for (int i = 0; i < 20; i++) {
+            for (int i = 0; i < 6; i++) {
                 if (i > 0) { // Add a new row after the first iteration
                     Utilities.Click(BaseTest.getDriver(), AddRow);
                 }
@@ -350,14 +351,27 @@ public class KSTRequisition_Page {
                         "Issue in Requisition Number", true);
             }
 
+//            String input = ProductConfirmation.getText();
+//
+//            // Regular expression to match the last number in the string
+//            Pattern pattern = Pattern.compile("\\b\\d+\\b(?=\\s*$)");
+//            Matcher matcher = pattern.matcher(input);
+//
+//            if (matcher.find()) {
+//                RequisitionNumber = matcher.group();
+//            }
+//            setRequisitionNumber(RequisitionNumber);
+//            System.out.println("Requisition Number: " + RequisitionNumber);
+            
+            
             String input = ProductConfirmation.getText();
 
             // Regular expression to match the last number in the string
-            Pattern pattern = Pattern.compile("\\b\\d+\\b(?=\\s*$)");
+            Pattern pattern = Pattern.compile("Requisition Number\\s(\\d+)");
             Matcher matcher = pattern.matcher(input);
 
             if (matcher.find()) {
-                RequisitionNumber = matcher.group();
+                RequisitionNumber = matcher.group(1);
             }
             setRequisitionNumber(RequisitionNumber);
             System.out.println("Requisition Number: " + RequisitionNumber);

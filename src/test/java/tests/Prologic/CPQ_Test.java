@@ -5,6 +5,7 @@ package tests.Prologic;
 
 
 import com.aventstack.extentreports.Status;
+import loginTest.Login_Test;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.CommonPages.LaunchSite;
@@ -18,12 +19,14 @@ import datahandlers.ExcelHandler;
 import extentreports.ExtentTestManager;
 
 import java.lang.reflect.Method;
+import java.util.Map;
 
 public class CPQ_Test extends BaseTest {
     private final ThreadLocal<LaunchSite> launchSite = new ThreadLocal<>();
     
     private final ThreadLocal<PortalLoginPage> loginPage = new ThreadLocal<>();
     private final ThreadLocal<SwitchProperty> switchproperty= new ThreadLocal<>();
+    private final ThreadLocal<Login_Test> login = new ThreadLocal<>();
     private final ThreadLocal<CPQ_Page> addProduct = new ThreadLocal<>();
 
 
@@ -34,6 +37,7 @@ public class CPQ_Test extends BaseTest {
         loginPage.set(new PortalLoginPage(getDriver()));
         switchproperty.set(new SwitchProperty(getDriver()));
         addProduct.set(new CPQ_Page(getDriver()));
+        login.set(new Login_Test(getDriver()));
     }
 
     /**
@@ -42,48 +46,16 @@ public class CPQ_Test extends BaseTest {
      * @Modified_Date : 
      */
     @Test 
-    public void D2C(Method m) {
+    public void CPQTEST(Method m) {
         ExtentTestManager.startTest(this.getClass().getSimpleName() + " :: " + m.getName(), "WebProliFic Login");
         try {
-            // Load URL based on environment
-            String url = ConfigProperties.getURL(environment, "admin");
-
-            String ChainID = null;
-            String PropertyID = null;
-            String Username = null;
-            String Password = null;
-            String[] credentials = null;
-
-            // Get environment variable or set default to "prod"
-            String environment = System.getProperty("env", "prod");
-
-            // Validate environment and retrieve credentials
-            switch (environment.toLowerCase()) {
-                case "dev":
-                case "test":
-                case "prod":
-                    credentials = ExcelHandler.getCredentialsForEnvironment(environment);
-                    if (credentials != null && credentials.length >= 3) {
-                        ChainID = credentials[0];
-                        PropertyID = credentials[1];
-                        Username = credentials[2];
-                        Password = credentials.length > 3 ? credentials[3] : "";  // Optional Password field
-                    } else {
-                        throw new IllegalArgumentException("Credentials not found for the environment: " + environment);
-                    }
-                    break;
-                default:
-                    throw new IllegalArgumentException("Unknown environment: " + environment);
-            }
-
-            // Now you have ChainID, PropertyID, Username, and Password for the specified environment
-
 
             // Test steps
-            launchSite.get().LaunchPortal(url);
-            loginPage.get().LogInToPortal(ChainID, PropertyID, Username);
+            Map<String,String> name =login.get().LoginCheck(m);
+//            launchSite.get().LaunchPortal(url);
+//            loginPage.get().LogInToPortal(ChainID, PropertyID, Username);
             switchproperty.get().SwitchProperty();
-            addProduct.get().AddProduct(Username);
+            addProduct.get().AddProduct(name.get("user"));
         } catch (Exception e) {
             ExtentTestManager.createAssertTestStepWithScreenshot("Login", Status.FAIL, "Exception found in Login", false, e);
         }

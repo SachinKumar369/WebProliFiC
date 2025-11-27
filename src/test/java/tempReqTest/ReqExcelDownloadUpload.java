@@ -63,13 +63,14 @@ public class ReqExcelDownloadUpload extends BaseTest {
             String[] credentials = null;
 
             // Get environment variable or set default to "prod"
-            String environment = System.getProperty("env", "prod");
+            String environment = System.getProperty("env", "approve");
 
             // Validate environment and retrieve credentials
             switch (environment.toLowerCase()) {
                 case "dev":
                 case "test":
                 case "prod":
+                case "approve":
                     credentials = ExcelHandler.getCredentialsForEnvironment(environment);
                     if (credentials != null && credentials.length >= 3) {
                         ChainID = credentials[0];

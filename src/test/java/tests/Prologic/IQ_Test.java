@@ -5,6 +5,7 @@ package tests.Prologic;
 
 
 import com.aventstack.extentreports.Status;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.CommonPages.LaunchSite;
@@ -92,11 +93,11 @@ public class IQ_Test extends BaseTest {
         }
     }
 
-//    @AfterMethod(alwaysRun = true)
-//    public void closeDriver() {
-//        launchSite.remove();
-//      
-//        closeBrowser();
-//    }
+    @AfterMethod(alwaysRun = true)
+    public void closeDriver() {
+        launchSite.remove();
+
+        closeBrowser();
+    }
 }
 

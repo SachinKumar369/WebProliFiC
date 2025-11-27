@@ -2,6 +2,7 @@ package reqApproval;
 
 import baselibrary.BaseTest;
 import com.aventstack.extentreports.Status;
+import com.fasterxml.jackson.databind.ser.Serializers;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -133,7 +134,7 @@ public class ReqApprovePage {
     private WebElement ProcessBtn;
     @FindBy(id="btnOK")
     private WebElement OKBtn;
-    @FindBy(id="cphDialogHeader_btnClose_Dlg") 
+    @FindBy(id="cphDialogHeader_btnClose_Dlg")
     private WebElement CloseBtn;
     @FindBy(id="cphBrowserHeader_btnClose_Brw")
     private WebElement CloseBtn1;
@@ -183,11 +184,15 @@ public class ReqApprovePage {
             
         	 String Updload_Path = System.getProperty("user.dir") + File.separator + "src" + File.separator + "test" + File.separator + "resources" + File.separator + "TestData" + File.separator + "TestData.xlsx";
         	   
-            
-            BaseTest.getDriver().switchTo().defaultContent();
-            BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
-            Utilities.Click(BaseTest.getDriver(), pers);
-            
+            try {
+                BaseTest.getDriver().switchTo().defaultContent();
+                BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
+                Utilities.Click(BaseTest.getDriver(), pers);
+            }catch (Exception e){
+                BaseTest.getDriver().switchTo().defaultContent();
+                BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
+                Utilities.Click(BaseTest.getDriver(), pers);
+            }
             
             
             String currentHandles1=BaseTest.getDriver().getWindowHandle();
@@ -195,7 +200,8 @@ public class ReqApprovePage {
             
             //
             BaseTest.getDriver().switchTo().defaultContent();
-            BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
+            //BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
+            BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
             Utilities.Click(BaseTest.getDriver()	, UserMail);
             BaseTest.getDriver().switchTo().defaultContent();
             
@@ -218,7 +224,10 @@ public class ReqApprovePage {
             //Enter into third window
             BaseTest.getDriver().switchTo().defaultContent();
             BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");  
-            Utilities.WaitTillElementDisplayed(BaseTest.getDriver(), Mail);
+
+           WebDriverWait wait = new WebDriverWait(BaseTest.getDriver(),Duration.ofSeconds(10));
+           wait.until(ExpectedConditions.elementToBeClickable(By.id("td_0_1")));
+           // Utilities.WaitTillElementDisplayed(BaseTest.getDriver(), Mail);
             
            // Utilities.Click(BaseTest.getDriver(), help);
             //Utilities.ActionClick(BaseTest.getDriver(), AddButton);
@@ -253,29 +262,33 @@ public class ReqApprovePage {
             
             //Switch to previous window i.e. Second window
             BaseTest.getDriver().switchTo().window(currentHandles1);
+
+
+            /*
+            checking
+             */
+//            {
+//                //Click on Close Button
+//                BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
+//                Utilities.Click(BaseTest.getDriver(), CloseBtn);
+//
+//
+//                //Click on Close Button again
+//                BaseTest.getDriver().switchTo().defaultContent();
+//                BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
+//                Utilities.Click(BaseTest.getDriver(), CloseBtn1);
+//            }
             
             
-            //Click on Close Button
-            BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
-            Utilities.Click(BaseTest.getDriver(), CloseBtn);
             
-            
-            //Click on Close Button again
+
+            // Switch to the main content and then to the required frame
             BaseTest.getDriver().switchTo().defaultContent();
             BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
-            Utilities.Click(BaseTest.getDriver(), CloseBtn1);
-            
-            
-            
-            
-            //
-            // Switch to the main content and then to the required frame
-//            BaseTest.getDriver().switchTo().defaultContent();
-//            BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
-//
-//            // Wait for Inventory element and click it
-//            Utilities.WaitTillElementDisplayed(BaseTest.getDriver(), Inventory);
-//            Utilities.Click(BaseTest.getDriver(), Inventory);
+
+            // Wait for Inventory element and click it
+            Utilities.WaitTillElementDisplayed(BaseTest.getDriver(), Inventory);
+            Utilities.Click(BaseTest.getDriver(), Inventory);
 
 
             //Inventory Module Select
@@ -301,7 +314,7 @@ public class ReqApprovePage {
             List<String> Resources1 = ExcelHandler.getAllColumnData("Requisition Number");
            
             //for(int i=0;i<Resources1.size();i++) {
-            String resource1 = Resources1.getLast();
+            String resource1 = Resources1.get(Resources1.size() - 1);
             
             				
             
@@ -314,26 +327,57 @@ public class ReqApprovePage {
             Utilities.Click(BaseTest.getDriver(), ViewEdit);
             DynamicWait.smallWait();
             BaseTest.getDriver().switchTo().defaultContent();
-            
-            
-            
-            //check whether requisition has been approved or not
+            BaseTest.getDriver().switchTo().frame("iframeGridDialog");
+            Utilities.Click(BaseTest.getDriver(),OKBtn);
+
+
+            //validate whether requisition has been approved
             BaseTest.getDriver().switchTo().defaultContent();
             BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
-            
-            
-            String Text=Approval.getAttribute("value");
-            String Text1="Approve";
-            if(Approval.getText()==Text1) {
-            	System.out.println("Requisition has been approved" +Text);
-            	 ExtentTestManager.createAssertTestStepWithScreenshot("Verify the Requisition has been Approved", Status.PASS,
-                         "Navigation on Product Page working fine", true);
+            WebElement reason=BaseTest.getDriver().findElement(By.id("cphBody_txtReason"));
+            boolean isDisable=reason.getAttribute("tabindex").equals("-1");
+
+            if (isDisable==true) {
+
+                ExtentTestManager.createAssertTestStepWithScreenshot("Reason", Status.PASS, "Reason is disabled hence requisition has been in approved state", true);
             } else {
-				System.out.println("Requisition is in "+Text+ "State");
-				 ExtentTestManager.createAssertTestStepWithScreenshot("Verify the navigation on tapping login", Status.FAIL,
-	                        "Navigation on Product Page working fine", true);
-			}
-            
+
+                ExtentTestManager.createAssertTestStepWithScreenshot("Reason", Status.WARNING, "Requisition is not in Approved State", true);
+            }
+
+
+
+
+            //validate whether requisition has been approved or not
+           // if(Description.get(3).contains("Issue Requisition")){
+               // BaseTest.getDriver().switchTo().defaultContent();
+               // BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
+            //    if(IndentDept.isEnabled()){
+                 //   ExtentTestManager.createAssertTestStepWithScreenshot("Indent Dept", Status.PASS, "Indent Department is Disabled", true);
+             //   }else {
+                   // ExtentTestManager.createAssertTestStepWithScreenshot("Indent Dept", Status.WARNING, "Indent Department is Enabled", true);
+
+              //  }
+           // }
+
+
+//            //check whether requisition has been approved or not
+//            BaseTest.getDriver().switchTo().defaultContent();
+//            BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
+//
+//
+//            String Text=Approval.getAttribute("value");
+//            String Text1="Approve";
+//            if(Approval.getText()==Text1) {
+//            	System.out.println("Requisition has been approved" +Text);
+//            	 ExtentTestManager.createAssertTestStepWithScreenshot("Verify the Requisition has been Approved", Status.PASS,
+//                         "Navigation on Product Page working fine", true);
+//            } else {
+//				System.out.println("Requisition is in "+Text+ "State");
+//				 ExtentTestManager.createAssertTestStepWithScreenshot("Verify the navigation on tapping login", Status.FAIL,
+//	                        "Navigation on Product Page working fine", true);
+//			}
+
             //Assert.assertEquals("Approve", Text);
 
            

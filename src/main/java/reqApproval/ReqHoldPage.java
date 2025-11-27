@@ -193,7 +193,8 @@ public class ReqHoldPage {
         	   
             
             BaseTest.getDriver().switchTo().defaultContent();
-            BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
+            //BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
+            BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
             Utilities.Click(BaseTest.getDriver(), pers);
             
             
@@ -203,7 +204,8 @@ public class ReqHoldPage {
             
             //
             BaseTest.getDriver().switchTo().defaultContent();
-            BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
+            //BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
+            BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
             Utilities.Click(BaseTest.getDriver()	, UserMail);
             BaseTest.getDriver().switchTo().defaultContent();
             
@@ -288,27 +290,27 @@ public class ReqHoldPage {
             BaseTest.getDriver().switchTo().window(currentHandles1);
             
             
-            //Click on Close Button
-            BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
-            Utilities.Click(BaseTest.getDriver(), CloseBtn);
-            
-            
-            //Click on Close Button again
-            BaseTest.getDriver().switchTo().defaultContent();
-            BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
-            Utilities.Click(BaseTest.getDriver(), CloseBtn1);
+//            //Click on Close Button
+//            BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
+//            Utilities.Click(BaseTest.getDriver(), CloseBtn);
+//
+//
+//            //Click on Close Button again
+//            BaseTest.getDriver().switchTo().defaultContent();
+//            BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
+//            Utilities.Click(BaseTest.getDriver(), CloseBtn1);
             
             
             
             
             //
             // Switch to the main content and then to the required frame
-//            BaseTest.getDriver().switchTo().defaultContent();
-//            BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
-//
-//            // Wait for Inventory element and click it
-//            Utilities.WaitTillElementDisplayed(BaseTest.getDriver(), Inventory);
-//            Utilities.Click(BaseTest.getDriver(), Inventory);
+            BaseTest.getDriver().switchTo().defaultContent();
+            BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
+
+            // Wait for Inventory element and click it
+            Utilities.WaitTillElementDisplayed(BaseTest.getDriver(), Inventory);
+            Utilities.Click(BaseTest.getDriver(), Inventory);
 
 
             //Inventory Module Select
@@ -334,7 +336,7 @@ public class ReqHoldPage {
             List<String> Resources1 = ExcelHandler.getAllColumnData("Requisition Number");
            
             //for(int i=0;i<Resources1.size();i++) {
-            String resource1 = Resources1.getLast();
+            String resource1 =Resources1.get(Resources1.size() - 1);
             
             				
             
@@ -347,14 +349,24 @@ public class ReqHoldPage {
             Utilities.Click(BaseTest.getDriver(), ViewEdit);
             DynamicWait.smallWait();
             BaseTest.getDriver().switchTo().defaultContent();
-            
-            
-            
-            //check whether requisition has been approved or not
+            BaseTest.getDriver().switchTo().frame("iframeGridDialog");
+            Utilities.Click(BaseTest.getDriver(),OKBtn);
+
+
+
+
+            //check whether requisition has been Hold or not
             BaseTest.getDriver().switchTo().defaultContent();
             BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
-            
-            
+            WebElement status=BaseTest.getDriver().findElement(By.id("cphBody_txtLastStatus"));
+
+            String statusText=status.getAttribute("value");
+            if (statusText.contains("On Hold")){
+                ExtentTestManager.createAssertTestStepWithScreenshot("On Hold", Status.PASS, "Req in On Hold State", true);
+            }
+            else {
+                ExtentTestManager.createAssertTestStepWithScreenshot("On Hold", Status.WARNING, "Req Not in On Hold State", true);
+            }
             
             //approve the requisition
             
