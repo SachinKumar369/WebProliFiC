@@ -1205,13 +1205,22 @@ public class ARPage extends Utilities {
     private WebElement downloadExcel;
     @FindBy(id = "FileDlg")
     private WebElement choseFile;
+    String uploadFile = System.getProperty("user.dir")
+            + "/src/test/resources/UploadData/AR16 InvoicePosting.xml";
+    @FindBy(id = "btnUpLoadData")
+    private WebElement uploadData;
+
     public void xlUpload() {
         try {
             BaseTest.getDriver().switchTo().defaultContent();
             BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
             Click(downloadExcel);
             BaseTest.getDriver().switchTo().frame("ifrFileDialog");
-            SendKeys(choseFile,"aaa");
+            SendKeys(choseFile,uploadFile);
+            BaseTest.getDriver().switchTo().defaultContent();
+            BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
+            BaseTest.getDriver().switchTo().frame("ifrFileDialog");
+            Click(uploadData);
 
         } catch (Exception e) {
             throw new RuntimeException(e);
