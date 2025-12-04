@@ -11,8 +11,8 @@
     <parameter name="os" value="Windows"/>
     <parameter name="mode" value="UI"/>
 
-    <parameter name="environment" value="new"/>
-    <parameter name="client" value="prologic"/>
+    <parameter name="environment" value="test"/>
+    <parameter name="client" value="test_prologic"/>
     <parameter name="plantype" value="All"/>
     <parameter name="implicitwaitduration" value="3"/>
     <parameter name="timeunit" value="seconds"/>
@@ -21,7 +21,7 @@
 
     <test name="AR Test" enabled="true">
         <classes>
-            <class name="AccountsReceivables.TransactionEntry.DocInquiry"/>
+            <class name="AccountsReceivables.TransactionEntry.InvoicePostingWithXL"/>
         </classes>
     </test>
 

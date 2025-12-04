@@ -408,14 +408,7 @@ public class ARPage extends Utilities {
         }
     }
 
-    public void xlUpload() {
-        try {
-            BaseTest.getDriver().switchTo().defaultContent();
-            BaseTest.getDriver().switchTo().frame("");
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-    }
+
 
     public void transectionType() {
         try {
@@ -1167,6 +1160,7 @@ public class ARPage extends Utilities {
 
             }
 
+
 //            BaseTest.getDriver().switchTo().defaultContent();
 //            BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
 //            SendKeys(recAccCode, "360one");
@@ -1184,6 +1178,46 @@ public class ARPage extends Utilities {
 
     @FindBy(xpath = "//a[@title='AR62 AR Accounts Inquiry']")
     private WebElement arAccountInquiry;
+    @FindBy(xpath = "//a[@title='AR09 Statement of Account']")
+    private WebElement soa;
+    @FindBy(id = "cphBody_chkOnlyBills")
+    private WebElement generatePrintChkBox;
+
+    public void generateInvoice(){
+        try {
+            BaseTest.getDriver().switchTo().defaultContent();
+            BaseTest.getDriver().switchTo().frame("iframeGridDialog");
+            Click(okButton);
+            BaseTest.getDriver().switchTo().defaultContent();
+            BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
+            Click(accountsReceivablesLink);
+            Click(soa);
+            SendKeys(arAcc,arAccount);
+            Click(generatePrintChkBox);
+            Click(searchBtn);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+
+    @FindBy(id = "cphBody_lblClickHereForUploadDownloadExcelData1")
+    private WebElement downloadExcel;
+    @FindBy(id = "FileDlg")
+    private WebElement choseFile;
+    public void xlUpload() {
+        try {
+            BaseTest.getDriver().switchTo().defaultContent();
+            BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
+            Click(downloadExcel);
+            BaseTest.getDriver().switchTo().frame("ifrFileDialog");
+            SendKeys(choseFile,"aaa");
+
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
 
 
 }

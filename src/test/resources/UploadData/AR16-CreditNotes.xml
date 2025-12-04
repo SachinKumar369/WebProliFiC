@@ -1,0 +1,2497 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Developer3</Author>
+  <LastAuthor>Rajdeep Barui</LastAuthor>
+  <Created>2013-05-27T10:27:13Z</Created>
+  <LastSaved>2023-05-31T12:42:43Z</LastSaved>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>6675</WindowHeight>
+  <WindowWidth>20460</WindowWidth>
+  <WindowTopX>32767</WindowTopX>
+  <WindowTopY>32767</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#000000"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s63">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#000000"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s64">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#000000"/>
+   <NumberFormat ss:Format="[$-809]dd\ mmm\ yyyy;@"/>
+  </Style>
+  <Style ss:ID="s65">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#000000"/>
+   <NumberFormat ss:Format="Fixed"/>
+  </Style>
+  <Style ss:ID="s66">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#000000"/>
+   <NumberFormat ss:Format="0.000"/>
+  </Style>
+  <Style ss:ID="s67">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#000000"/>
+   <NumberFormat ss:Format="[$-809]dd\ mmm\ yyyy;@"/>
+  </Style>
+  <Style ss:ID="s68">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#000000"/>
+   <NumberFormat ss:Format="Fixed"/>
+  </Style>
+  <Style ss:ID="s69">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#000000"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s70">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#000000"/>
+   <NumberFormat ss:Format="[$-809]dd\ mmm\ yyyy;@"/>
+  </Style>
+  <Style ss:ID="s71">
+   <Borders>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#000000"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s72">
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#000000"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s74">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="9" ss:Color="#000000"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s76">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="9" ss:Color="#000000"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s77">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="9" ss:Color="#000000"
+    ss:Bold="1"/>
+   <Interior ss:Color="#BFBFBF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s78">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="9" ss:Color="#000000"
+    ss:Bold="1"/>
+   <Interior ss:Color="#BFBFBF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="[$-809]dd\ mmm\ yyyy;@"/>
+  </Style>
+  <Style ss:ID="s79">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="9" ss:Color="#808080"
+    ss:Bold="1"/>
+   <Interior ss:Color="#BFBFBF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s80">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="9" ss:Bold="1"/>
+   <Interior ss:Color="#BFBFBF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s81">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="9" ss:Color="#000000"
+    ss:Bold="1"/>
+   <Interior ss:Color="#BFBFBF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Fixed"/>
+  </Style>
+  <Style ss:ID="s82">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="9" ss:Color="#000000"
+    ss:Bold="1"/>
+   <Interior ss:Color="#F8CBAD" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s83">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="9" ss:Color="#000000"
+    ss:Bold="1"/>
+   <Interior ss:Color="#F8CBAD" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="[$-809]dd\ mmm\ yyyy;@"/>
+  </Style>
+  <Style ss:ID="s84">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="9" ss:Color="#000000"
+    ss:Bold="1"/>
+   <Interior ss:Color="#E2EFDA" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="[$-809]dd\ mmm\ yyyy;@"/>
+  </Style>
+  <Style ss:ID="s85">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="9" ss:Color="#808080"
+    ss:Bold="1"/>
+   <Interior ss:Color="#E2EFDA" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="[$-809]dd\ mmm\ yyyy;@"/>
+  </Style>
+  <Style ss:ID="s86">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="9" ss:Color="#000000"
+    ss:Bold="1"/>
+   <Interior ss:Color="#FCE4D6" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s87">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="9" ss:Color="#000000"
+    ss:Bold="1"/>
+   <Interior ss:Color="#D8D8D8" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s88">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="9" ss:Color="#808080"
+    ss:Bold="1"/>
+   <Interior ss:Color="#D8D8D8" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s89">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="9" ss:Color="#000000"
+    ss:Bold="1"/>
+   <Interior ss:Color="#D8D8D8" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Fixed"/>
+  </Style>
+  <Style ss:ID="s90">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="9" ss:Color="#000000"
+    ss:Bold="1"/>
+   <Interior ss:Color="#ACB9CA" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s91">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="9" ss:Color="#808080"
+    ss:Bold="1"/>
+   <Interior ss:Color="#ACB9CA" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s92">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="9" ss:Color="#000000"
+    ss:Bold="1"/>
+   <Interior ss:Color="#ACB9CA" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Fixed"/>
+  </Style>
+  <Style ss:ID="s93">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="9" ss:Color="#808080"
+    ss:Bold="1"/>
+   <Interior ss:Color="#9BC2E6" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Fixed"/>
+  </Style>
+  <Style ss:ID="s94">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="9" ss:Color="#808080"
+    ss:Bold="1"/>
+   <Interior ss:Color="#9BC2E6" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="[$-809]dd\ mmm\ yyyy;@"/>
+  </Style>
+  <Style ss:ID="s95">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="9" ss:Color="#0066CC"
+    ss:Bold="1"/>
+   <Interior ss:Color="#9BC2E6" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Fixed"/>
+  </Style>
+  <Style ss:ID="s96">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="9" ss:Color="#0066CC"
+    ss:Bold="1"/>
+   <Interior ss:Color="#9BC2E6" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="[$-809]dd\ mmm\ yyyy;@"/>
+  </Style>
+  <Style ss:ID="s97">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="9" ss:Color="#000000"
+    ss:Bold="1"/>
+   <Interior ss:Color="#A9D08E" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Fixed"/>
+  </Style>
+  <Style ss:ID="s98">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="9" ss:Color="#808080"
+    ss:Bold="1"/>
+   <Interior ss:Color="#A9D08E" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Fixed"/>
+  </Style>
+  <Style ss:ID="s99">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="9" ss:Color="#000000"
+    ss:Bold="1"/>
+   <Interior ss:Color="#A9D08E" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Fixed"/>
+  </Style>
+  <Style ss:ID="s100">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#000000"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s101">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#000000"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s102">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#000000"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s105">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#000000"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s106">
+   <Borders>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#000000"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s107">
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#000000"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s108">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#000000"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="[$-809]dd\ mmm\ yyyy;@"/>
+  </Style>
+  <Style ss:ID="s109">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#000000"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="Fixed"/>
+  </Style>
+  <Style ss:ID="s110">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#FF6600"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s111">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#FF6600"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="[$-809]dd\ mmm\ yyyy;@"/>
+  </Style>
+  <Style ss:ID="s112">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#000000"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="0.000"/>
+  </Style>
+  <Style ss:ID="s113">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#003366"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s114">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#003366"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s115">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#003366"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="Fixed"/>
+  </Style>
+  <Style ss:ID="s116">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#003366"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="Fixed"/>
+  </Style>
+  <Style ss:ID="s117">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#993300"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s118">
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#993300"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s119">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#993300"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s120">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#993300"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="Fixed"/>
+  </Style>
+  <Style ss:ID="s121">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#993300"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s122">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#FF6600"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="[$-809]dd\ mmm\ yyyy;@"/>
+  </Style>
+  <Style ss:ID="s123">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#993300"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s124">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#993300"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="Fixed"/>
+  </Style>
+  <Style ss:ID="s125">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#000000"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="[$-809]dd\ mmm\ yyyy;@"/>
+  </Style>
+  <Style ss:ID="s126">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#000000"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s127">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#000000"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s128">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#000000"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="[$-809]dd\ mmm\ yyyy;@"/>
+  </Style>
+  <Style ss:ID="s129">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#000000"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="Fixed"/>
+  </Style>
+  <Style ss:ID="s130">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#FF6600"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s131">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#FF6600"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="[$-809]dd\ mmm\ yyyy;@"/>
+  </Style>
+  <Style ss:ID="s132">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#000000"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="0.000"/>
+  </Style>
+  <Style ss:ID="s133">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#FF6600"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="[$-809]dd\ mmm\ yyyy;@"/>
+  </Style>
+  <Style ss:ID="s134">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#003366"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s135">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#003366"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="Fixed"/>
+  </Style>
+  <Style ss:ID="s136">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#003366"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="Fixed"/>
+  </Style>
+  <Style ss:ID="s137">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#993300"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s138">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#993300"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s139">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#993300"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s140">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#993300"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="Fixed"/>
+  </Style>
+  <Style ss:ID="s144">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#000000"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s145">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#FF6600"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s146">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#FF6600"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="[$-809]dd\ mmm\ yyyy;@"/>
+  </Style>
+  <Style ss:ID="s147">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#FF6600"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="[$-809]dd\ mmm\ yyyy;@"/>
+  </Style>
+  <Style ss:ID="s148">
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#000000"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="[$-809]dd\ mmm\ yyyy;@"/>
+  </Style>
+  <Style ss:ID="s152">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#000000"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="[$-809]dd\ mmm\ yyyy;@"/>
+  </Style>
+  <Style ss:ID="s153">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#000000"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="Fixed"/>
+  </Style>
+  <Style ss:ID="s154">
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#FF6600"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s155">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#FF6600"/>
+   <NumberFormat ss:Format="[$-809]dd\ mmm\ yyyy;@"/>
+  </Style>
+  <Style ss:ID="s156">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#000000"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="0.000"/>
+  </Style>
+  <Style ss:ID="s157">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#FF6600"/>
+   <NumberFormat ss:Format="[$-809]dd\ mmm\ yyyy;@"/>
+  </Style>
+  <Style ss:ID="s158">
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#003366"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s159">
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#003366"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s160">
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#003366"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="Fixed"/>
+  </Style>
+  <Style ss:ID="s161">
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#000000"/>
+   <NumberFormat ss:Format="[$-809]dd\ mmm\ yyyy;@"/>
+  </Style>
+  <Style ss:ID="s162">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#000000"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s163">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#000000"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s164">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#000000"/>
+   <NumberFormat ss:Format="[$-809]dd\ mmm\ yyyy;@"/>
+  </Style>
+  <Style ss:ID="s165">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#000000"/>
+   <NumberFormat ss:Format="Fixed"/>
+  </Style>
+  <Style ss:ID="s166">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#FF6600"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s167">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#FF6600"/>
+   <NumberFormat ss:Format="[$-809]dd\ mmm\ yyyy;@"/>
+  </Style>
+  <Style ss:ID="s168">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#000000"/>
+   <NumberFormat ss:Format="0.000"/>
+  </Style>
+  <Style ss:ID="s169">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#FF6600"/>
+   <NumberFormat ss:Format="[$-809]dd\ mmm\ yyyy;@"/>
+  </Style>
+  <Style ss:ID="s170">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#003366"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s171">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#003366"/>
+   <NumberFormat ss:Format="Fixed"/>
+  </Style>
+  <Style ss:ID="s172">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#003366"/>
+   <NumberFormat ss:Format="Fixed"/>
+  </Style>
+  <Style ss:ID="s173">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#0066CC"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s174">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#0066CC"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s175">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#0066CC"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="[$-809]dd\ mmm\ yyyy;@"/>
+  </Style>
+  <Style ss:ID="s176">
+   <Borders>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#0066CC"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s177">
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="8" ss:Color="#0066CC"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s178">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Bold="1"/>
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s179">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Bold="1"/>
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s180">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s181">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s182">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s183">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Italic="1"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s184">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#C0C0C0"/>
+  </Style>
+  <Style ss:ID="s185">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#C0C0C0"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s186">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#FF6600"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s187">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#969696"/>
+  </Style>
+  <Style ss:ID="s188">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#003366"/>
+  </Style>
+  <Style ss:ID="s189">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#969696"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s190">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#003366"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s191">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#969696"
+    ss:Italic="1"/>
+  </Style>
+  <Style ss:ID="s192">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#333333"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s193">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#808080"/>
+  </Style>
+  <Style ss:ID="s194">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#808080"
+    ss:Italic="1"/>
+  </Style>
+  <Style ss:ID="s195">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#808080"/>
+  </Style>
+  <Style ss:ID="s196">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#333333"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s197">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#808080"/>
+  </Style>
+  <Style ss:ID="s198">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#808080"
+    ss:Italic="1"/>
+  </Style>
+  <Style ss:ID="s199">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#808080"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s200">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#0066CC"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s201">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#808080"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s202">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#333333"/>
+   <Interior/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Data">
+  <Table ss:ExpandedColumnCount="16384" ss:ExpandedRowCount="17" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s62" ss:DefaultColumnWidth="570.75"
+   ss:DefaultRowHeight="15">
+   <Column ss:StyleID="s63" ss:AutoFitWidth="0" ss:Width="26.25"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="30"/>
+   <Column ss:StyleID="s64" ss:AutoFitWidth="0" ss:Width="48"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="40.5"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="33"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="42.75"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="26.25"/>
+   <Column ss:StyleID="s65" ss:AutoFitWidth="0" ss:Width="46.5"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="66"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="45"/>
+   <Column ss:StyleID="s64" ss:AutoFitWidth="0" ss:Width="51.75"/>
+   <Column ss:StyleID="s64" ss:AutoFitWidth="0" ss:Width="37.5"/>
+   <Column ss:StyleID="s63" ss:AutoFitWidth="0" ss:Width="30.75"/>
+   <Column ss:StyleID="s62" ss:Width="35.25"/>
+   <Column ss:StyleID="s64" ss:AutoFitWidth="0" ss:Width="48"/>
+   <Column ss:StyleID="s64" ss:AutoFitWidth="0" ss:Width="45"/>
+   <Column ss:StyleID="s66" ss:AutoFitWidth="0" ss:Width="36.75"/>
+   <Column ss:StyleID="s65" ss:Width="33"/>
+   <Column ss:StyleID="s65" ss:Width="37.5"/>
+   <Column ss:StyleID="s67" ss:AutoFitWidth="0" ss:Width="44.25"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="39.75"/>
+   <Column ss:StyleID="s62" ss:Width="26.25"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="36"/>
+   <Column ss:StyleID="s68" ss:AutoFitWidth="0" ss:Width="35.25"/>
+   <Column ss:StyleID="s65" ss:AutoFitWidth="0" ss:Width="39"/>
+   <Column ss:StyleID="s69" ss:AutoFitWidth="0" ss:Width="43.5"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="38.25"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="29.25"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="32.25"/>
+   <Column ss:StyleID="s65" ss:AutoFitWidth="0" ss:Width="38.25"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="22.5"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="54.75"/>
+   <Column ss:StyleID="s69" ss:AutoFitWidth="0" ss:Width="48"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="48" ss:Span="2"/>
+   <Column ss:Index="37" ss:StyleID="s70" ss:AutoFitWidth="0" ss:Width="48"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="79.5"/>
+   <Column ss:StyleID="s70" ss:AutoFitWidth="0" ss:Width="48"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="48"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="161.25"/>
+   <Column ss:StyleID="s71" ss:AutoFitWidth="0" ss:Width="48"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="161.25"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="79.5"/>
+   <Column ss:StyleID="s71" ss:AutoFitWidth="0" ss:Width="100.5"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="161.25"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="79.5"/>
+   <Column ss:StyleID="s71" ss:AutoFitWidth="0" ss:Width="101.25"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="161.25"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="79.5"/>
+   <Column ss:StyleID="s71" ss:AutoFitWidth="0" ss:Width="101.25"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="161.25"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="79.5"/>
+   <Column ss:StyleID="s71" ss:AutoFitWidth="0" ss:Width="101.25"/>
+   <Column ss:StyleID="s72" ss:AutoFitWidth="0" ss:Width="161.25"/>
+   <Column ss:StyleID="s72" ss:AutoFitWidth="0" ss:Width="79.5"/>
+   <Column ss:StyleID="s71" ss:AutoFitWidth="0" ss:Width="101.25"/>
+   <Column ss:StyleID="s72" ss:AutoFitWidth="0" ss:Width="161.25"/>
+   <Column ss:StyleID="s72" ss:AutoFitWidth="0" ss:Width="79.5"/>
+   <Column ss:StyleID="s71" ss:AutoFitWidth="0" ss:Width="101.25"/>
+   <Column ss:StyleID="s72" ss:AutoFitWidth="0" ss:Width="161.25"/>
+   <Column ss:StyleID="s72" ss:AutoFitWidth="0" ss:Width="79.5"/>
+   <Column ss:StyleID="s71" ss:AutoFitWidth="0" ss:Width="101.25"/>
+   <Column ss:StyleID="s72" ss:AutoFitWidth="0" ss:Width="161.25"/>
+   <Column ss:StyleID="s72" ss:AutoFitWidth="0" ss:Width="79.5"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="101.25"/>
+   <Column ss:StyleID="s69" ss:AutoFitWidth="0" ss:Width="48"/>
+   <Column ss:StyleID="s62" ss:Hidden="1" ss:AutoFitWidth="0" ss:Span="1"/>
+   <Column ss:Index="70" ss:StyleID="s62" ss:Hidden="1" ss:AutoFitWidth="0"
+    ss:Width="48" ss:Span="4730"/>
+   <Column ss:Index="4801" ss:StyleID="s62" ss:Hidden="1" ss:AutoFitWidth="0"
+    ss:Span="6886"/>
+   <Column ss:Index="11688" ss:StyleID="s62" ss:Hidden="1" ss:AutoFitWidth="0"
+    ss:Width="48" ss:Span="4696"/>
+   <Row ss:AutoFitHeight="0" ss:Height="35.25" ss:StyleID="s74">
+    <Cell ss:StyleID="s77"><Data ss:Type="String">Transaction Srl No</Data><Comment
+      ss:Author="Developer3"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font
+         html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">Please enter the transaction serial no.</Font></B></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">Transaction Type</Data><Comment
+      ss:Author="Developer3"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font
+         html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">Enter the transaction Type:&#10;     -&gt; For Debit Note = DN&#10;     -&gt; For Credit Note = CN&#10;     -&gt; For Invoice = IN</Font></B></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Transaction Date</Data><Comment
+      ss:Author="Developer3"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font
+         html:Face="Tahoma" x:Family="Swiss" html:Size="8" html:Color="#000000">Enter the Trasnaction Date, and date should not be future date</Font></B></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">AR Account</Data><Comment
+      ss:Author="Developer3"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font
+         html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">Enter the AR Account Code</Font></B></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">AR Account Name</Data><Comment
+      ss:Author="Developer3"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font
+         html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">Optional</Font></B></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">Document Number</Data><Comment
+      ss:Author="Developer3"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font
+         html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">Optional column, If document number configured auto generate.</Font></B></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">Currency</Data><Comment
+      ss:Author="Developer3"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font
+         html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">in case multi currency installed and AR Account deal with forex</Font></B></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">Transaction Amount</Data><Comment
+      ss:Author="Developer3"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font
+         html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">Please enter the transaction amount.&#10;Sum of GL distribution amount should match with transaction amount. Do not enter any negative sign &quot;-&quot;.</Font></B></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">Transaction Particulars</Data><Comment
+      ss:Author="Developer3"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font
+         html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">Enter the transaction remark</Font></B></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Reference Invoice Number</Data><Comment
+      ss:Author="Developer3"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font
+         html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">Original Invoice Number: Only for Debit Note/Credit Note.</Font></B></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Reference Invoice Date</Data><Comment
+      ss:Author="Developer3"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font
+         html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">Original Invoice Date: Only for Debit Note/Credit Note.</Font></B></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Reason</Data><Comment
+      ss:Author="Developer3"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font
+         html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">Only for Debit/Credit Note</Font></B></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s84"><Data ss:Type="String">Invoice Srl No</Data></Cell>
+    <Cell ss:StyleID="s85"><Data ss:Type="String">Invoice Number</Data><Comment
+      ss:Author="Project User7"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font
+         html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">Invoice No</Font></B><Font
+        html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">&#10;</Font></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s85"><Data ss:Type="String">Invoice Date</Data><Comment
+      ss:Author="Project User7"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font
+         html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">Invoice date</Font></B><Font
+        html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">&#10;</Font></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s85"><Data ss:Type="String">Particulars</Data><Comment
+      ss:Author="Project User7"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font
+         html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">Invoice Particulars</Font></B><Font
+        html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">&#10;</Font></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s85"><Data ss:Type="String">Quantity</Data><Comment
+      ss:Author="Project User7"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font
+         html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">Quantity Optional</Font></B><Font
+        html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">&#10;</Font></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s85"><Data ss:Type="String">Rate</Data><Comment
+      ss:Author="Project User7"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font
+         html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">Rate Optional</Font></B><Font
+        html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">&#10;</Font></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s84"><Data ss:Type="String">Invoice Amount</Data><Comment
+      ss:Author="Project User7"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font
+         html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">Taxable Amount</Font></B><Font
+        html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">&#10;</Font></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s85"><Data ss:Type="String">SAC Code</Data><Comment
+      ss:Author="Project User7"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font
+         html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">Service Accounting Code</Font></B><Font
+        html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">&#10;</Font></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">Tax Template Code</Data><Comment
+      ss:Author="Developer3"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font
+         html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">Tax Template Code</Font></B></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Tax Code</Data></Cell>
+    <Cell ss:StyleID="s88"><Data ss:Type="String">Tax Name</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Taxable Amount</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Tax Amount</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">GL Account</Data><Comment
+      ss:Author="Developer3"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font
+         html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">Enter the GL Account Code</Font></B></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s91"><Data ss:Type="String">GL Account Name</Data><Comment
+      ss:Author="Developer3"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font
+         html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">Optional column</Font></B></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Sub Ledger</Data><Comment
+      ss:Author="Developer3"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font
+         html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">Enter the Sub GL Code</Font></B></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s91"><Data ss:Type="String">Sub Ledger Name</Data><Comment
+      ss:Author="Developer3"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font
+         html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">Optional column</Font></B></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s92"><Data ss:Type="String">GL Amount</Data><Comment
+      ss:Author="Developer3"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font
+         html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">Enter the GL Account.&#10;Do not enter negative sign &quot;-&quot;.</Font></B></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">Flag</Data><Comment
+      ss:Author="Developer3"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font
+         html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">Enter GL Amount Flag&#10;-&gt; Debit Amount = Dr/D&#10;-&gt; Credit Amount = Cr/C&#10;&quot;Dr&quot; Debit Flag will be defaulted, if not entered. </Font></B></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="String">GL Narration</Data><Comment
+      ss:Author="Developer3"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font
+         html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">Enter GL Narration.&#10;Transaction Particulars will be defaulted, if not entered.</Font></B></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s93"><Data ss:Type="String">Commision Amount</Data><Comment
+      ss:Author="Developer10"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font
+         html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">Enter the Commision Account.&#10;Do not enter negative sign &quot;-&quot;.</Font></B></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s93"><Data ss:Type="String">Issue Bank</Data><Comment
+      ss:Author="Developer10"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font
+         html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">Enter the Issue Bank</Font></B></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s93"><Data ss:Type="String">City</Data><Comment
+      ss:Author="Developer10"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font
+         html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">Enter the Bank City</Font></B></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s93"><Data ss:Type="String">Cheque Number</Data><Comment
+      ss:Author="Developer10"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font
+         html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">Enter the Cheque Number.</Font></B></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s94"><Data ss:Type="String">Cheque Date</Data><Comment
+      ss:Author="Developer10"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font
+         html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">Enter the Cheque Date.</Font></B></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Reference Cheque Number</Data><Comment
+      ss:Author="Developer10"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font
+         html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">Enter the Reference Cheque Number.</Font></B></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s96"><Data ss:Type="String">Cheque Clear Date</Data><Comment
+      ss:Author="Developer10"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font
+         html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">Enter the Cheque Clear Date.</Font></B></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s93"><Data ss:Type="String">Cheque Currency</Data><Comment
+      ss:Author="Developer10"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font
+         html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">Enter the Cheque Currency.</Font></B></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s93"><Data ss:Type="String">Cheque Currency Amount</Data><Comment
+      ss:Author="Developer10"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font
+         html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">Enter the Cheque Currency Amount</Font></B><Font
+        html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">.</Font><B><Font
+         html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">Do not enter negative sign &quot;-&quot;.</Font></B></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s93"><Data ss:Type="String">Deposit Bank Id</Data><Comment
+      ss:Author="Developer10"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font
+         html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">Enter the Bank Id.</Font></B></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s97"><Data ss:Type="String">Group Code1</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Group Code Name1</Data></Cell>
+    <Cell ss:StyleID="s99"><Data ss:Type="String">Group Code Value1</Data></Cell>
+    <Cell ss:StyleID="s99"><Data ss:Type="String">Group Code2</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Group Code Name2</Data></Cell>
+    <Cell ss:StyleID="s99"><Data ss:Type="String">Group Code Value2</Data></Cell>
+    <Cell ss:StyleID="s99"><Data ss:Type="String">Group Code3</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Group Code Name3</Data></Cell>
+    <Cell ss:StyleID="s99"><Data ss:Type="String">Group Code Value3</Data></Cell>
+    <Cell ss:StyleID="s99"><Data ss:Type="String">Group Code4</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Group Code Name4</Data></Cell>
+    <Cell ss:StyleID="s99"><Data ss:Type="String">Group Code Value4</Data></Cell>
+    <Cell ss:StyleID="s99"><Data ss:Type="String">Group Code5</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Group Code Name5</Data></Cell>
+    <Cell ss:StyleID="s99"><Data ss:Type="String">Group Code Value5</Data></Cell>
+    <Cell ss:StyleID="s99"><Data ss:Type="String">Group Code6</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Group Code Name6</Data></Cell>
+    <Cell ss:StyleID="s99"><Data ss:Type="String">Group Code Value6</Data></Cell>
+    <Cell ss:StyleID="s99"><Data ss:Type="String">Group Code7</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Group Code Name7</Data></Cell>
+    <Cell ss:StyleID="s99"><Data ss:Type="String">Group Code Value7</Data></Cell>
+    <Cell ss:StyleID="s99"><Data ss:Type="String">Group Code8</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Group Code Name8</Data></Cell>
+    <Cell ss:StyleID="s99"><Data ss:Type="String">Group Code Value8</Data></Cell>
+    <Cell ss:StyleID="s76"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s101">
+    <Cell ss:StyleID="s100"><Data ss:Type="String">1</Data></Cell>
+    <Cell><Data ss:Type="String">CN</Data></Cell>
+    <Cell ss:StyleID="s108"><Data ss:Type="String">17/09/2025</Data></Cell>
+    <Cell><Data ss:Type="String">N1</Data></Cell>
+    <Cell><Data ss:Type="String">NEW ONE</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="String">INR</Data></Cell>
+    <Cell ss:StyleID="s109"><Data ss:Type="Number">200</Data></Cell>
+    <Cell><Data ss:Type="String">TEST UPLOAD</Data></Cell>
+    <Cell ss:StyleID="s110"><Data ss:Type="String">8798799</Data></Cell>
+    <Cell ss:StyleID="s111"><Data ss:Type="String">17/09/2025</Data></Cell>
+    <Cell ss:StyleID="s111"/>
+    <Cell ss:StyleID="s100"/>
+    <Cell><Data ss:Type="String">F5F5F</Data></Cell>
+    <Cell ss:StyleID="s108"><Data ss:Type="String">17/09/2025</Data></Cell>
+    <Cell ss:StyleID="s102"><Data ss:Type="String">TEST CN</Data></Cell>
+    <Cell ss:StyleID="s112"/>
+    <Cell ss:StyleID="s109"/>
+    <Cell ss:StyleID="s109"><Data ss:Type="Number">200</Data></Cell>
+    <Cell ss:StyleID="s113"/>
+    <Cell ss:StyleID="s114"/>
+    <Cell ss:StyleID="s114"/>
+    <Cell ss:StyleID="s114"/>
+    <Cell ss:StyleID="s115"/>
+    <Cell ss:StyleID="s116"/>
+    <Cell ss:StyleID="s117"><Data ss:Type="String">1615208403</Data></Cell>
+    <Cell ss:StyleID="s118"><Data ss:Type="String">RECLASS-SECURED NON CONVERTIBL</Data></Cell>
+    <Cell ss:StyleID="s118"/>
+    <Cell ss:StyleID="s119"/>
+    <Cell ss:StyleID="s120"><Data ss:Type="Number">200</Data></Cell>
+    <Cell ss:StyleID="s118"><Data ss:Type="String">Dr</Data></Cell>
+    <Cell ss:StyleID="s121"><Data ss:Type="String">test</Data></Cell>
+    <Cell ss:StyleID="s105"/>
+    <Cell ss:Index="35"><Data ss:Type="String">OL</Data></Cell>
+    <Cell><Data ss:Type="String">5464677</Data></Cell>
+    <Cell ss:StyleID="s108"><Data ss:Type="String">17/09/2025</Data></Cell>
+    <Cell ss:Index="39" ss:StyleID="s108"><Data ss:Type="String">17/09/2025</Data></Cell>
+    <Cell ss:Index="42" ss:StyleID="s106"><Data ss:Type="String">ZERO</Data></Cell>
+    <Cell ss:Index="45" ss:StyleID="s106"/>
+    <Cell ss:Index="48" ss:StyleID="s106"/>
+    <Cell ss:Index="51" ss:StyleID="s106"/>
+    <Cell ss:Index="54" ss:StyleID="s106"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s106"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s106"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s106"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:Index="67" ss:StyleID="s105"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s101">
+    <Cell ss:StyleID="s100"/>
+    <Cell ss:Index="3" ss:StyleID="s108"/>
+    <Cell ss:Index="8" ss:StyleID="s109"/>
+    <Cell ss:Index="10" ss:StyleID="s110"/>
+    <Cell ss:StyleID="s111"/>
+    <Cell ss:StyleID="s111"/>
+    <Cell ss:StyleID="s100"/>
+    <Cell ss:Index="15" ss:StyleID="s108"/>
+    <Cell ss:StyleID="s111"/>
+    <Cell ss:StyleID="s112"/>
+    <Cell ss:StyleID="s109"/>
+    <Cell ss:StyleID="s109"/>
+    <Cell ss:StyleID="s122"/>
+    <Cell ss:StyleID="s114"/>
+    <Cell ss:StyleID="s114"/>
+    <Cell ss:StyleID="s114"/>
+    <Cell ss:StyleID="s115"/>
+    <Cell ss:StyleID="s116"/>
+    <Cell ss:StyleID="s117"/>
+    <Cell ss:StyleID="s118"/>
+    <Cell ss:StyleID="s123"/>
+    <Cell ss:StyleID="s121"/>
+    <Cell ss:StyleID="s124"/>
+    <Cell ss:StyleID="s123"/>
+    <Cell ss:StyleID="s121"/>
+    <Cell ss:StyleID="s105"/>
+    <Cell ss:Index="37" ss:StyleID="s125"/>
+    <Cell ss:Index="39" ss:StyleID="s125"/>
+    <Cell ss:Index="42" ss:StyleID="s106"/>
+    <Cell ss:Index="45" ss:StyleID="s106"/>
+    <Cell ss:Index="48" ss:StyleID="s106"/>
+    <Cell ss:Index="51" ss:StyleID="s106"/>
+    <Cell ss:Index="54" ss:StyleID="s106"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s106"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s106"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s106"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:Index="67" ss:StyleID="s105"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s101">
+    <Cell ss:StyleID="s100"/>
+    <Cell ss:Index="3" ss:StyleID="s108"/>
+    <Cell ss:Index="8" ss:StyleID="s109"/>
+    <Cell ss:Index="10" ss:StyleID="s110"/>
+    <Cell ss:StyleID="s111"/>
+    <Cell ss:StyleID="s111"/>
+    <Cell ss:StyleID="s100"/>
+    <Cell ss:Index="15" ss:StyleID="s108"/>
+    <Cell ss:StyleID="s102"/>
+    <Cell ss:StyleID="s112"/>
+    <Cell ss:StyleID="s109"/>
+    <Cell ss:StyleID="s109"/>
+    <Cell ss:StyleID="s113"/>
+    <Cell ss:StyleID="s114"/>
+    <Cell ss:StyleID="s114"/>
+    <Cell ss:StyleID="s114"/>
+    <Cell ss:StyleID="s115"/>
+    <Cell ss:StyleID="s116"/>
+    <Cell ss:StyleID="s117"/>
+    <Cell ss:StyleID="s123"/>
+    <Cell ss:StyleID="s123"/>
+    <Cell ss:StyleID="s121"/>
+    <Cell ss:StyleID="s124"/>
+    <Cell ss:StyleID="s123"/>
+    <Cell ss:StyleID="s121"/>
+    <Cell ss:StyleID="s105"/>
+    <Cell ss:Index="37" ss:StyleID="s125"/>
+    <Cell ss:Index="39" ss:StyleID="s125"/>
+    <Cell ss:Index="42" ss:StyleID="s106"/>
+    <Cell ss:Index="45" ss:StyleID="s106"/>
+    <Cell ss:Index="48" ss:StyleID="s106"/>
+    <Cell ss:Index="51" ss:StyleID="s106"/>
+    <Cell ss:Index="54" ss:StyleID="s106"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s106"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s106"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s106"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:Index="67" ss:StyleID="s105"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s101">
+    <Cell ss:StyleID="s126"/>
+    <Cell ss:StyleID="s127"/>
+    <Cell ss:StyleID="s128"/>
+    <Cell ss:StyleID="s127"/>
+    <Cell ss:StyleID="s127"/>
+    <Cell ss:StyleID="s127"/>
+    <Cell ss:StyleID="s127"/>
+    <Cell ss:StyleID="s129"/>
+    <Cell ss:StyleID="s127"/>
+    <Cell ss:StyleID="s130"/>
+    <Cell ss:StyleID="s131"/>
+    <Cell ss:StyleID="s131"/>
+    <Cell ss:StyleID="s126"/>
+    <Cell ss:StyleID="s127"/>
+    <Cell ss:StyleID="s128"/>
+    <Cell ss:StyleID="s131"/>
+    <Cell ss:StyleID="s132"/>
+    <Cell ss:StyleID="s129"/>
+    <Cell ss:StyleID="s129"/>
+    <Cell ss:StyleID="s133"/>
+    <Cell ss:StyleID="s134"/>
+    <Cell ss:StyleID="s134"/>
+    <Cell ss:StyleID="s134"/>
+    <Cell ss:StyleID="s135"/>
+    <Cell ss:StyleID="s136"/>
+    <Cell ss:StyleID="s137"/>
+    <Cell ss:StyleID="s138"/>
+    <Cell ss:StyleID="s138"/>
+    <Cell ss:StyleID="s139"/>
+    <Cell ss:StyleID="s140"/>
+    <Cell ss:StyleID="s138"/>
+    <Cell ss:StyleID="s138"/>
+    <Cell ss:StyleID="s105"/>
+    <Cell ss:Index="37" ss:StyleID="s125"/>
+    <Cell ss:Index="39" ss:StyleID="s125"/>
+    <Cell ss:Index="42" ss:StyleID="s106"/>
+    <Cell ss:Index="45" ss:StyleID="s106"/>
+    <Cell ss:Index="48" ss:StyleID="s106"/>
+    <Cell ss:Index="51" ss:StyleID="s106"/>
+    <Cell ss:Index="54" ss:StyleID="s106"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s106"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s106"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s106"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:Index="67" ss:StyleID="s105"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s101">
+    <Cell ss:StyleID="s100"/>
+    <Cell ss:Index="3" ss:StyleID="s108"/>
+    <Cell ss:Index="8" ss:StyleID="s109"/>
+    <Cell ss:Index="10" ss:StyleID="s110"/>
+    <Cell ss:StyleID="s111"/>
+    <Cell ss:StyleID="s111"/>
+    <Cell ss:StyleID="s100"/>
+    <Cell ss:Index="15" ss:StyleID="s108"/>
+    <Cell ss:StyleID="s111"/>
+    <Cell ss:StyleID="s112"/>
+    <Cell ss:StyleID="s109"/>
+    <Cell ss:StyleID="s109"/>
+    <Cell ss:StyleID="s122"/>
+    <Cell ss:StyleID="s114"/>
+    <Cell ss:StyleID="s114"/>
+    <Cell ss:StyleID="s114"/>
+    <Cell ss:StyleID="s115"/>
+    <Cell ss:StyleID="s115"/>
+    <Cell ss:StyleID="s117"/>
+    <Cell ss:StyleID="s118"/>
+    <Cell ss:StyleID="s118"/>
+    <Cell ss:StyleID="s119"/>
+    <Cell ss:StyleID="s120"/>
+    <Cell ss:StyleID="s118"/>
+    <Cell ss:StyleID="s118"/>
+    <Cell ss:StyleID="s105"/>
+    <Cell ss:Index="37" ss:StyleID="s125"/>
+    <Cell ss:Index="39" ss:StyleID="s125"/>
+    <Cell ss:Index="42" ss:StyleID="s106"/>
+    <Cell ss:Index="45" ss:StyleID="s106"/>
+    <Cell ss:Index="48" ss:StyleID="s106"/>
+    <Cell ss:Index="51" ss:StyleID="s106"/>
+    <Cell ss:Index="54" ss:StyleID="s106"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s106"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s106"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s106"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:Index="67" ss:StyleID="s105"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s101">
+    <Cell ss:StyleID="s100"/>
+    <Cell ss:Index="3" ss:StyleID="s108"/>
+    <Cell ss:Index="8" ss:StyleID="s109"/>
+    <Cell ss:Index="10" ss:StyleID="s110"/>
+    <Cell ss:StyleID="s111"/>
+    <Cell ss:StyleID="s111"/>
+    <Cell ss:StyleID="s100"/>
+    <Cell ss:Index="15" ss:StyleID="s108"/>
+    <Cell ss:StyleID="s111"/>
+    <Cell ss:StyleID="s112"/>
+    <Cell ss:StyleID="s109"/>
+    <Cell ss:StyleID="s109"/>
+    <Cell ss:StyleID="s122"/>
+    <Cell ss:StyleID="s114"/>
+    <Cell ss:StyleID="s114"/>
+    <Cell ss:StyleID="s114"/>
+    <Cell ss:StyleID="s115"/>
+    <Cell ss:StyleID="s116"/>
+    <Cell ss:StyleID="s117"/>
+    <Cell ss:StyleID="s118"/>
+    <Cell ss:StyleID="s118"/>
+    <Cell ss:StyleID="s119"/>
+    <Cell ss:StyleID="s120"/>
+    <Cell ss:StyleID="s118"/>
+    <Cell ss:StyleID="s119"/>
+    <Cell ss:StyleID="s105"/>
+    <Cell ss:Index="37" ss:StyleID="s125"/>
+    <Cell ss:Index="39" ss:StyleID="s125"/>
+    <Cell ss:Index="42" ss:StyleID="s106"/>
+    <Cell ss:Index="45" ss:StyleID="s106"/>
+    <Cell ss:Index="48" ss:StyleID="s106"/>
+    <Cell ss:Index="51" ss:StyleID="s106"/>
+    <Cell ss:Index="54" ss:StyleID="s106"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s106"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s106"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s106"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:Index="67" ss:StyleID="s105"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s101">
+    <Cell ss:StyleID="s126"/>
+    <Cell ss:StyleID="s127"/>
+    <Cell ss:StyleID="s128"/>
+    <Cell ss:StyleID="s127"/>
+    <Cell ss:StyleID="s127"/>
+    <Cell ss:StyleID="s127"/>
+    <Cell ss:StyleID="s127"/>
+    <Cell ss:StyleID="s129"/>
+    <Cell ss:StyleID="s127"/>
+    <Cell ss:StyleID="s130"/>
+    <Cell ss:StyleID="s131"/>
+    <Cell ss:StyleID="s131"/>
+    <Cell ss:StyleID="s126"/>
+    <Cell ss:StyleID="s127"/>
+    <Cell ss:StyleID="s128"/>
+    <Cell ss:StyleID="s131"/>
+    <Cell ss:StyleID="s132"/>
+    <Cell ss:StyleID="s129"/>
+    <Cell ss:StyleID="s129"/>
+    <Cell ss:StyleID="s133"/>
+    <Cell ss:StyleID="s134"/>
+    <Cell ss:StyleID="s134"/>
+    <Cell ss:StyleID="s134"/>
+    <Cell ss:StyleID="s135"/>
+    <Cell ss:StyleID="s136"/>
+    <Cell ss:StyleID="s137"/>
+    <Cell ss:StyleID="s138"/>
+    <Cell ss:StyleID="s138"/>
+    <Cell ss:StyleID="s139"/>
+    <Cell ss:StyleID="s140"/>
+    <Cell ss:StyleID="s138"/>
+    <Cell ss:StyleID="s138"/>
+    <Cell ss:StyleID="s105"/>
+    <Cell ss:Index="37" ss:StyleID="s125"/>
+    <Cell ss:Index="39" ss:StyleID="s125"/>
+    <Cell ss:Index="42" ss:StyleID="s106"/>
+    <Cell ss:Index="45" ss:StyleID="s106"/>
+    <Cell ss:Index="48" ss:StyleID="s106"/>
+    <Cell ss:Index="51" ss:StyleID="s106"/>
+    <Cell ss:Index="54" ss:StyleID="s106"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s106"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s106"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s106"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:Index="67" ss:StyleID="s105"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s101">
+    <Cell ss:StyleID="s100"/>
+    <Cell ss:Index="3" ss:StyleID="s108"/>
+    <Cell ss:Index="8" ss:StyleID="s109"/>
+    <Cell ss:Index="10" ss:StyleID="s110"/>
+    <Cell ss:StyleID="s111"/>
+    <Cell ss:StyleID="s111"/>
+    <Cell ss:StyleID="s100"/>
+    <Cell ss:Index="15" ss:StyleID="s108"/>
+    <Cell ss:StyleID="s111"/>
+    <Cell ss:StyleID="s112"/>
+    <Cell ss:StyleID="s109"/>
+    <Cell ss:StyleID="s109"/>
+    <Cell ss:StyleID="s122"/>
+    <Cell ss:StyleID="s114"/>
+    <Cell ss:StyleID="s114"/>
+    <Cell ss:StyleID="s114"/>
+    <Cell ss:StyleID="s115"/>
+    <Cell ss:StyleID="s115"/>
+    <Cell ss:StyleID="s117"/>
+    <Cell ss:StyleID="s118"/>
+    <Cell ss:StyleID="s118"/>
+    <Cell ss:StyleID="s119"/>
+    <Cell ss:StyleID="s120"/>
+    <Cell ss:StyleID="s118"/>
+    <Cell ss:StyleID="s118"/>
+    <Cell ss:StyleID="s105"/>
+    <Cell ss:Index="37" ss:StyleID="s125"/>
+    <Cell ss:Index="39" ss:StyleID="s125"/>
+    <Cell ss:Index="42" ss:StyleID="s106"/>
+    <Cell ss:Index="45" ss:StyleID="s106"/>
+    <Cell ss:Index="48" ss:StyleID="s106"/>
+    <Cell ss:Index="51" ss:StyleID="s106"/>
+    <Cell ss:Index="54" ss:StyleID="s106"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s106"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s106"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s106"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:Index="67" ss:StyleID="s105"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s101">
+    <Cell ss:StyleID="s100"/>
+    <Cell ss:Index="3" ss:StyleID="s108"/>
+    <Cell ss:Index="8" ss:StyleID="s109"/>
+    <Cell ss:Index="10" ss:StyleID="s110"/>
+    <Cell ss:StyleID="s111"/>
+    <Cell ss:StyleID="s111"/>
+    <Cell ss:StyleID="s100"/>
+    <Cell ss:Index="15" ss:StyleID="s108"/>
+    <Cell ss:StyleID="s111"/>
+    <Cell ss:StyleID="s112"/>
+    <Cell ss:StyleID="s109"/>
+    <Cell ss:StyleID="s109"/>
+    <Cell ss:StyleID="s122"/>
+    <Cell ss:StyleID="s114"/>
+    <Cell ss:StyleID="s114"/>
+    <Cell ss:StyleID="s114"/>
+    <Cell ss:StyleID="s115"/>
+    <Cell ss:StyleID="s116"/>
+    <Cell ss:StyleID="s117"/>
+    <Cell ss:StyleID="s118"/>
+    <Cell ss:StyleID="s118"/>
+    <Cell ss:StyleID="s119"/>
+    <Cell ss:StyleID="s120"/>
+    <Cell ss:StyleID="s118"/>
+    <Cell ss:StyleID="s118"/>
+    <Cell ss:StyleID="s105"/>
+    <Cell ss:Index="37" ss:StyleID="s125"/>
+    <Cell ss:Index="39" ss:StyleID="s125"/>
+    <Cell ss:Index="42" ss:StyleID="s106"/>
+    <Cell ss:Index="45" ss:StyleID="s106"/>
+    <Cell ss:Index="48" ss:StyleID="s106"/>
+    <Cell ss:Index="51" ss:StyleID="s106"/>
+    <Cell ss:Index="54" ss:StyleID="s106"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s106"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s106"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s106"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:Index="67" ss:StyleID="s105"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s101">
+    <Cell ss:StyleID="s126"/>
+    <Cell ss:StyleID="s127"/>
+    <Cell ss:StyleID="s128"/>
+    <Cell ss:StyleID="s127"/>
+    <Cell ss:StyleID="s127"/>
+    <Cell ss:StyleID="s127"/>
+    <Cell ss:StyleID="s127"/>
+    <Cell ss:StyleID="s129"/>
+    <Cell ss:StyleID="s127"/>
+    <Cell ss:StyleID="s130"/>
+    <Cell ss:StyleID="s131"/>
+    <Cell ss:StyleID="s131"/>
+    <Cell ss:StyleID="s126"/>
+    <Cell ss:StyleID="s127"/>
+    <Cell ss:StyleID="s128"/>
+    <Cell ss:StyleID="s131"/>
+    <Cell ss:StyleID="s132"/>
+    <Cell ss:StyleID="s129"/>
+    <Cell ss:StyleID="s129"/>
+    <Cell ss:StyleID="s133"/>
+    <Cell ss:StyleID="s134"/>
+    <Cell ss:StyleID="s134"/>
+    <Cell ss:StyleID="s134"/>
+    <Cell ss:StyleID="s135"/>
+    <Cell ss:StyleID="s136"/>
+    <Cell ss:StyleID="s137"/>
+    <Cell ss:StyleID="s138"/>
+    <Cell ss:StyleID="s138"/>
+    <Cell ss:StyleID="s139"/>
+    <Cell ss:StyleID="s140"/>
+    <Cell ss:StyleID="s138"/>
+    <Cell ss:StyleID="s138"/>
+    <Cell ss:StyleID="s105"/>
+    <Cell ss:Index="37" ss:StyleID="s125"/>
+    <Cell ss:Index="39" ss:StyleID="s125"/>
+    <Cell ss:Index="42" ss:StyleID="s106"/>
+    <Cell ss:Index="45" ss:StyleID="s106"/>
+    <Cell ss:Index="48" ss:StyleID="s106"/>
+    <Cell ss:Index="51" ss:StyleID="s106"/>
+    <Cell ss:Index="54" ss:StyleID="s106"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s106"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s106"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s106"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:Index="67" ss:StyleID="s105"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s107">
+    <Cell ss:StyleID="s126"/>
+    <Cell ss:StyleID="s127"/>
+    <Cell ss:StyleID="s128"/>
+    <Cell ss:StyleID="s127"/>
+    <Cell ss:StyleID="s144"/>
+    <Cell ss:StyleID="s127"/>
+    <Cell ss:StyleID="s127"/>
+    <Cell ss:StyleID="s129"/>
+    <Cell ss:StyleID="s144"/>
+    <Cell ss:StyleID="s145"/>
+    <Cell ss:StyleID="s146"/>
+    <Cell ss:StyleID="s146"/>
+    <Cell ss:StyleID="s126"/>
+    <Cell ss:StyleID="s127"/>
+    <Cell ss:StyleID="s128"/>
+    <Cell ss:StyleID="s146"/>
+    <Cell ss:StyleID="s132"/>
+    <Cell ss:StyleID="s129"/>
+    <Cell ss:StyleID="s129"/>
+    <Cell ss:StyleID="s147"/>
+    <Cell ss:StyleID="s134"/>
+    <Cell ss:StyleID="s134"/>
+    <Cell ss:StyleID="s134"/>
+    <Cell ss:StyleID="s135"/>
+    <Cell ss:StyleID="s136"/>
+    <Cell ss:StyleID="s137"/>
+    <Cell ss:StyleID="s138"/>
+    <Cell ss:StyleID="s138"/>
+    <Cell ss:StyleID="s139"/>
+    <Cell ss:StyleID="s140"/>
+    <Cell ss:StyleID="s138"/>
+    <Cell ss:StyleID="s138"/>
+    <Cell ss:StyleID="s105"/>
+    <Cell ss:Index="37" ss:StyleID="s148"/>
+    <Cell ss:Index="39" ss:StyleID="s148"/>
+    <Cell ss:Index="42" ss:StyleID="s106"/>
+    <Cell ss:Index="45" ss:StyleID="s106"/>
+    <Cell ss:Index="48" ss:StyleID="s106"/>
+    <Cell ss:Index="51" ss:StyleID="s106"/>
+    <Cell ss:Index="54" ss:StyleID="s106"/>
+    <Cell ss:Index="57" ss:StyleID="s106"/>
+    <Cell ss:Index="60" ss:StyleID="s106"/>
+    <Cell ss:Index="63" ss:StyleID="s106"/>
+    <Cell ss:Index="67" ss:StyleID="s105"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s72">
+    <Cell ss:StyleID="s100"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s152"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s101"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s153"/>
+    <Cell ss:StyleID="s101"/>
+    <Cell ss:StyleID="s154"/>
+    <Cell ss:StyleID="s155"/>
+    <Cell ss:StyleID="s155"/>
+    <Cell ss:StyleID="s100"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s152"/>
+    <Cell ss:StyleID="s155"/>
+    <Cell ss:StyleID="s156"/>
+    <Cell ss:StyleID="s153"/>
+    <Cell ss:StyleID="s153"/>
+    <Cell ss:StyleID="s157"/>
+    <Cell ss:StyleID="s158"/>
+    <Cell ss:StyleID="s159"/>
+    <Cell ss:StyleID="s159"/>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s116"/>
+    <Cell ss:StyleID="s117"/>
+    <Cell ss:StyleID="s118"/>
+    <Cell ss:StyleID="s118"/>
+    <Cell ss:StyleID="s119"/>
+    <Cell ss:StyleID="s120"/>
+    <Cell ss:StyleID="s118"/>
+    <Cell ss:StyleID="s118"/>
+    <Cell ss:StyleID="s69"/>
+    <Cell ss:Index="37" ss:StyleID="s161"/>
+    <Cell ss:Index="39" ss:StyleID="s161"/>
+    <Cell ss:Index="42" ss:StyleID="s71"/>
+    <Cell ss:Index="45" ss:StyleID="s71"/>
+    <Cell ss:Index="48" ss:StyleID="s71"/>
+    <Cell ss:Index="51" ss:StyleID="s71"/>
+    <Cell ss:Index="54" ss:StyleID="s71"/>
+    <Cell ss:Index="57" ss:StyleID="s71"/>
+    <Cell ss:Index="60" ss:StyleID="s71"/>
+    <Cell ss:Index="63" ss:StyleID="s71"/>
+    <Cell ss:Index="67" ss:StyleID="s69"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s72">
+    <Cell ss:StyleID="s100"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s152"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s153"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s154"/>
+    <Cell ss:StyleID="s155"/>
+    <Cell ss:StyleID="s155"/>
+    <Cell ss:StyleID="s100"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s152"/>
+    <Cell ss:StyleID="s155"/>
+    <Cell ss:StyleID="s156"/>
+    <Cell ss:StyleID="s153"/>
+    <Cell ss:StyleID="s153"/>
+    <Cell ss:StyleID="s157"/>
+    <Cell ss:StyleID="s158"/>
+    <Cell ss:StyleID="s159"/>
+    <Cell ss:StyleID="s159"/>
+    <Cell ss:StyleID="s160"/>
+    <Cell ss:StyleID="s116"/>
+    <Cell ss:StyleID="s117"/>
+    <Cell ss:StyleID="s118"/>
+    <Cell ss:StyleID="s118"/>
+    <Cell ss:StyleID="s119"/>
+    <Cell ss:StyleID="s120"/>
+    <Cell ss:StyleID="s118"/>
+    <Cell ss:StyleID="s118"/>
+    <Cell ss:StyleID="s69"/>
+    <Cell ss:Index="37" ss:StyleID="s161"/>
+    <Cell ss:Index="39" ss:StyleID="s161"/>
+    <Cell ss:Index="42" ss:StyleID="s71"/>
+    <Cell ss:Index="45" ss:StyleID="s71"/>
+    <Cell ss:Index="48" ss:StyleID="s71"/>
+    <Cell ss:Index="51" ss:StyleID="s71"/>
+    <Cell ss:Index="54" ss:StyleID="s71"/>
+    <Cell ss:Index="57" ss:StyleID="s71"/>
+    <Cell ss:Index="60" ss:StyleID="s71"/>
+    <Cell ss:Index="63" ss:StyleID="s71"/>
+    <Cell ss:Index="67" ss:StyleID="s69"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s72">
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s163"/>
+    <Cell ss:StyleID="s164"/>
+    <Cell ss:StyleID="s163"/>
+    <Cell ss:StyleID="s163"/>
+    <Cell ss:StyleID="s163"/>
+    <Cell ss:StyleID="s163"/>
+    <Cell ss:StyleID="s165"/>
+    <Cell ss:StyleID="s163"/>
+    <Cell ss:StyleID="s166"/>
+    <Cell ss:StyleID="s167"/>
+    <Cell ss:StyleID="s167"/>
+    <Cell ss:StyleID="s162"/>
+    <Cell ss:StyleID="s163"/>
+    <Cell ss:StyleID="s164"/>
+    <Cell ss:StyleID="s167"/>
+    <Cell ss:StyleID="s168"/>
+    <Cell ss:StyleID="s165"/>
+    <Cell ss:StyleID="s165"/>
+    <Cell ss:StyleID="s169"/>
+    <Cell ss:StyleID="s170"/>
+    <Cell ss:StyleID="s170"/>
+    <Cell ss:StyleID="s170"/>
+    <Cell ss:StyleID="s171"/>
+    <Cell ss:StyleID="s172"/>
+    <Cell ss:StyleID="s137"/>
+    <Cell ss:StyleID="s138"/>
+    <Cell ss:StyleID="s138"/>
+    <Cell ss:StyleID="s139"/>
+    <Cell ss:StyleID="s140"/>
+    <Cell ss:StyleID="s138"/>
+    <Cell ss:StyleID="s138"/>
+    <Cell ss:StyleID="s69"/>
+    <Cell ss:Index="37" ss:StyleID="s161"/>
+    <Cell ss:Index="39" ss:StyleID="s161"/>
+    <Cell ss:Index="42" ss:StyleID="s71"/>
+    <Cell ss:Index="45" ss:StyleID="s71"/>
+    <Cell ss:Index="48" ss:StyleID="s71"/>
+    <Cell ss:Index="51" ss:StyleID="s71"/>
+    <Cell ss:Index="54" ss:StyleID="s71"/>
+    <Cell ss:Index="57" ss:StyleID="s71"/>
+    <Cell ss:Index="60" ss:StyleID="s71"/>
+    <Cell ss:Index="63" ss:StyleID="s71"/>
+    <Cell ss:Index="67" ss:StyleID="s69"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="3" ss:StyleID="s152"/>
+    <Cell ss:StyleID="s107"/>
+    <Cell ss:StyleID="s101"/>
+    <Cell ss:Index="15" ss:StyleID="s152"/>
+    <Cell ss:Index="26" ss:StyleID="s117"/>
+    <Cell ss:StyleID="s118"/>
+    <Cell ss:Index="30" ss:StyleID="s120"/>
+    <Cell ss:StyleID="s118"/>
+    <Cell ss:StyleID="s118"/>
+    <Cell ss:StyleID="s173"/>
+    <Cell ss:StyleID="s174"/>
+    <Cell ss:StyleID="s174"/>
+    <Cell ss:StyleID="s174"/>
+    <Cell ss:StyleID="s175"/>
+    <Cell ss:StyleID="s174"/>
+    <Cell ss:StyleID="s175"/>
+    <Cell ss:StyleID="s174"/>
+    <Cell ss:StyleID="s174"/>
+    <Cell ss:StyleID="s176"/>
+    <Cell ss:StyleID="s174"/>
+    <Cell ss:StyleID="s174"/>
+    <Cell ss:StyleID="s176"/>
+    <Cell ss:StyleID="s174"/>
+    <Cell ss:StyleID="s174"/>
+    <Cell ss:StyleID="s176"/>
+    <Cell ss:StyleID="s174"/>
+    <Cell ss:StyleID="s174"/>
+    <Cell ss:StyleID="s176"/>
+    <Cell ss:StyleID="s174"/>
+    <Cell ss:StyleID="s174"/>
+    <Cell ss:StyleID="s176"/>
+    <Cell ss:StyleID="s177"/>
+    <Cell ss:StyleID="s177"/>
+    <Cell ss:StyleID="s176"/>
+    <Cell ss:StyleID="s177"/>
+    <Cell ss:StyleID="s177"/>
+    <Cell ss:StyleID="s176"/>
+    <Cell ss:StyleID="s177"/>
+    <Cell ss:StyleID="s177"/>
+    <Cell ss:StyleID="s176"/>
+    <Cell ss:StyleID="s177"/>
+    <Cell ss:StyleID="s177"/>
+    <Cell ss:StyleID="s174"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="26" ss:StyleID="s137"/>
+    <Cell ss:StyleID="s138"/>
+    <Cell ss:StyleID="s163"/>
+    <Cell ss:StyleID="s163"/>
+    <Cell ss:StyleID="s140"/>
+    <Cell ss:StyleID="s138"/>
+    <Cell ss:StyleID="s138"/>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Zoom>75</Zoom>
+   <Selected/>
+   <FreezePanes/>
+   <FrozenNoSplit/>
+   <SplitHorizontal>1</SplitHorizontal>
+   <TopRowBottomPane>1</TopRowBottomPane>
+   <ActivePane>2</ActivePane>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+    </Pane>
+    <Pane>
+     <Number>2</Number>
+     <ActiveCol>31</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Help">
+  <Table ss:ExpandedColumnCount="16384" ss:ExpandedRowCount="45" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="15">
+   <Column ss:Hidden="1" ss:AutoFitWidth="0" ss:Width="88.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="155.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="59.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="69"/>
+   <Column ss:AutoFitWidth="0" ss:Width="454.5"/>
+   <Column ss:Index="16384" ss:AutoFitWidth="0" ss:Width="41.25"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s178"><Data ss:Type="String">Column Name</Data></Cell>
+    <Cell ss:StyleID="s178"><Data ss:Type="String">Label</Data></Cell>
+    <Cell ss:StyleID="s178"><Data ss:Type="String">DataType</Data></Cell>
+    <Cell ss:StyleID="s178"><Data ss:Type="String">Length</Data></Cell>
+    <Cell ss:StyleID="s179"><Data ss:Type="String">Remarks</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s180"><Data ss:Type="String">gl_acct_code</Data></Cell>
+    <Cell ss:StyleID="s181"><Data ss:Type="String">Transaction Srl No</Data></Cell>
+    <Cell ss:StyleID="s182"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s182"/>
+    <Cell ss:StyleID="s182"><Data ss:Type="String">Transaction Serial Number</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s180"><Data ss:Type="String">gl_acct_code</Data></Cell>
+    <Cell ss:StyleID="s181"><Data ss:Type="String">Transaction Type</Data></Cell>
+    <Cell ss:StyleID="s182"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s182"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s182"><Data ss:Type="String">DN = Debit Note/ CN = Credit Note</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s180"><Data ss:Type="String">gl_acct_code</Data></Cell>
+    <Cell ss:StyleID="s181"><Data ss:Type="String">Transaction Date</Data></Cell>
+    <Cell ss:StyleID="s182"><Data ss:Type="String">DateTime</Data></Cell>
+    <Cell ss:StyleID="s182"/>
+    <Cell ss:StyleID="s182"><Data ss:Type="String">Date Format &quot;ddMMMyyyy&quot;, ie: 01April2013</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s180"><Data ss:Type="String">gl_acct_code</Data></Cell>
+    <Cell ss:StyleID="s181"><Data ss:Type="String">AR Account</Data></Cell>
+    <Cell ss:StyleID="s182"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s182"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s182"><Data ss:Type="String">AP Account Code</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s180"><Data ss:Type="String">gl_acct_code</Data></Cell>
+    <Cell ss:StyleID="s181"><Data ss:Type="String">AR Account Name</Data></Cell>
+    <Cell ss:StyleID="s182"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s182"><Data ss:Type="Number">30</Data></Cell>
+    <Cell ss:StyleID="s183"><Data ss:Type="String">Optional</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s181"><Data ss:Type="String">gl_acct_name</Data></Cell>
+    <Cell ss:StyleID="s181"><Data ss:Type="String">Document Number</Data></Cell>
+    <Cell ss:StyleID="s182"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s182"><Data ss:Type="Number">50</Data></Cell>
+    <Cell ss:StyleID="s183"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40"><I><Font html:Color="#000000">Optional, if auto generate configured, </Font></I><B><I><Font
+         html:Color="#000000">For IGSTI site should be blank</Font></I></B></ss:Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s181"><Data ss:Type="String">ap_gl_sub_code</Data></Cell>
+    <Cell ss:StyleID="s181"><Data ss:Type="String">Transaction Amount</Data></Cell>
+    <Cell ss:StyleID="s182"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s182"/>
+    <Cell ss:StyleID="s182"><Data ss:Type="String">Transaction amount should match with sum of GL Acmount</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s181"><Data ss:Type="String">ap_gl_sub_name</Data></Cell>
+    <Cell ss:StyleID="s181"><Data ss:Type="String">Transaction Particulars</Data></Cell>
+    <Cell ss:StyleID="s182"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s182"><Data ss:Type="Number">255</Data></Cell>
+    <Cell ss:StyleID="s183"><Data ss:Type="String">Optional</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s184">
+    <Cell ss:StyleID="s185"><Data ss:Type="String">gl_acct_code</Data></Cell>
+    <Cell ss:StyleID="s186"><Data ss:Type="String">Reference invoice Number</Data></Cell>
+    <Cell ss:StyleID="s187"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s187"><Data ss:Type="Number">50</Data></Cell>
+    <Cell ss:StyleID="s188"><Data ss:Type="String">Original Invoice Number: Only for Debit Note/Credit Note.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s184">
+    <Cell ss:StyleID="s185"><Data ss:Type="String">gl_acct_code</Data></Cell>
+    <Cell ss:StyleID="s186"><Data ss:Type="String">Reference invoice Date</Data></Cell>
+    <Cell ss:StyleID="s187"><Data ss:Type="String">DateTime</Data></Cell>
+    <Cell ss:StyleID="s187"/>
+    <Cell ss:StyleID="s188"><Data ss:Type="String">Original Invoice Date: Only for Debit Note/Credit Note.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s184">
+    <Cell ss:StyleID="s185"><Data ss:Type="String">gl_acct_code</Data></Cell>
+    <Cell ss:StyleID="s186"><Data ss:Type="String">Reason</Data></Cell>
+    <Cell ss:StyleID="s187"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s187"><Data ss:Type="Number">255</Data></Cell>
+    <Cell ss:StyleID="s188"><Data ss:Type="String">Reason for Debit Note/Credit Note, Optional.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s184">
+    <Cell ss:StyleID="s185"/>
+    <Cell ss:StyleID="s181"><Data ss:Type="String">Invoice Srl No</Data></Cell>
+    <Cell ss:StyleID="s187"><Data ss:Type="String">Integer</Data></Cell>
+    <Cell ss:StyleID="s187"/>
+    <Cell ss:StyleID="s188"><Data ss:Type="String">Requried:</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s184">
+    <Cell ss:StyleID="s185"/>
+    <Cell ss:StyleID="s181"><Data ss:Type="String">Invoice No</Data></Cell>
+    <Cell ss:StyleID="s187"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s187"><Data ss:Type="Number">50</Data></Cell>
+    <Cell ss:StyleID="s182"><Data ss:Type="String">Invoice No :Optional But Requried When provide Invoice Date</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s184">
+    <Cell ss:StyleID="s185"/>
+    <Cell ss:StyleID="s181"><Data ss:Type="String">Invoice Date</Data></Cell>
+    <Cell ss:StyleID="s182"><Data ss:Type="String">DateTime</Data></Cell>
+    <Cell ss:StyleID="s187"/>
+    <Cell ss:StyleID="s182"><Data ss:Type="String">Date Format &quot;ddMMMyyyy&quot;, ie: 01April2013 ,Optional Requried When provide Invoice Date</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s184">
+    <Cell ss:StyleID="s185"/>
+    <Cell ss:StyleID="s181"><Data ss:Type="String">Particulars</Data></Cell>
+    <Cell ss:StyleID="s187"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s187"><Data ss:Type="Number">255</Data></Cell>
+    <Cell ss:StyleID="s182"><Data ss:Type="String">Invoice Particulars</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s184">
+    <Cell ss:StyleID="s185"/>
+    <Cell ss:StyleID="s181"><Data ss:Type="String">Quantity</Data></Cell>
+    <Cell ss:StyleID="s187"><Data ss:Type="String">Float</Data></Cell>
+    <Cell ss:StyleID="s187"/>
+    <Cell ss:StyleID="s182"><Data ss:Type="String">Optional</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s184">
+    <Cell ss:StyleID="s185"/>
+    <Cell ss:StyleID="s181"><Data ss:Type="String">Rate</Data></Cell>
+    <Cell ss:StyleID="s187"><Data ss:Type="String">money</Data></Cell>
+    <Cell ss:StyleID="s187"/>
+    <Cell ss:StyleID="s182"><Data ss:Type="String">Optional</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s184">
+    <Cell ss:StyleID="s185"/>
+    <Cell ss:StyleID="s181"><Data ss:Type="String">Taxable Amount </Data></Cell>
+    <Cell ss:StyleID="s187"><Data ss:Type="String">money</Data></Cell>
+    <Cell ss:StyleID="s187"/>
+    <Cell ss:StyleID="s182"><Data ss:Type="String">Base Amount of the invoice</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s184">
+    <Cell ss:StyleID="s185"/>
+    <Cell ss:StyleID="s181"><Data ss:Type="String">SAC Code</Data></Cell>
+    <Cell ss:StyleID="s187"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s187"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s182"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40"><Font html:Color="#000000">Service Accounting Code, </Font><B><Font
+        html:Color="#003366">For IGSTI site</Font></B></ss:Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s184">
+    <Cell ss:StyleID="s185"><Data ss:Type="String">gl_acct_code</Data></Cell>
+    <Cell ss:StyleID="s186"><Data ss:Type="String">Tax Code</Data></Cell>
+    <Cell ss:StyleID="s187"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s187"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s188"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40"><Font html:Color="#003366">GST Tax Template Code is mandatory for </Font><B><Font
+        html:Color="#003366">IGSTI </Font></B><Font html:Color="#003366">site</Font></ss:Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s180"><Data ss:Type="String">gl_acct_code</Data></Cell>
+    <Cell ss:StyleID="s189"><Data ss:Type="String">Tax Template Code</Data></Cell>
+    <Cell ss:StyleID="s187"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s187"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s190"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40"><B><Font html:Color="#003366">For IGSTI site:Tax Code</Font><Font
+        html:Color="#969696"> </Font></B><Font html:Color="#969696">, Optional for VAT input:only for Debit Note</Font></ss:Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s180"><Data ss:Type="String">gl_acct_code</Data></Cell>
+    <Cell ss:StyleID="s189"><Data ss:Type="String">VAT Name</Data></Cell>
+    <Cell ss:StyleID="s187"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s187"/>
+    <Cell ss:StyleID="s191"><Data ss:Type="String">Optional</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s181"><Data ss:Type="String">ap_gl_sub_code</Data></Cell>
+    <Cell ss:StyleID="s189"><Data ss:Type="String">Taxable Amount</Data></Cell>
+    <Cell ss:StyleID="s187"><Data ss:Type="String">money</Data></Cell>
+    <Cell ss:StyleID="s187"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s190"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40"><B><Font html:Color="#003366">For IGSTI site:Taxable Amount,  </Font></B><Font
+       html:Color="#969696">Optional for VAT: only for Debit Note</Font></ss:Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s180"><Data ss:Type="String">gl_acct_code</Data></Cell>
+    <Cell ss:StyleID="s189"><Data ss:Type="String">Tax Amount</Data></Cell>
+    <Cell ss:StyleID="s187"><Data ss:Type="String">money</Data></Cell>
+    <Cell ss:StyleID="s187"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s190"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40"><B><Font html:Color="#003366">For IGSTI site:Tax Amount,  </Font></B><Font
+       html:Color="#969696">Optional for VAT: only for Debit Note</Font></ss:Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s181"><Data ss:Type="String">ap_amount</Data></Cell>
+    <Cell ss:StyleID="s192"><Data ss:Type="String">GL Account</Data></Cell>
+    <Cell ss:StyleID="s193"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s193"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s193"><Data ss:Type="String">GL Account Code</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s181"><Data ss:Type="String">dr_cr</Data></Cell>
+    <Cell ss:StyleID="s192"><Data ss:Type="String">GL Account Name</Data></Cell>
+    <Cell ss:StyleID="s193"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s193"/>
+    <Cell ss:StyleID="s194"><Data ss:Type="String">Optional</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s181"><Data ss:Type="String">ap_particulars</Data></Cell>
+    <Cell ss:StyleID="s192"><Data ss:Type="String">Sub Ledger</Data></Cell>
+    <Cell ss:StyleID="s193"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s193"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s193"><Data ss:Type="String">Sub GL Code</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s192"><Data ss:Type="String">Sub Ledger Name</Data></Cell>
+    <Cell ss:StyleID="s193"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s193"/>
+    <Cell ss:StyleID="s194"><Data ss:Type="String">Optional</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s192"><Data ss:Type="String">Amount</Data></Cell>
+    <Cell ss:StyleID="s193"><Data ss:Type="String">money</Data></Cell>
+    <Cell ss:StyleID="s193"/>
+    <Cell ss:StyleID="s193"><Data ss:Type="String">GL Amount</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s192"><Data ss:Type="String">Flag</Data></Cell>
+    <Cell ss:StyleID="s193"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s193"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s195"><Data ss:Type="String">Dr/Cr</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s196"><Data ss:Type="String">GL Narration</Data></Cell>
+    <Cell ss:StyleID="s197"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s197"><Data ss:Type="Number">255</Data></Cell>
+    <Cell ss:StyleID="s198"><Data ss:Type="String">Optional</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s192"><Data ss:Type="String">Commision Amount</Data></Cell>
+    <Cell ss:StyleID="s187"><Data ss:Type="String">money</Data></Cell>
+    <Cell ss:StyleID="s199"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s193"><Data ss:Type="String">Optional for Commision:if coomision setup is on</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s192"><Data ss:Type="String">Issue Bank</Data></Cell>
+    <Cell ss:StyleID="s193"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s199"><Data ss:Type="Number">30</Data></Cell>
+    <Cell ss:StyleID="s193"><Data ss:Type="String">Issue Bank Name</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s192"><Data ss:Type="String">City</Data></Cell>
+    <Cell ss:StyleID="s193"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s199"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s193"><Data ss:Type="String">Issue Bank City</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s192"><Data ss:Type="String">Cheque Number</Data></Cell>
+    <Cell ss:StyleID="s193"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s182"/>
+    <Cell ss:StyleID="s193"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s192"><Data ss:Type="String">Cheque Date</Data></Cell>
+    <Cell ss:StyleID="s193"><Data ss:Type="String">DateTime</Data></Cell>
+    <Cell ss:StyleID="s182"/>
+    <Cell ss:StyleID="s193"><Data ss:Type="String">Date Format &quot;ddMMMyyyy&quot;, ie: 01April2013</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s200"><Data ss:Type="String">Reference Cheque Number</Data></Cell>
+    <Cell ss:StyleID="s193"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s182"/>
+    <Cell ss:StyleID="s193"><Data ss:Type="String">Optional</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s200"><Data ss:Type="String">Cheque Clear Date</Data></Cell>
+    <Cell ss:StyleID="s193"><Data ss:Type="String">DateTime</Data></Cell>
+    <Cell ss:StyleID="s182"/>
+    <Cell ss:StyleID="s193"><Data ss:Type="String">Optional, Date Format &quot;ddMMMyyyy&quot;, ie: 01April2013</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s192"><Data ss:Type="String">Cheque Currency</Data></Cell>
+    <Cell ss:StyleID="s193"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s199"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s193"><Data ss:Type="String">Cheque currency</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s192"><Data ss:Type="String">Cheque Currency Amount</Data></Cell>
+    <Cell ss:StyleID="s187"><Data ss:Type="String">money</Data></Cell>
+    <Cell ss:StyleID="s199"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s193"><Data ss:Type="String">Cheque Amount</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s196"><Data ss:Type="String">Deposit Bank Id</Data></Cell>
+    <Cell ss:StyleID="s197"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s201"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s197"><Data ss:Type="String">Deposit Bank Id</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s192"><Data ss:Type="String">Group Code Value</Data></Cell>
+    <Cell ss:StyleID="s199"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s199"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s199"><Data ss:Type="String">Group Code value </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s202"><Data ss:Type="String">Description</Data></Cell>
+    <Cell ss:StyleID="s199"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s199"><Data ss:Type="Number">90</Data></Cell>
+    <Cell ss:StyleID="s199"><Data ss:Type="String">Description</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s202"><Data ss:Type="String">Value</Data></Cell>
+    <Cell ss:StyleID="s199"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s199"><Data ss:Type="Number">255</Data></Cell>
+    <Cell ss:StyleID="s199"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40"><Font html:Color="#808080">Value (Mandatory if value type is</Font><B><Font
+        html:Color="#808080"> LIST</Font></B><Font html:Color="#808080">)</Font></ss:Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <TopRowVisible>36</TopRowVisible>
+   <LeftColumnVisible>1</LeftColumnVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>46</ActiveRow>
+     <ActiveCol>3</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>
