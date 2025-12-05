@@ -39,6 +39,8 @@ public class CreateCN extends BaseTest {
 //            arAccountPageThread.get().enterTax(1);
             arAccountPageThread.get().enterGL();
             arAccountPageThread.get().cn();
+
+            // to create a credit note first post a invoice and then create a cn with same ar account
             ExtentTestManager.createAssertTestStepWithScreenshot("AR Account Creation", Status.PASS, "AR Account created successfully", true);
         } catch (Exception e) {
             ExtentTestManager.createAssertTestStepWithScreenshot("AR Account Creation", Status.FAIL, "AR Account creation failed", true, e);

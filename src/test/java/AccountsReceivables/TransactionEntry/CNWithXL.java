@@ -11,7 +11,7 @@ import pages.POPages.WithoutApproval.withRQ.InventoryControl;
 
 import java.lang.reflect.Method;
 
-public class InvoicePostingWithXL extends BaseTest {
+public class CNWithXL extends BaseTest {
 
     private final ThreadLocal<Login> LoginThread = new ThreadLocal<>();
     private final ThreadLocal<InventoryControl> InventoryControlThread = new ThreadLocal<>();
@@ -37,8 +37,8 @@ public class InvoicePostingWithXL extends BaseTest {
 
 
             arAccountPageThread.get().ar();
-            arAccountPageThread.get().selectTransactionType("invoice");
-            arAccountPageThread.get().xlUpload("invoice");
+            arAccountPageThread.get().selectTransactionType("credit note");
+            arAccountPageThread.get().xlUpload("creditnote");
 //            arAccountPageThread.get().transectionDetails(false);
 //            arAccountPageThread.get().invoice(0);
 //            //arAccountPageThread.get().enterTax(0);

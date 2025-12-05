@@ -21,7 +21,7 @@
 
     <test name="AR Test" enabled="true">
         <classes>
-            <class name="AccountsReceivables.TransactionEntry.InvoicePostingWithXL"/>
+            <class name="AccountsReceivables.TransactionEntry.CN_Posting"/>
         </classes>
     </test>
 

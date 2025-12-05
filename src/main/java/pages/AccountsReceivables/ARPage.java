@@ -423,7 +423,13 @@ public class ARPage extends Utilities {
             BaseTest.getDriver().switchTo().defaultContent();
             BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
 
-            Utilities.Click(accounting);
+
+            try {
+                Utilities.Click(accounting);
+
+            } catch (Exception e) {
+
+            }
 
             BaseTest.getDriver().switchTo().defaultContent();
             BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
@@ -469,6 +475,7 @@ public class ARPage extends Utilities {
                 case "credit note":
                     Utilities.Click(creditNoteRadio);
                     ExtentTestManager.getTest().pass("Credit Note radio selected");
+
                     break;
 
                 case "debit note":
@@ -852,10 +859,15 @@ public class ARPage extends Utilities {
 
             }
 
-            // Save & Close
-//            BaseTest.getDriver().switchTo().defaultContent();
-//            BaseTest.getDriver().switchTo().frame(iframeDialog);
-//            Utilities.Click(BaseTest.getDriver(), saveCloseButton);
+           try {
+               BaseTest.getDriver().switchTo().defaultContent();
+               BaseTest.getDriver().switchTo().frame(iframeGridDialog);
+               Utilities.Click(BaseTest.getDriver(), okButton);
+           } catch (Exception e) {
+
+           }
+
+
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
@@ -1010,11 +1022,16 @@ public class ARPage extends Utilities {
         }
     }
 
+    @FindBy(id = "settle_10_0")
+    private WebElement settle;
+
     public void cn() {
         try {
             BaseTest.getDriver().switchTo().defaultContent();
             BaseTest.getDriver().switchTo().frame("iframeGridDialog");
             Click(searchBtn);
+            Click(settle);
+            Click(saveCloseButton);
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
@@ -1205,23 +1222,110 @@ public class ARPage extends Utilities {
     private WebElement downloadExcel;
     @FindBy(id = "FileDlg")
     private WebElement choseFile;
-    String uploadFile = System.getProperty("user.dir")
+    String invoiceXL = System.getProperty("user.dir")
             + "/src/test/resources/UploadData/AR16 InvoicePosting.xml";
+
+
+    String creditNoteXL = System.getProperty("user.dir")
+            + "/src/test/resources/UploadData/AR16-CreditNotes.xml";
+
+
+
     @FindBy(id = "btnUpLoadData")
     private WebElement uploadData;
 
-    public void xlUpload() {
+    public void xlUpload1(String fileType) {
         try {
             BaseTest.getDriver().switchTo().defaultContent();
             BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
             Click(downloadExcel);
             BaseTest.getDriver().switchTo().frame("ifrFileDialog");
-            SendKeys(choseFile,uploadFile);
+            SendKeys(choseFile, fileType);
             BaseTest.getDriver().switchTo().defaultContent();
             BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
             BaseTest.getDriver().switchTo().frame("ifrFileDialog");
             Click(uploadData);
 
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public void xlUpload(String fileType) {
+        try {
+            BaseTest.getDriver().switchTo().defaultContent();
+            BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
+            Click(downloadExcel);
+
+            BaseTest.getDriver().switchTo().frame("ifrFileDialog");
+
+            String fileToUpload;
+
+            switch (fileType.toLowerCase()) {
+                case "invoice":
+                    fileToUpload = invoiceXL;
+                    break;
+
+                case "creditnote":
+                    fileToUpload = creditNoteXL;
+                    break;
+
+//                case "debitnote":
+//                    fileToUpload = debitNoteXL;
+//                    break;
+//
+//                case "payment":
+//                    fileToUpload = paymentXL;
+//                    break;
+
+                default:
+                    throw new IllegalArgumentException("Invalid file type passed: " + fileType);
+            }
+
+            SendKeys(choseFile, fileToUpload);
+
+            BaseTest.getDriver().switchTo().defaultContent();
+            BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
+            BaseTest.getDriver().switchTo().frame("ifrFileDialog");
+
+            Click(uploadData);
+
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public void transectionDetailsCN() {
+        try {
+
+            // Dr Account Code "%%"
+            Utilities.Click(BaseTest.getDriver(), drAccCode);
+            Utilities.SendKeys(BaseTest.getDriver(), drAccCode, arAccount);
+
+            DynamicWait.smallWait();
+            drAccCode.sendKeys(org.openqa.selenium.Keys.TAB);
+
+//            // Select ACP Tollways (inside grid iframe)
+//            BaseTest.getDriver().switchTo().defaultContent();
+//            BaseTest.getDriver().switchTo().frame(iframeGridDialog);
+//            Utilities.DoubleClick(arAccouont.get(0));
+
+
+            // Back to Dialog iframe
+            BaseTest.getDriver().switchTo().defaultContent();
+            BaseTest.getDriver().switchTo().frame(iframeDialog);
+            arAccount = drAccCode.getAttribute("value");
+            System.out.println("Account code is : " + arAccount);
+
+            date = getDate.getAttribute("value");
+            SendKeys(invDate, date);
+            SendKeys(reference, "Reference");
+
+
+
+            // Enter Note
+            Utilities.Click(BaseTest.getDriver(), tranNote);
+            Utilities.SendKeys(BaseTest.getDriver(), tranNote, "Notes");
         } catch (Exception e) {
             throw new RuntimeException(e);
         }

@@ -11,7 +11,7 @@ import pages.POPages.WithoutApproval.withRQ.InventoryControl;
 
 import java.lang.reflect.Method;
 
-public class InvoicePostingWithXL extends BaseTest {
+public class CN_Posting extends BaseTest {
 
     private final ThreadLocal<Login> LoginThread = new ThreadLocal<>();
     private final ThreadLocal<InventoryControl> InventoryControlThread = new ThreadLocal<>();
@@ -38,11 +38,19 @@ public class InvoicePostingWithXL extends BaseTest {
 
             arAccountPageThread.get().ar();
             arAccountPageThread.get().selectTransactionType("invoice");
-            arAccountPageThread.get().xlUpload("invoice");
-//            arAccountPageThread.get().transectionDetails(false);
-//            arAccountPageThread.get().invoice(0);
-//            //arAccountPageThread.get().enterTax(0);
-//            arAccountPageThread.get().enterGL();
+            arAccountPageThread.get().transectionDetails(false);
+            arAccountPageThread.get().invoice(0);
+            //arAccountPageThread.get().enterTax(0);
+            arAccountPageThread.get().enterGL();
+
+            arAccountPageThread.get().ar();
+            arAccountPageThread.get().selectTransactionType("credit note");
+            arAccountPageThread.get().transectionDetailsCN();
+            arAccountPageThread.get().invoice(0);
+//            arAccountPageThread.get().enterTax(1);
+            arAccountPageThread.get().enterGL();
+            arAccountPageThread.get().cn();
+
 
             ExtentTestManager.createAssertTestStepWithScreenshot("AR Account Creation", Status.PASS, "AR Account created successfully", true);
         } catch (Exception e) {

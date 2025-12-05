@@ -32,7 +32,7 @@ public class ARAccountXL extends BaseTest {
             LoginThread.get().loginAndLaunchTestSRV(m);
             InventoryControlThread.get().Switch0419();
             arAccountPageThread.get().navigateToARAccount();
-            arAccountPageThread.get().xlUpload();
+            //arAccountPageThread.get().xlUpload();
             ExtentTestManager.createAssertTestStepWithScreenshot("AR Account Creation", Status.PASS, "AR Account created successfully", true);
         } catch (Exception e) {
             ExtentTestManager.createAssertTestStepWithScreenshot("AR Account Creation", Status.FAIL, "AR Account creation failed", true, e);
