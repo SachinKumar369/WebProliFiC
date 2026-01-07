@@ -147,7 +147,7 @@ public class BaseTest {
                 WebDriverManager.chromedriver()
                         .clearDriverCache()
                         .clearResolutionCache()
-                        .driverVersion("141.0.7390.65")  //141.0.7390.65   138.0.7204.92  139.0.7258.155
+                        .driverVersion("143.0.7499.42")  //141.0.7390.65    139.0.7258.155
                         .setup();
 
                 ChromeOptions chromeOptions = new ChromeOptions();

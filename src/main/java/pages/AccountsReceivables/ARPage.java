@@ -1332,5 +1332,12 @@ public class ARPage extends Utilities {
     }
 
 
+    public void example(){
+        try {
+
+        } catch (Exception e) {
+            ExtentTestManager.createAssertTestStepWithScreenshot("Example",Status.FAIL,"error in example",true,e);
+        }
+    }
 
 }

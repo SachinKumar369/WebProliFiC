@@ -52,7 +52,7 @@ public class CN_Posting extends BaseTest {
             arAccountPageThread.get().cn();
 
 
-            ExtentTestManager.createAssertTestStepWithScreenshot("AR Account Creation", Status.PASS, "AR Account created successfully", true);
+           //  ExtentTestManager.createAssertTestStepWithScreenshot("AR Account Creation", Status.PASS, "AR Account created successfully", true);
         } catch (Exception e) {
             ExtentTestManager.createAssertTestStepWithScreenshot("AR Account Creation", Status.FAIL, "AR Account creation failed", true, e);
         }

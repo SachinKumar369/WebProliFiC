@@ -93,6 +93,9 @@ public class Login extends BaseTest {
             String currentHandles = driver.getWindowHandle();
             System.out.println(currentHandles);
 
+
+
+
             Utilities.Click(driver, Login.get(0));
             DynamicWait.smallWait();
 

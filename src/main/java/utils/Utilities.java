@@ -660,6 +660,39 @@ public class Utilities {
         }
     }
 
+    public static String selectByAndGetValue(String type, WebElement element, String value) {
+        WaitForPageLoad();
+        WaitTillElementDisplayed(element);
+
+        Select dropDownElement = new Select(element);
+        WebElement selectedOption;
+
+        switch (type.toLowerCase()) {
+            case "value":
+                dropDownElement.selectByValue(value);
+                selectedOption = dropDownElement.getFirstSelectedOption();
+                break;
+
+            case "index":
+                int index = Integer.parseInt(value);
+                selectedOption = dropDownElement.getOptions().get(index);
+                dropDownElement.selectByIndex(index);
+                break;
+
+            case "visibletext":
+                dropDownElement.selectByVisibleText(value);
+                selectedOption = dropDownElement.getFirstSelectedOption();
+                break;
+
+            default:
+                throw new IllegalArgumentException("Invalid select type: " + type);
+        }
+
+        return selectedOption.getAttribute("value");
+        // OR return selectedOption.getText();
+    }
+
+
     public static void scrollIntoView(WebElement element) {
         WaitForPageLoad();
         ((JavascriptExecutor) BaseTest.getDriver()).executeScript("arguments[0].scrollIntoView(true);", element);
