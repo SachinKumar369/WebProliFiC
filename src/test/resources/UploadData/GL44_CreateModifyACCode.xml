@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?mso-application progid="Excel.Sheet"?><Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet" xmlns:html="http://www.w3.org/TR/REC-html40" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet" xmlns:x="urn:schemas-microsoft-com:office:excel">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>ASPNET</Author>
+  <LastAuthor>Developer15</LastAuthor>
+  <Created>2008-07-15T07:28:11Z</Created>
+  <LastSaved>2019-06-19T10:57:57Z</LastSaved>
+  <Company>Prologic First India Pvt Ltd.</Company>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG />
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>6675</WindowHeight>
+  <WindowWidth>20460</WindowWidth>
+  <WindowTopX>32767</WindowTopX>
+  <WindowTopY>32767</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom" />
+   <Borders />
+   <Font ss:FontName="Arial" x:Family="Swiss" />
+   <Interior />
+   <NumberFormat />
+   <Protection />
+  </Style>
+  <Style ss:ID="s62">
+   <NumberFormat ss:Format="@" />
+  </Style>
+  <Style ss:ID="s63">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1" />
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1" />
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1" />
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1" />
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1" />
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Bold="1" />
+   <Interior ss:Color="#BFBFBF" ss:Pattern="Solid" />
+   <NumberFormat ss:Format="@" />
+  </Style>
+  <Style ss:ID="s64">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1" />
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1" />
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1" />
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1" />
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1" />
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Bold="1" />
+   <Interior ss:Color="#BFBFBF" ss:Pattern="Solid" />
+   <NumberFormat ss:Format="0" />
+  </Style>
+  <Style ss:ID="s70">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1" />
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1" />
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1" />
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1" />
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Bold="1" />
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid" />
+  </Style>
+  <Style ss:ID="s71">
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Bold="1" />
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid" />
+  </Style>
+  <Style ss:ID="s72">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1" />
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Bold="1" />
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid" />
+  </Style>
+  <Style ss:ID="s73">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1" />
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1" />
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1" />
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1" />
+   </Borders>
+  </Style>
+  <Style ss:ID="s74">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1" />
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1" />
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1" />
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1" />
+   </Borders>
+   <Interior ss:Color="#CCFFFF" ss:Pattern="Solid" />
+  </Style>
+  <Style ss:ID="s75">
+   <Alignment ss:Vertical="Justify" />
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1" />
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1" />
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1" />
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1" />
+   </Borders>
+   <Interior ss:Color="#CCFFFF" ss:Pattern="Solid" />
+  </Style>
+  <Style ss:ID="s76">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1" />
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1" />
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1" />
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1" />
+   </Borders>
+   <Interior ss:Color="#FFFF99" ss:Pattern="Solid" />
+  </Style>
+  <Style ss:ID="s77">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1" />
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1" />
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1" />
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1" />
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" />
+   <Interior ss:Color="#FFFF99" ss:Pattern="Solid" />
+  </Style>
+  <Style ss:ID="s78">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1" />
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1" />
+   </Borders>
+   <Interior />
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Data">
+  <Names>
+   <NamedRange ss:Name="Z_53E92935_7DD5_4EE8_A158_4A0D6B384540_.wvu.Rows" ss:RefersTo="=Data!#REF!" ss:Hidden="1" />
+   <NamedRange ss:Name="Z_A6219DBB_90BC_473A_9D30_3DDB2C3CBB1B_.wvu.Rows" ss:RefersTo="=Data!#REF!" ss:Hidden="1" />
+  </Names>
+  <Table ss:ExpandedColumnCount="24" ss:ExpandedRowCount="4" x:FullColumns="1" x:FullRows="1" ss:StyleID="s62">
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="46.5" />
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="50.25" />
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="67.5" />
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="102" />
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="98.25" />
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="87.75" />
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="61.5" />
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="58.5" />
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="42" />
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="59.25" />
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="46.5" />
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="54" />
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="63.75" ss:Span="1" />
+   <Column ss:Index="15" ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="27" ss:Span="1" />
+   <Column ss:Index="17" ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="29.25" />
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="52.5" />
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="56.25" />
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="44.25" />
+   <Column ss:StyleID="s62" ss:Width="63.75" />
+   <Column ss:Index="24" ss:StyleID="s62" ss:Width="79.5" />
+   <Row ss:AutoFitHeight="0" ss:Height="51">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Account Category</Data><Comment ss:Author="Saroj Pradhan"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">A - Assets
+L- Liabilities
+I - Income
+E - Expense
+
+</Font></B></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Account Group</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Account Group Name</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Account Code</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Account Name</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Account Name(Long)</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Department Required?</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Print Sequence</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">GST Flag</Data><Comment ss:Author="Saroj Pradhan"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">Income and Stock Account mared as GST Indicator</Font></B></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Type of Account</Data><Comment ss:Author="Saroj Pradhan"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">M - Account group heading
+S - Account group sub-heading
+A - General Ledger Account for posting
+</Font></B></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Sub Ledger Allowed</Data><Comment ss:Author="Developer3"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">Y - Yes
+N - No
+</Font></B></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Expense are Allocated</Data><Comment ss:Author="Saroj Pradhan"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">Y - Yes
+N - No</Font></B><Font html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">
+</Font></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Pre-paid Account</Data><Comment ss:Author="Saroj Pradhan"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">Y - Yes
+N - No</Font></B><Font html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">
+</Font></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Direct Posting Not Allowed</Data><Comment ss:Author="Saroj Pradhan"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font html:Face="Tahoma" x:Family="Swiss" html:Size="9" html:Color="#000000">Disallow posting for this a/c (Y/N)
+</Font></B></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">AP</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">AR</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">GC</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Inventory</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Interface</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Frozen Flag</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Add/Update/Delete Flag</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">A</Data></Cell>
+    <Cell><Data ss:Type="String">2000</Data></Cell>
+    <Cell><Data ss:Type="String">ASSET</Data></Cell>
+    <Cell><Data ss:Type="String">2U0132</Data></Cell>
+    <Cell><Data ss:Type="String">BAKERY FIN</Data></Cell>
+    <Cell><Data ss:Type="String">BAKERY FIN</Data></Cell>
+    <Cell><Data ss:Type="String">N</Data></Cell>
+    <Cell><Data ss:Type="String">98989</Data></Cell>
+    <Cell><Data ss:Type="String">N</Data></Cell>
+    <Cell><Data ss:Type="String">A</Data></Cell>
+    <Cell><Data ss:Type="String">N</Data></Cell>
+    <Cell><Data ss:Type="String">N</Data></Cell>
+    <Cell><Data ss:Type="String">N</Data></Cell>
+    <Cell><Data ss:Type="String">N</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+    <Cell ss:Index="21"><Data ss:Type="String">A</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">I</Data></Cell>
+    <Cell><Data ss:Type="String">3001</Data></Cell>
+    <Cell><Data ss:Type="String">Rooms , Restaurants , Banquets &amp; Other Operating Income</Data></Cell>
+    <Cell><Data ss:Type="String">2U0133</Data></Cell>
+    <Cell><Data ss:Type="String">INCOME TODAT</Data></Cell>
+    <Cell><Data ss:Type="String">INCOME TODAY</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+    <Cell><Data ss:Type="String">989899</Data></Cell>
+    <Cell><Data ss:Type="String">N</Data></Cell>
+    <Cell><Data ss:Type="String">A</Data></Cell>
+    <Cell><Data ss:Type="String">N</Data></Cell>
+    <Cell><Data ss:Type="String">N</Data></Cell>
+    <Cell><Data ss:Type="String">N</Data></Cell>
+    <Cell><Data ss:Type="String">N</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+    <Cell ss:Index="21"><Data ss:Type="String">A</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">L</Data></Cell>
+    <Cell><Data ss:Type="String">1001</Data></Cell>
+    <Cell><Data ss:Type="String">Equity Share Capital</Data></Cell>
+    <Cell><Data ss:Type="String">2U0134</Data></Cell>
+    <Cell><Data ss:Type="String">LIABILITY NEW</Data></Cell>
+    <Cell><Data ss:Type="String">LIABILITY NEW</Data></Cell>
+    <Cell><Data ss:Type="String">N</Data></Cell>
+    <Cell><Data ss:Type="String">766565</Data></Cell>
+    <Cell><Data ss:Type="String">N</Data></Cell>
+    <Cell><Data ss:Type="String">A</Data></Cell>
+    <Cell><Data ss:Type="String">N</Data></Cell>
+    <Cell><Data ss:Type="String">N</Data></Cell>
+    <Cell><Data ss:Type="String">N</Data></Cell>
+    <Cell><Data ss:Type="String">N</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+    <Cell><Data ss:Type="String">Y</Data></Cell>
+    <Cell ss:Index="21"><Data ss:Type="String">A</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Print>
+    <ValidPrinterInfo />
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Selected />
+   <LeftColumnVisible>4</LeftColumnVisible>
+   <FreezePanes />
+   <FrozenNoSplit />
+   <SplitHorizontal>1</SplitHorizontal>
+   <TopRowBottomPane>1</TopRowBottomPane>
+   <ActivePane>2</ActivePane>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+    </Pane>
+    <Pane>
+     <Number>2</Number>
+     <ActiveRow>3</ActiveRow>
+     <ActiveCol>8</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Help">
+  <Table ss:ExpandedColumnCount="9" ss:ExpandedRowCount="28" x:FullColumns="1" x:FullRows="1">
+   <Column ss:Width="105" />
+   <Column ss:Width="42.75" />
+   <Column ss:Width="54.75" />
+   <Column ss:Width="50.25" />
+   <Column ss:Index="6" ss:Width="178.5" />
+   <Column ss:Width="15.75" />
+   <Column ss:Width="44.25" />
+   <Column ss:AutoFitWidth="0" ss:Width="227.25" />
+   <Row>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Column Name</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Position</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Drop Down</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">DataType</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Length</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Drop Down Values</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">ID</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Editable</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">Remarks</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">Account Category</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String"> </Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">A - Assets</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s73" />
+    <Cell ss:StyleID="s73" />
+    <Cell ss:StyleID="s73" />
+    <Cell ss:StyleID="s73" />
+    <Cell ss:StyleID="s73" />
+    <Cell ss:StyleID="s73"><Data ss:Type="String">L - Liabilities</Data></Cell>
+    <Cell ss:StyleID="s73" />
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s73" />
+    <Cell ss:StyleID="s73" />
+    <Cell ss:StyleID="s73" />
+    <Cell ss:StyleID="s73" />
+    <Cell ss:StyleID="s73" />
+    <Cell ss:StyleID="s73"><Data ss:Type="String">I - Income</Data></Cell>
+    <Cell ss:StyleID="s73" />
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s73" />
+    <Cell ss:StyleID="s73" />
+    <Cell ss:StyleID="s73" />
+    <Cell ss:StyleID="s73" />
+    <Cell ss:StyleID="s73" />
+    <Cell ss:StyleID="s73"><Data ss:Type="String">E - Expense</Data></Cell>
+    <Cell ss:StyleID="s73" />
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">Account Group</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s73" />
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">Account Group Name</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s73" />
+    <Cell ss:StyleID="s73" />
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">3</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">Account Code</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s73" />
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">4</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">Account Name</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">30</Data></Cell>
+    <Cell ss:StyleID="s73" />
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">Account Name(Long)</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">255</Data></Cell>
+    <Cell ss:StyleID="s73" />
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">6</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">Department Required?</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">Y</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s73" />
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">7</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">Print Sequence</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">int</Data></Cell>
+    <Cell ss:StyleID="s73" />
+    <Cell ss:StyleID="s73" />
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">8</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">GST Flag</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">Y</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">Only for Indian GST site, Y/N</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">9</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Type of Account</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Y</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">M - Account group heading</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5">
+    <Cell ss:StyleID="s74" />
+    <Cell ss:StyleID="s74" />
+    <Cell ss:StyleID="s74" />
+    <Cell ss:StyleID="s74" />
+    <Cell ss:StyleID="s74" />
+    <Cell ss:StyleID="s75"><Data ss:Type="String">S - Account group sub-heading</Data></Cell>
+    <Cell ss:StyleID="s74" />
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.5">
+    <Cell ss:StyleID="s74" />
+    <Cell ss:StyleID="s74" />
+    <Cell ss:StyleID="s74" />
+    <Cell ss:StyleID="s74" />
+    <Cell ss:StyleID="s74" />
+    <Cell ss:StyleID="s75"><Data ss:Type="String">A - General Ledger Account for posting</Data></Cell>
+    <Cell ss:StyleID="s74" />
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Sub Ledger Allowed</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Y</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">N - No</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="Number">11</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+    <Cell><Data ss:Type="String">Sub ledger is not allowed for account type M and S</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s76" />
+    <Cell ss:StyleID="s76" />
+    <Cell ss:StyleID="s76" />
+    <Cell ss:StyleID="s76" />
+    <Cell ss:StyleID="s76" />
+    <Cell ss:StyleID="s77"><Data ss:Type="String">Y - Mandatory</Data></Cell>
+    <Cell ss:StyleID="s76" />
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">Expense are Allocated</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s73" />
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">Pre-paid Account</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s73" />
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">13</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">Direct Posting Allowed</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">N</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s73" />
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">14</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">AP</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:Index="4" ss:StyleID="s78"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s78"><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">AR</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">16</Data></Cell>
+    <Cell ss:Index="4" ss:StyleID="s78"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s78"><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">GC</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:Index="4" ss:StyleID="s78"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s78"><Data ss:Type="Number">17</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Inventory</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">18</Data></Cell>
+    <Cell ss:Index="4" ss:StyleID="s78"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s78"><Data ss:Type="Number">18</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Interface</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">19</Data></Cell>
+    <Cell ss:Index="4" ss:StyleID="s78"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s78"><Data ss:Type="Number">19</Data></Cell>
+    <Cell><Data ss:Type="String">Yes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Frozen Flag</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:Index="4" ss:StyleID="s78"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Y/N</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">20</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Add/Update/Delete Flag</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">21</Data></Cell>
+    <Cell ss:Index="4" ss:StyleID="s78"><Data ss:Type="String">string</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">A-Add, U-Update, D-Delete</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">21</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <FreezePanes />
+   <FrozenNoSplit />
+   <SplitHorizontal>1</SplitHorizontal>
+   <TopRowBottomPane>4</TopRowBottomPane>
+   <ActivePane>2</ActivePane>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+    </Pane>
+    <Pane>
+     <Number>2</Number>
+     <ActiveRow>12</ActiveRow>
+     <ActiveCol>5</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>
