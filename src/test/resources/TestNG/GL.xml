@@ -21,7 +21,7 @@
 
     <test name="GL Test" enabled="true">
         <classes>
-            <class name="GL.JV.CreateJVReversalDate"/>
+            <class name="GL.BankReconciliation.DeleteTrasection"/>
         </classes>
     </test>
 
