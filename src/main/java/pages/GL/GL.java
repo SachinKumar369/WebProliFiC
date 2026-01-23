@@ -819,5 +819,56 @@ public class GL extends Utilities {
         }
     }
 
+    @FindBy(id = "LinkProduct3")
+    private WebElement systemAdmin;
+    @FindBy(id = "divmodule_2")
+    private WebElement systemConfig;
+    @FindBy(xpath = "//a[@title='MENU07 Setup Users']")
+    private WebElement setupUser;
+    @FindBy(id = "cphDialogHeader_btnAddRecords")
+    private WebElement addUser;
+    @FindBy(id = "cphBody_txtUserId")
+    private WebElement userID;
+    @FindBy(id = "cphBody_txtUserName")
+    private WebElement userName;
+    @FindBy(id = "cphBody_txtEmployeeID")
+    private WebElement employeeID;
+    @FindBy(id = "cphBody_txtDepartmentID")
+    private WebElement department;
+    @FindBy(id = "cphBody_txtDesignation")
+    private WebElement designation;
+    @FindBy(id = "cphBody_txtTemplateId")
+    private WebElement template;
+
+
+    public void createUser(){
+        try {
+            BaseTest.getDriver().manage().window().maximize();
+            multipageiframebrw();
+            Click(systemAdmin);
+            multipageiframebrw();
+            Click(systemConfig);
+            Click(setupUser);
+            multipageiframebrw();
+            Click(addUser);
+
+            for (int i= 0; i<=20; i++){
+
+                SendKeys(userID,"A"+i);
+                SendKeys(userName,"A"+i);
+                SendKeys(employeeID,"A"+i);
+                SendKeys(department,"OT");
+                SendKeys(designation,"Manager");
+                SendKeys(template,"SUP");
+                Click(saveButton);
+
+            }
+
+
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
 
 }

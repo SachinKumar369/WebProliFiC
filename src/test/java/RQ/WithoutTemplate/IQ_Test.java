@@ -86,11 +86,11 @@ public class IQ_Test extends BaseTest {
         }
     }
 
-    @AfterMethod(alwaysRun = true)
-    public void closeDriver() {
-        launchSite.remove();
-
-        closeBrowser();
-    }
+//    @AfterMethod(alwaysRun = true)
+//    public void closeDriver() {
+//        launchSite.remove();
+//
+//        closeBrowser();
+//    }
 }
 

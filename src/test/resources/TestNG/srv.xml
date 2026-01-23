@@ -19,7 +19,7 @@
     <parameter name="url" value="https://qc2web.prologicfirst.in/WISH/Common/frmLogin.aspx"/>
 
 
-    <test name="SRV Test" enabled="false">
+    <test name="SRV Test" enabled="true">
         <classes>
             <class name="SRVTest.AdditionalCharge.SRVCharge"/>
             <class name="SRVTest.AdditionalCharge.ItemCharge"/>

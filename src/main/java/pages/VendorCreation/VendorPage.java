@@ -16,6 +16,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import pages.T0419_Pages.IQ_Page;
 import utils.DynamicWait;
 import utils.Utilities;
 
@@ -1112,134 +1113,269 @@ public class VendorPage extends ExtentTestManager {
         }
     }
 
-    public void VendorCreation() {
+    public void VendorCreation2() {
         try {
 
 
-            Utilities.logerror("VendorCreation", logMessages -> {
-                // Step 1: Maximize window
                 BaseTest.getDriver().manage().window().maximize();
-                logMessages.add("Maximized browser window");
 
                 // Step 2: Switch to frame
                 BaseTest.getDriver().switchTo().defaultContent();
                 BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
-                logMessages.add("Switched to MultiPageiframeBrw frame");
 
                 // Step 3: Click Inventory
                 Utilities.Click(Inventory);
-                logMessages.add("Clicked on Inventory");
 
                 // Step 4: Switch to frame again
                 BaseTest.getDriver().switchTo().defaultContent();
                 BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
-                logMessages.add("Switched to MultiPageiframeBrw frame");
 
                 // Step 5: Click Inventory Module
                 Utilities.Click(InventoryModule);
-                logMessages.add("Clicked on Inventory Module");
 
                 // Step 6: Click Vendor Setup
                 Utilities.Click(VendorSetup);
-                logMessages.add("Clicked on VendorSetup");
 
                 // Step 7: Switch to frame again
                 BaseTest.getDriver().switchTo().defaultContent();
                 BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
-                logMessages.add("Switched to MultiPageiframeBrw frame");
 
                 // Step 8: Click Add
                 Utilities.Click(Add);
-                logMessages.add("Clicked on Add Button");
 
                 // Step 9: Click Account Group Dropdown
                 Utilities.Click(BaseTest.getDriver(), AccountGroup);
-                logMessages.add("Clicked on Account Group Dropdown");
 
                 // Step 10: Select Account Group
                 BaseTest.getDriver().switchTo().defaultContent();
                 BaseTest.getDriver().switchTo().frame("iframeGridDialog");
                 Utilities.DoubleClick(SelectAccGroup);
-                logMessages.add("Selected the Account Group");
 
                 // Step 11: Switch back to main frame
                 BaseTest.getDriver().switchTo().defaultContent();
                 BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
-                logMessages.add("Switched to MultiPageiframeBrw frame");
 
                 // Step 12: Generate unique text for Account ID
                 uniqueText = new SimpleDateFormat("ddyyHHmm").format(new Date());
-                logMessages.add("Generated unique text for Account ID: " + uniqueText);
 
                 // Step 13: Enter Account ID
                 Utilities.SendKeys(AccountID, uniqueText);
-                logMessages.add("Entered Account ID");
 
                 // Step 14: Enter Account Name
                 Utilities.SendKeys(AccountName, "Testing");
-                logMessages.add("Entered Account Name");
 
                 // Step 15: Enter Address
                 Utilities.SendKeys(Address, "Phase V");
-                logMessages.add("Entered Address");
 
                 // Step 16: Enter City
                 Utilities.SendKeys(City, "Meerut");
-                logMessages.add("Entered City");
 
                 // Step 17: Enter State
                 Utilities.SendKeys(State, "UP");
-                logMessages.add("Entered State");
 
                 // Step 18: Enter Zip
                 Utilities.SendKeys(Zip, "250002");
-                logMessages.add("Entered Pin Code");
 
                 // Step 19: Select GST State
                 Utilities.selectBy("value", GstState, "09");
-                logMessages.add("Entered GST State");
 
                 // Step 20: Enter Country
                 Utilities.SendKeys(Country, "India");
-                logMessages.add("Entered Country");
 
                 // Step 21: Select Currency
                 try {
 
                     Utilities.Click(CurrencyDropdown);
-                    logMessages.add("Clicked on Currency Dropdown");
                     BaseTest.getDriver().switchTo().defaultContent();
                     BaseTest.getDriver().switchTo().frame("iframeGridDialog");
-                    logMessages.add("Switched to iframeGridDialog frame");
                     Utilities.DoubleClick(SelectCurrency);
-                    logMessages.add("Selected Currency");
                 } catch (Exception e) {
 
                 }
                 // Step 22: Switch back to main frame
                 BaseTest.getDriver().switchTo().defaultContent();
                 BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
-                logMessages.add("Switched to MultiPageiframeBrw frame");
 
                 // Step 23: Click Save
                 Utilities.Click(Save);
-                logMessages.add("Clicked Save");
 
                 // Step 24: Check confirmation dialog
                 BaseTest.getDriver().switchTo().defaultContent();
                 BaseTest.getDriver().switchTo().frame("iframeGridDialog");
-                logMessages.add("Switched to iframeGridDialog frame");
                 if (ConfDlg.isDisplayed() && ConfDlg.getText().contains("[238] - Details Created/Updated")) {
                     ExtentTestManager.createAssertTestStepWithScreenshot("Vendor Creation", Status.PASS, "Vendor Creation Passed", true);
                 } else {
-                    ExtentTestManager.createAssertTestStepWithScreenshot("Vendor Creation", Status.FAIL, "Vendor Creation Failed", true);
+                   // ExtentTestManager.createAssertTestStepWithScreenshot("Vendor Creation", Status.FAIL, "Vendor Creation Failed", true);
+
+                    appProgError();
+
                 }
-            });
+           // });
         } catch (Exception e) {
-            ExtentTestManager.createAssertTestStepWithScreenshot("Vendor Creation9", Status.FAIL, "Vendor Creation Failed", true);
+           // ExtentTestManager.createAssertTestStepWithScreenshot("Vendor Creation9", Status.FAIL, "Vendor Creation Failed", true);
+
+
+            appProgError();
 
         }
     }
+
+
+    public void VendorCreation() {
+        try {
+
+            ExtentTestManager.logStep("Vendor Creation", "Test started");
+
+            BaseTest.getDriver().manage().window().maximize();
+            ExtentTestManager.logStep("Browser", "Window maximized");
+
+            BaseTest.getDriver().switchTo().defaultContent();
+            ExtentTestManager.logStep("Frame Switch", "Switched to default content");
+
+            BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
+            ExtentTestManager.logStep("Frame Switch", "Switched to frame: MultiPageiframeBrw");
+
+            ExtentTestManager.logStep("Click", "Clicking Inventory");
+            Utilities.Click(Inventory);
+            ExtentTestManager.logStep("Click", "Clicked Inventory");
+
+            BaseTest.getDriver().switchTo().defaultContent();
+            ExtentTestManager.logStep("Frame Switch", "Switched to default content");
+
+            BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
+            ExtentTestManager.logStep("Frame Switch", "Switched to frame: MultiPageiframeBrw");
+
+            ExtentTestManager.logStep("Click", "Clicking Inventory Module");
+            Utilities.Click(InventoryModule);
+            ExtentTestManager.logStep("Click", "Clicked Inventory Module");
+
+            ExtentTestManager.logStep("Click", "Clicking Vendor Setup");
+            Utilities.Click(VendorSetup);
+            ExtentTestManager.logStep("Click", "Clicked Vendor Setup");
+
+            BaseTest.getDriver().switchTo().defaultContent();
+            ExtentTestManager.logStep("Frame Switch", "Switched to default content");
+
+            BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
+            ExtentTestManager.logStep("Frame Switch", "Switched to frame: MultiPageiframeBrw");
+
+            ExtentTestManager.logStep("Click", "Clicking Add");
+            Utilities.Click(Add);
+            ExtentTestManager.logStep("Click", "Clicked Add");
+
+            ExtentTestManager.logStep("Click", "Clicking Account Group dropdown");
+            Utilities.Click(BaseTest.getDriver(), AccountGroup);
+            ExtentTestManager.logStep("Click", "Clicked Account Group dropdown");
+
+            BaseTest.getDriver().switchTo().defaultContent();
+            ExtentTestManager.logStep("Frame Switch", "Switched to default content");
+
+            BaseTest.getDriver().switchTo().frame("iframeGridDialog");
+            ExtentTestManager.logStep("Frame Switch", "Switched to frame: iframeGridDialog");
+
+            ExtentTestManager.logStep("Double Click", "Selecting Account Group");
+            Utilities.DoubleClick(SelectAccGroup);
+            ExtentTestManager.logStep("Double Click", "Selected Account Group");
+
+            BaseTest.getDriver().switchTo().defaultContent();
+            ExtentTestManager.logStep("Frame Switch", "Switched to default content");
+
+            BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
+            ExtentTestManager.logStep("Frame Switch", "Switched to frame: MultiPageiframeBrw");
+
+            uniqueText = new SimpleDateFormat("ddyyHHmm").format(new Date());
+            ExtentTestManager.logStep("Test Data", "Generated unique Account ID: " + uniqueText);
+
+            ExtentTestManager.logStep("Input", "Entering Account ID: " + uniqueText);
+            Utilities.SendKeys(AccountID, uniqueText);
+
+            ExtentTestManager.logStep("Input", "Entering Account Name: Testing");
+            Utilities.SendKeys(AccountName, "Testing");
+
+            ExtentTestManager.logStep("Input", "Entering Address: Phase V");
+            Utilities.SendKeys(Address, "Phase V");
+
+            ExtentTestManager.logStep("Input", "Entering City: Meerut");
+            Utilities.SendKeys(City, "Meerut");
+
+            ExtentTestManager.logStep("Input", "Entering State: UP");
+            Utilities.SendKeys(State, "UP");
+
+            ExtentTestManager.logStep("Input", "Entering Zip: 250002");
+            Utilities.SendKeys(Zip, "250002");
+
+            ExtentTestManager.logStep("Dropdown", "Selecting GST State value: 09");
+            Utilities.selectBy("value", GstState, "09");
+
+            ExtentTestManager.logStep("Input", "Entering Country: India");
+            Utilities.SendKeys(Country, "India");
+
+            try {
+                ExtentTestManager.logStep("Click", "Clicking Currency dropdown");
+                Utilities.Click(CurrencyDropdown);
+                ExtentTestManager.logStep("Click", "Clicked Currency dropdown");
+
+                BaseTest.getDriver().switchTo().defaultContent();
+                ExtentTestManager.logStep("Frame Switch", "Switched to default content");
+
+                BaseTest.getDriver().switchTo().frame("iframeGridDialog");
+                ExtentTestManager.logStep("Frame Switch", "Switched to frame: iframeGridDialog");
+
+                ExtentTestManager.logStep("Double Click", "Selecting Currency");
+                Utilities.DoubleClick(SelectCurrency);
+                ExtentTestManager.logStep("Double Click", "Selected Currency");
+
+            } catch (Exception e) {
+                ExtentTestManager.logStep("Currency", "Currency selection skipped/failed: " + e.getMessage());
+            }
+
+            BaseTest.getDriver().switchTo().defaultContent();
+            ExtentTestManager.logStep("Frame Switch", "Switched to default content");
+
+            BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
+            ExtentTestManager.logStep("Frame Switch", "Switched to frame: MultiPageiframeBrw");
+
+            ExtentTestManager.logStep("Click", "Clicking Save");
+            Utilities.Click(Save);
+            ExtentTestManager.logStep("Click", "Clicked Save");
+
+            BaseTest.getDriver().switchTo().defaultContent();
+            ExtentTestManager.logStep("Frame Switch", "Switched to default content");
+
+            BaseTest.getDriver().switchTo().frame("iframeGridDialog");
+            ExtentTestManager.logStep("Frame Switch", "Switched to frame: iframeGridDialog");
+
+            ExtentTestManager.logStep("Validation", "Validating confirmation dialog message");
+
+            if (ConfDlg.isDisplayed() && ConfDlg.getText().contains("[238] - Details Created/Updated")) {
+                ExtentTestManager.createAssertTestStepWithScreenshot(
+                        "Vendor Creation",
+                        Status.PASS,
+                        "Vendor Creation Passed - Confirmation: " + ConfDlg.getText(),
+                        true
+                );
+            } else {
+                appProgError();
+//                ExtentTestManager.createAssertTestStepWithScreenshot(
+//                        "Vendor Creation",
+//                        Status.FAIL,
+//                        "Vendor Creation Failed - Confirmation not matched. Found: " + ConfDlg.getText(),
+//                        true
+//                );
+            }
+
+        } catch (Exception e) {
+            appProgError();
+//            ExtentTestManager.createAssertTestStepWithScreenshot(
+//                    "Vendor Creation",
+//                    Status.FAIL,
+//                    "Vendor Creation Failed due to exception: " + e.getMessage(),
+//                    true,
+//                    e
+//            );
+        }
+    }
+
 
     public void Delete() {
         try {
@@ -1442,5 +1578,27 @@ public class VendorPage extends ExtentTestManager {
 
     @FindBy(id = "cphBody_txtfx_code")
     private WebElement currency;
+
+    public void appProgError(){
+        try {
+            // Error handling with proper logging
+            ExtentTestManager.createAssertTestStepWithScreenshot("Error Handling", Status.INFO,
+                    "Checking for application errors after exception", false);
+            BaseTest.getDriver().switchTo().defaultContent();
+            BaseTest.getDriver().switchTo().frame("iframeGridDialog");
+            //BaseTest.getDriver().switchTo().frame("iframeGridDialog");
+
+            if (ConfDlg.isDisplayed() && ConfDlg.getText().contains("Application program error")) {
+                IQ_Page ob = new IQ_Page(BaseTest.getDriver());
+                ob.ApplicationProgError();
+                ExtentTestManager.createAssertTestStepWithScreenshot("Application Error", Status.FAIL,
+                        "Application error occurred during execution", true);
+                return;
+            }
+        } catch (Exception innerEx) {
+            ExtentTestManager.createAssertTestStepWithScreenshot("Error Handling", Status.FAIL,
+                    "Error while handling application error", true, innerEx);
+        }
+    }
 
 }

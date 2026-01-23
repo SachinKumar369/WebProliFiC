@@ -21,7 +21,7 @@
 
     <test name="GL Test" enabled="true">
         <classes>
-            <class name="GL.BankReconciliation.DeleteTrasection"/>
+            <class name="GL.JV.UserCreation"/>
         </classes>
     </test>
 

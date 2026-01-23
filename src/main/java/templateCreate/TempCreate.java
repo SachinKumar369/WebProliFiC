@@ -642,6 +642,8 @@ public class TempCreate {
             BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
 
             WebDriverWait wait = new WebDriverWait(BaseTest.getDriver(),Duration.ofSeconds(10));
+            BaseTest.getDriver().switchTo().defaultContent();
+            BaseTest.getDriver().switchTo().frame("MultiPageiframeBrw");
             wait.until(ExpectedConditions.elementToBeClickable(SystemAdmin));
             Utilities.Click(BaseTest.getDriver(),SystemAdmin);
             BaseTest.getDriver().switchTo().defaultContent();

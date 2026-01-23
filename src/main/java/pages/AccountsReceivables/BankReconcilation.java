@@ -2,8 +2,8 @@ package pages.AccountsReceivables;
 
 import baselibrary.BaseTest;
 import com.aventstack.extentreports.Status;
+import com.prologic.util.data.DateUtility;
 import extentreports.ExtentTestManager;
-import org.bouncycastle.pqc.crypto.util.PQCOtherInfoGenerator;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -96,6 +96,71 @@ public class BankReconcilation extends Utilities {
         } catch (Exception e) {
             ExtentTestManager.createAssertTestStepWithScreenshot("Delete Bank Transection", Status.FAIL,"Issue in Deleting the  Bank Transection",true,e);
 
+        }
+    }
+
+    @FindBy(xpath = "//a[@title=\"BN03 Reconcile Bank Statement\"]")
+    private WebElement reconcileBank;
+    @FindBy(id = "cphBody_imgBankId")
+    private WebElement bankIdimg;
+    @FindBy(id = "td_5_0")
+    private WebElement bankID;
+    @FindBy(id = "cphFooter_tdDatetime")
+    private WebElement date;
+    @FindBy(id = "cphBody_txtReconciledUpTo")
+    private WebElement reconcileDate;
+    @FindBy(id = "cphBody_btnSearch")
+    private WebElement searchButton;
+
+
+    public void reconcileBankStatement(){
+        try {
+            BaseTest.getDriver().manage().window().maximize();
+            multipageiframebrw();
+            Click(accounting);
+            multipageiframebrw();
+            wait.until(ExpectedConditions.elementToBeClickable(bankReconcile));
+            Click(bankReconcile);
+            Click(reconcileBank);
+            multipageiframebrw();
+            Click(bankIdimg);
+            iframeGridDialog();
+            DoubleClick(bankID);
+            multipageiframebrw();
+            String businessDate = date.getText();
+            System.out.println("Bussiness Date is :" +businessDate);
+            String ddmmyyDate = DateUtility.convertDateToDDMMYYYY(businessDate);
+            System.out.println("ddmmyy Date is " +ddmmyyDate);
+            SendKeys(reconcileDate,ddmmyyDate);
+            Click(searchButton);
+
+
+
+        } catch (Exception e) {
+            ExtentTestManager.createAssertTestStepWithScreenshot("Add Transaction Details", Status.FAIL,"Issue in Deleting the  Bank Transection",true,e);
+        }
+    }
+
+    @FindBy(xpath = "//a[contains(@module_name,'General Cashier')]")
+    private WebElement generalCash;
+    @FindBy(xpath = "//a[@title='GC02 General Cashier Main Screen']")
+    private WebElement generalCashierMainScreen;
+    @FindBy(id = "cphBody_btnAddRow_Top")
+    private WebElement addRow;
+
+
+    public void generalCashier(){
+        try {
+            BaseTest.getDriver().manage().window().maximize();
+            multipageiframebrw();
+            Click(accounting);
+            multipageiframebrw();
+            Click(generalCash);
+            Click(generalCashierMainScreen);
+            multipageiframebrw();
+            Click(addRow);
+        } catch (Exception e) {
+            ExtentTestManager.createAssertTestStepWithScreenshot("General Cashier",Status.FAIL,"Error while creating General Cashier" , true,e);
         }
     }
 

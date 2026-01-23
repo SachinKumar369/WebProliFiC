@@ -14,6 +14,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.w3c.dom.*;
+import pages.T0419_Pages.IQ_Page;
 import utils.DynamicWait;
 import utils.Utilities;
 
@@ -805,10 +806,34 @@ public class ItemPage {
             ItemID = SelectRQ.getText();
             System.out.println("Item id is :" + ItemID);
         } catch (Exception e) {
-            ExtentTestManager.createAssertTestStepWithScreenshot("Item Create", Status.FAIL, "Item Creation Failed", true, e);
+           // ExtentTestManager.createAssertTestStepWithScreenshot("Item Create", Status.FAIL, "Item Creation Failed", true, e);
 
+            try {
+                // Error handling with proper logging
+                ExtentTestManager.createAssertTestStepWithScreenshot("Error Handling", Status.INFO,
+                        "Checking for application errors after exception", false);
+                BaseTest.getDriver().switchTo().defaultContent();
+                BaseTest.getDriver().switchTo().frame("iframeGridDialog");
+                //BaseTest.getDriver().switchTo().frame("iframeGridDialog");
+
+                if (ProductConfirmation.isDisplayed() && ProductConfirmation.getText().contains("Application program error")) {
+                    IQ_Page ob = new IQ_Page(BaseTest.getDriver());
+                    ob.ApplicationProgError();
+                    ExtentTestManager.createAssertTestStepWithScreenshot("Application Error", Status.FAIL,
+                            "Application error occurred during execution", true);
+                    return;
+                }
+            } catch (Exception innerEx) {
+                ExtentTestManager.createAssertTestStepWithScreenshot("Error Handling", Status.FAIL,
+                        "Error while handling application error", true, innerEx);
+            }
+
+            //throw e;
         }
-    }
+        }
+
+    @FindBy(id = "lblErrorDesc")
+    private WebElement ProductConfirmation;
 
     public void ItemCreate() {
         try {

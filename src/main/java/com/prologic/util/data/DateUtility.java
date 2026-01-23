@@ -1,8 +1,11 @@
 package com.prologic.util.data;
 
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
 import java.util.Formatter;
+import java.util.Locale;
 
 
 public class DateUtility 
@@ -22,6 +25,18 @@ public class DateUtility
 			e.printStackTrace();
 			return null;
 		}
+	}
+
+	public static String convertDateToDDMMYYYY(String inputDate) {
+
+		DateTimeFormatter inputFormatter =
+				DateTimeFormatter.ofPattern("dd MMMM yyyy", Locale.ENGLISH);
+
+		DateTimeFormatter outputFormatter =
+				DateTimeFormatter.ofPattern("ddMMyyyy");
+
+		LocalDate date = LocalDate.parse(inputDate.trim(), inputFormatter);
+		return date.format(outputFormatter);
 	}
 
 }

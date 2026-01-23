@@ -208,7 +208,7 @@ public class ExcelHandler {
      * @Input_Parameters : String
      * @Output_Parameters : List
      **/
-    public static synchronized List<String> getAllColumnData(String colIdentifier) {
+    public static synchronized List<String> getAllColumnData1(String colIdentifier) {
         List<String> allColData = new ArrayList<>();
         try {
             int RowCount = getRowCount();
@@ -232,6 +232,57 @@ public class ExcelHandler {
         }
         return allColData;
     }
+
+    public static synchronized List<String> getAllColumnData(String colIdentifier) {
+
+        List<String> allColData = new ArrayList<>();
+
+        int rowCount = getRowCount();
+        int colNumber = getColumnNum(colIdentifier);
+
+        // ✅ HARD validation – fail fast
+        if (colNumber < 0) {
+            throw new RuntimeException(
+                    "Excel column not found: [" + colIdentifier + "]"
+            );
+        }
+
+        DataFormatter formatter = new DataFormatter();
+
+        for (int i = 1; i < rowCount; i++) {
+
+            if (excelWSheet.getRow(i) == null) {
+                continue;
+            }
+
+            Cell currentCell = excelWSheet.getRow(i).getCell(colNumber);
+
+            if (currentCell == null) {
+                continue;
+            }
+
+            String cellValue = formatter.formatCellValue(currentCell).trim();
+
+            if (!cellValue.isEmpty()) {
+                allColData.add(cellValue);
+            }
+        }
+
+        // ✅ Prevent downstream IndexOutOfBoundsException
+        if (allColData.isEmpty()) {
+            throw new RuntimeException(
+                    "No data found under Excel column: [" + colIdentifier + "]"
+            );
+        }
+
+        Log.info(
+                "Excel column [" + colIdentifier + "] loaded with values count: "
+                        + allColData.size()
+        );
+
+        return allColData;
+    }
+
 
     /**
      * @Test_Method_Description : To Set Column Data

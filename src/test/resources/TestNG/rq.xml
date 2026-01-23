@@ -22,18 +22,12 @@
 
 
 
-   <test name="RQ Regression1" enabled="false">
-       <classes>
-           <class name="RQ.WithoutTemplate.IQ_Test"></class>
-           <class name="ValidationTest.ApplicationProgError"></class>
 
-       </classes>
-   </test>
 
 
     <test name="RQ Regression" enabled="true">
         <classes>
-           <class name="RQTest.WithoutApproval.IQ_Test"></class>
+           <class name="RQ.WithTemplate.TempCreate_Test"></class>
 
         </classes>
     </test>

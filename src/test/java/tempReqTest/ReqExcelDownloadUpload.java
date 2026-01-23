@@ -63,7 +63,7 @@ public class ReqExcelDownloadUpload extends BaseTest {
             String[] credentials = null;
 
             // Get environment variable or set default to "prod"
-            String environment = System.getProperty("env", "approve");
+            String environment = System.getProperty("env", "prod");
 
             // Validate environment and retrieve credentials
             switch (environment.toLowerCase()) {

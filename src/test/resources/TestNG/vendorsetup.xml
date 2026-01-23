@@ -24,9 +24,10 @@
             <!--
             <class name="VendorSetup.WithoutApproval.VendorTaxCategory"/>
 
-            -->
+           
 
-            <class name="VendorSetup.WithoutApproval.ExcelDownloadTest"/>
+            <class name="VendorSetup.WithoutApproval.VendorCreation"/>  - -->
+            <class name="GL.JV.UserCreation"></class>
 
 
         </classes>

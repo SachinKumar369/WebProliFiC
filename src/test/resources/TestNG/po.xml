@@ -62,7 +62,7 @@
         </classes>
     </test>
 
-    <test name="PO" enabled="false">
+    <test name="PO" enabled="true">
         <classes>
             <class name="POTest.WithRQ_withoutApproval.WithoutRQ.CommentTest"/>
             <class name="POTest.WithRQ_withoutApproval.WithoutRQ.CPTest"/>
