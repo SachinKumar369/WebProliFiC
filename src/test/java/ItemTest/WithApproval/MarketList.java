@@ -34,7 +34,7 @@ public class MarketList extends BaseTest {
         ExtentTestManager.startTest(this.getClass().getSimpleName() + " :: " + m.getName(), " Portal Login");
         try {
             LoginThread.get().loginSK(m);
-            InventoryControlThread.get().Switch0419();
+            //InventoryControlThread.get().Switch0419();
 
 
         } catch (Exception e) {

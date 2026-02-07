@@ -21,13 +21,13 @@
 
     <test name="Vendor Setup" enabled="true">
         <classes>
-            <!--
+
             <class name="VendorSetup.WithoutApproval.VendorTaxCategory"/>
 
-           
+            <!--
 
-            <class name="VendorSetup.WithoutApproval.VendorCreation"/>  - -->
-            <class name="GL.JV.UserCreation"></class>
+             <class name="VendorSetup.WithoutApproval.VendorCreation"/>  - -->
+
 
 
         </classes>

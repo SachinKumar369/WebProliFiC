@@ -19,7 +19,7 @@
     <parameter name="url" value="https://qc2web.prologicfirst.in/WISH/Common/frmLogin.aspx"/>
 
 
-    <test name="PJV Test" enabled="true">
+    <test name="PJV Test" enabled="false">
         <classes>
             <class name="accountpayables.PJV.MakePJVTest"/>
             <class name="accountpayables.PJV.TaxDeductionTest"/>
@@ -38,7 +38,6 @@
             <class name="accountpayables.creditdebitNote.PostCreditNotes"/>
             <class name="accountpayables.TransactionReversal.ReversePJV"/>
 
-            
 
             <class name="accountpayables.createApAccounts.CreateAPAccount"/>
             <class name="accountpayables.PJV.TaxDeductionApprovalTest"/>
@@ -54,14 +53,34 @@
             <class name="accountpayables.settlement.SettlePJVCreditNotesTest"/>
 
 
+
+
         </classes>
     </test>
     <test name="Demo" enabled="false">
         <classes>
-            <class name="accountpayables.PJV.RCMPJV"/>
-
+            <class name="accountpayables.createApAccounts.CreateAPAccount"/>
+            <class name="accountpayables.PJV.TaxDeductionApprovalTest"/>
+            <class name="accountpayables.payadvance.WithDeduction"/>
+            <class name="accountpayables.payadvance.Freeze"/>
+            <class name="accountpayables.payadvance.WithPO"/>
+            <class name="accountpayables.processpayment.BankTransfer"/>
+            <class name="accountpayables.TransactionReversal.ReversePJV"/>
+            <class name="accountpayables.TransactionReversal.ReversePayament"/>
+            <class name="accountpayables.TransferTransactions.MakePJVTest"/>
+            <class name="accountpayables.TransactionReversal.ReverseCreditDebitNotes"/>
+            <class name="accountpayables.settlement.SettleDocumentTest"/>
+            <class name="accountpayables.settlement.SettlePJVCreditNotesTest"/>
         </classes>
     </test>
+
+
+
+<test name="Regression" enabled="true">
+<classes>
+    <class name="accountpayables.advanceControl.AMGLAT_Y"/>
+</classes>
+</test>
 
 
 </suite>

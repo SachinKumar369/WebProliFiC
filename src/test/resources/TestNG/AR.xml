@@ -21,7 +21,8 @@
 
     <test name="AR Test" enabled="true">
         <classes>
-            <class name="AccountsReceivables.TransactionEntry.CN_Posting"/>
+            <class name="AccountsReceivables.TransactionEntry.GenerateInvoiceSOA"/>
+
         </classes>
     </test>
 

@@ -24,20 +24,20 @@
     <test name="Item Test" enabled="true">
         <classes>
 
+            <class name="ItemTest.WithApproval.MarketList"/>
 
-            <class name="ItemTest.WithoutApproval.ExcelUpload"/>
 
         </classes>
     </test>
 
     <test name="Regression" enabled="false">
         <classes>
-            <class name="ItemTest.WithApproval.MarketList"/>
             <class name="ItemTest.WithApproval.NonStockable"/>
             <class name="ItemTest.WithApproval.RegularItemTest"/>
             <class name="ItemTest.WithoutApproval.RegularItemTest"/>
             <class name="ItemTest.WithoutApproval.DeleteItem"/>
 
+            <class name="ItemTest.WithoutApproval.ExcelUpload"/>
 
 
 

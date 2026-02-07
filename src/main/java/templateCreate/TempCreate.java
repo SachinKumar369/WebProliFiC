@@ -345,7 +345,7 @@ public class TempCreate {
             boolean isPage2Switched = false; // Track if switched to Page 2
             int itemsFromPage1 = 10; // Define the number of items to pick from Page 1
 
-            for (int i = 0; i < 3; i++) {
+            for (int i = 0; i < 60; i++) {
                 if (i > 0) { // Add a new row after the first iteration
                     Utilities.Click(BaseTest.getDriver(), AddRow);
                 }

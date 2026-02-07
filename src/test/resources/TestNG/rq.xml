@@ -27,7 +27,7 @@
 
     <test name="RQ Regression" enabled="true">
         <classes>
-           <class name="RQ.WithTemplate.TempCreate_Test"></class>
+           <class name="RQ.WithoutTemplate.IQ_Test"></class>
 
         </classes>
     </test>

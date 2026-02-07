@@ -523,7 +523,7 @@ public class PO extends Utilities {
             //Select To Date
             BaseTest.getDriver().switchTo().defaultContent();
             BaseTest.getDriver().switchTo().frame("MultiPageiframeDlg");
-            Utilities.SendKeys(BaseTest.getDriver(), ToDate, "17/09/2025");
+            Utilities.SendKeys(BaseTest.getDriver(), ToDate, "20/09/2025");
             String Value = "CCL001";
             //Select Vendor
             Utilities.SendKeys(BaseTest.getDriver(), Vendor, "%%");

@@ -1150,7 +1150,7 @@ public class PO_Page {
                 if (i > 0) { // Execute only after i = 0
                     Utilities.Click(BaseTest.getDriver(), AddRow);
                 }
-                Utilities.SendKeys(BaseTest.getDriver(), getItemSearchElement(i), "%%");
+                Utilities.SendKeys(BaseTest.getDriver(), getItemSearchElement(i), "BEER");
                 getItemSearchElement(i).sendKeys(Keys.TAB);
                 BaseTest.getDriver().switchTo().defaultContent();
                 wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(By.id("iframeGridDialog")));

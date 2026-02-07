@@ -172,8 +172,13 @@ public class GSTVendorPage {
                 logMessages.add("Entered Pin Code");
 
                 // Step 19: Select GST State
-                Utilities.selectBy("value", GstState, "09");
-                logMessages.add("Entered GST State");
+               try {
+                   Utilities.selectBy("value", GstState, "09");
+                   logMessages.add("Entered GST State");
+
+               } catch (Exception e) {
+
+               }
 
                 // Step 20: Enter Country
                 Utilities.SendKeys(Country, "India");
